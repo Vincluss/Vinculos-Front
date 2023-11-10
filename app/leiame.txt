@@ -1,0 +1,15 @@
+## LEIA ESTE DOCUMENTO PARA UMA EXPLICAÇÃO SIMPLES SOBRE O NEXT.JS
+
+A pasta app é onde colocaremos todas nossas páginas para roteamento das mesmas.
+
+Assim, podemos concluir que a pasta App é a principal.
+Dentro dela, teremos várias pastas e dentro das pastas teremos uma única página page.jsx
+O nome destas pastas serão os nomes das páginas que será renderizada.
+Por exemplo, teremos uma pasta sobre e dentro dela teremos um arquivo page.jsx
+
+Nela somente teremos as páginas completas já com os componentes.
+
+O roteamento do Next.js é diferente do React tradicional.
+Precisaremos criar páginas com os mesmos componentes e não substituindo os componentes como fazíamos no react.
+
+Por exempl
