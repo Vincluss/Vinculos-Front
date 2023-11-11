@@ -8,6 +8,17 @@ export default function HomeCandidato() {
           Página de homeCandidato
         </Link>
       </h3>
+      <h3>
+        <Link href={'/homeCandidato#section'}>
+          ir para section
+        </Link>
+      </h3>
+
+      <div className='h-[100vh] bg-black'></div>
+
+      <section id='section'>
+        section diferente
+      </section>
     </main>
   )
 }
