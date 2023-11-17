@@ -1,13 +1,12 @@
 import Link from 'next/link'
+import Vagas from "@/componentes/vagas"
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <h3>
-        <Link href={'/homeCandidato'}>
-          Segura na mão de Deus
-        </Link>
-      </h3>
-    </main>
+    <>
+      <Vagas />
+    </>
   )
 }
+
+// Pasta page que está na pasta raiz é igual á pasta /

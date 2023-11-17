@@ -1,36 +1,61 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Vínculos - README
 
-## Getting Started
+Este é o repositório para o Front-End da Vínculos.
 
-First, run the development server:
+## Ferramentas utilizadas
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+No projeto Vínculos, utilizamos Next.JS para o runtime, React.Js como biblioteca, TailwindCSS e módulos CSS para estilização.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Arquivos principais no Next.Js
+#### Layout
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+O arquivo `layout.jsx` é o template principal do aplicativo, nele podemos definir elementos comuns a todas as páginas, como cabeçalho, rodapé e menu de navegação.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+#### Páginas
 
-## Learn More
+As páginas, por sua vez, são os arquivos que definem a estrutura e os componentes específicos de cada rota. Esses arquivos possuem o seguinte padrão de nomenclatura: `page.jsx`.
 
-To learn more about Next.js, take a look at the following resources:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+#### Componentes
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+Os componentes são blocos de construção reutilizáveis que podem ser utilizados em diferentes partes do aplicativo.
 
-## Deploy on Vercel
+### Arquivos e estrutura das pastas
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+No projeto Vínculos, existem diversos arquivos, divididos em duas categorias principais: **pages**, **componentes** e **layouts**.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Na pasta <code>@/app/</code> teremos todo nosso código principal que será renderizado.
+
+Dentro dela, teremos o arquivo <code>page.jsx</code> e <code>layout.jsx</code>, que serão os arquivos de nossa homepage.
+
+Assim, o roteamento de outras páginas em nosso projeto será feito por pastas dentro da pasta <code>@/app/</code>. 
+Por exemplo:
+![Local Image](routing.png)
+
+
+Os componentes devem ser organizados em uma pasta chamada `componentes`. Dentro dessa pasta, você pode criar subpastas para agrupar componentes relacionados, como `componentes/navbar`, `componentes/footer`, etc.
+
+## Nomenclatura
+
+Os componentes devem seguir a nomenclatura `PascalCase`. Exemplos:
+
+- `Navbar.jsx`
+- `Footer.jsx`
+
+### Estilos
+
+Para os estilos do projeto, utilizamos módulos de css dentro da pasta de componentes.
+
+Para os estilos globais do aplicativo, criamos um arquivo chamado `globals.css` na raiz do projeto.
+
+### Arquivos de Imagem
+
+Imagens utilizadas no projeto devem ser colocadas na pasta `public/img`.
+
+## Créditos
+
+Projeto criado por [Vínculos](https://github.com/fulanoDetal).
+
+## Licença
+
+Este projeto é licenciado sob a licença [MIT](LICENSE).
