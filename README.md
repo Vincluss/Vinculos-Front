@@ -7,18 +7,34 @@ Este é o repositório para o Front-End da Vínculos.
 No projeto Vínculos, utilizamos Next.JS para o runtime, React.Js como biblioteca, TailwindCSS e módulos CSS para estilização.
 
 ## Arquivos principais no Next.Js
-#### Layout
+#### layout.jsx
 
 O arquivo `layout.jsx` é o template principal do aplicativo, nele podemos definir elementos comuns a todas as páginas, como cabeçalho, rodapé e menu de navegação.
 
-#### Páginas
+#### page.jsx
 
 As páginas, por sua vez, são os arquivos que definem a estrutura e os componentes específicos de cada rota. Esses arquivos possuem o seguinte padrão de nomenclatura: `page.jsx`.
 
+Neste arquivo teremos os componentes organizados da seguinte forma:
+
+```JSX
+    export default function Home() {
+    return (
+        <>
+            <Componente />
+            <Componente />
+            <Componente />
+            <Componente />
+        </>
+    )
+    }
+```
 
 #### Componentes
 
 Os componentes são blocos de construção reutilizáveis que podem ser utilizados em diferentes partes do aplicativo.
+
+Os componentes devem ser organizados em uma pasta chamada `componentes`. Dentro dessa pasta, você pode criar subpastas para agrupar componentes relacionados, como `componentes/navbar`, `componentes/footer`, etc.
 
 ### Arquivos e estrutura das pastas
 
@@ -32,9 +48,6 @@ Assim, o roteamento de outras páginas em nosso projeto será feito por pastas d
 Por exemplo:
 
 ![Local Image](routing.png)
-
-
-Os componentes devem ser organizados em uma pasta chamada `componentes`. Dentro dessa pasta, você pode criar subpastas para agrupar componentes relacionados, como `componentes/navbar`, `componentes/footer`, etc.
 
 ## Nomenclatura
 
