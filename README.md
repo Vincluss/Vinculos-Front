@@ -58,7 +58,7 @@ Os componentes devem seguir a nomenclatura `PascalCase`. Exemplos:
 
 ## Roteamento
 
-No Next.Js temos o roteamento baseado em pastas, assim, utilizamos o Componente do Next chamado de Link, ele funciona como uma tag <code><a>Clique aqui</a><code>.
+No Next.Js temos o roteamento baseado em pastas, assim, utilizamos o Componente do Next chamado de Link, ele funciona como uma tag `<a></a>`.
 
 As pastas são os links dentro da propriedade <code>href=</code>.
 
