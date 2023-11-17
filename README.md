@@ -56,6 +56,26 @@ Os componentes devem seguir a nomenclatura `PascalCase`. Exemplos:
 - `Navbar.jsx`
 - `Footer.jsx`
 
+## Roteamento
+
+No Next.Js temos o roteamento baseado em pastas, assim, utilizamos o Componente do Next chamado de Link, ele funciona como uma tag <code><a>Clique aqui</a><code>.
+
+As pastas são os links dentro da propriedade <code>href=</code>.
+
+Exemplo:
+
+```JSX
+    import Link from 'next/link';
+
+    <Link href="/"> 
+        Clique aqui para ir para a página home
+    </Link>
+
+    <Link href="/sobre">
+        Clique aqui para ir para a página sobre
+    </Link>
+```
+
 ### Estilos
 
 Para os estilos do projeto, utilizamos módulos de css dentro da pasta de componentes.
