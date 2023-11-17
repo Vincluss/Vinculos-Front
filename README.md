@@ -11,6 +11,16 @@ No projeto Vínculos, utilizamos Next.JS para o runtime, React.Js como bibliotec
 
 O arquivo `layout.jsx` é o template principal do aplicativo, nele podemos definir elementos comuns a todas as páginas, como cabeçalho, rodapé e menu de navegação.
 
+Mude o valor de title para mudar título da guia no navegador no arquivo `layout.jsx`.
+
+``` JSX
+    export const metadata = {
+    title: "Vínculos",
+    description:
+        "A plataforma que emprega e capacita pessoas com deficiências sensoriais",
+    };
+```
+
 #### page.jsx
 
 As páginas, por sua vez, são os arquivos que definem a estrutura e os componentes específicos de cada rota. Esses arquivos possuem o seguinte padrão de nomenclatura: `page.jsx`.
@@ -35,6 +45,8 @@ Neste arquivo teremos os componentes organizados da seguinte forma:
 Os componentes são blocos de construção reutilizáveis que podem ser utilizados em diferentes partes do aplicativo.
 
 Os componentes devem ser organizados em uma pasta chamada `componentes`. Dentro dessa pasta, você pode criar subpastas para agrupar componentes relacionados, como `componentes/navbar`, `componentes/footer`, etc.
+
+Eles serão estilizados pelos módulos de CSS na pasta <code>@/componentes/css</code>
 
 ### Arquivos e estrutura das pastas
 
@@ -68,19 +80,13 @@ Exemplo:
     import Link from 'next/link';
 
     <Link href="/"> 
-        Clique aqui para ir para a página home
+        Clique aqui para ir para a página home.
     </Link>
 
     <Link href="/sobre">
-        Clique aqui para ir para a página sobre
+        Clique aqui para ir para a página sobre.
     </Link>
 ```
-
-### Estilos
-
-Para os estilos do projeto, utilizamos módulos de css dentro da pasta de componentes.
-
-Para os estilos globais do aplicativo, criamos um arquivo chamado `globals.css` na raiz do projeto.
 
 ### Arquivos de Imagem
 
@@ -88,7 +94,7 @@ Imagens utilizadas no projeto devem ser colocadas na pasta `public/img`.
 
 ## Créditos
 
-Projeto criado por [Vínculos](https://github.com/fulanoDetal).
+Projeto criado por [Vínculos](https://www.linkedin.com/company/100154077/admin/feed/posts/).
 
 ## Licença
 
