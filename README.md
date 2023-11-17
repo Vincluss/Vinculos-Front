@@ -30,6 +30,7 @@ Dentro dela, teremos o arquivo <code>page.jsx</code> e <code>layout.jsx</code>, 
 
 Assim, o roteamento de outras páginas em nosso projeto será feito por pastas dentro da pasta <code>@/app/</code>. 
 Por exemplo:
+
 ![Local Image](routing.png)
 
 
