@@ -1,10 +1,11 @@
 import Link from 'next/link';
-
+import Usuario from './usuario/page';
+import Curriculo from './curriculo/page';
 
 export default function Home() {
   return (
     <>
-      <h1>Neymar</h1>
+      <Usuario/>
     </>
   );
 }

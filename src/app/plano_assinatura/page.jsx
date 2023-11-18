@@ -28,7 +28,6 @@ export default function PlanoAssinatura () {
             </div>
             <button type="submit" className={Style.btn_assinatura}>Assinar</button>
 
-            <link href={"/curriculo"}>Clique Aqui</link>
 
         </section>    
     );
