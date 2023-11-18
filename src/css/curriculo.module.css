@@ -1,6 +1,6 @@
 .container_curriculo{
     width: 100%;
-    height: 50%;
+    height: auto;
 }
 
 .onda{
@@ -40,6 +40,7 @@
 
 .btn_enviarCurriculo:hover{
     @apply bg-header;
+    transition: 1s all;
 }
 
 

@@ -9,7 +9,7 @@ const poppins = Poppins({
 });
 
 export const metadata = {
-  title: "Página de currículo",
+  title: "Vínculos",
   description:
     "A plataforma que emprega e capacita pessoas com deficiências sensoriais",
 };
