@@ -1,4 +1,5 @@
 import Style from "@/src/css/plano_assinatura.module.css"
+import Link from "next/link";
 
 export default function PlanoAssinatura () {
     return(
@@ -26,6 +27,8 @@ export default function PlanoAssinatura () {
                 <h2 className={Style.preco}>Valor</h2>
             </div>
             <button type="submit" className={Style.btn_assinatura}>Assinar</button>
+
+            <link href={"/curriculo"}>Clique Aqui</link>
 
         </section>    
     );
