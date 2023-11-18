@@ -1,11 +1,10 @@
 import Link from 'next/link'
-import Vagas from "@/componentes/vagas"
-import HomeGeral from './home_geral/page'
+import Vagas from "@/src/componentes/vagas"
+
 
 export default function Home() {
   return (
     <>
-      <HomeGeral />
       <Vagas />
     </>
   )

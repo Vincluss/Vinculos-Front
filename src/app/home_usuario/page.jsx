@@ -1,7 +1,7 @@
 import Image from "next/image";
 import OndaCima from '@/public/img/img-efeitos/onda_cima.svg'
 
-export default function HomeCandidato(){
+export default function HomeUsuario(){
     return(
         <div>
             <Image 
