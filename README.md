@@ -52,11 +52,11 @@ Eles serão estilizados pelos módulos de CSS na pasta <code>@/componentes/css</
 
 No projeto Vínculos, existem diversos arquivos, divididos em duas categorias principais: **pages**, **componentes** e **layouts**.
 
-Na pasta <code>@/app/</code> teremos todo nosso código principal que será renderizado.
+Na pasta <code>@/src/app/</code> teremos todo nosso código principal que será renderizado.
 
 Dentro dela, teremos o arquivo <code>page.jsx</code> e <code>layout.jsx</code>, que serão os arquivos de nossa homepage.
 
-Assim, o roteamento de outras páginas em nosso projeto será feito por pastas dentro da pasta <code>@/app/</code>. 
+Assim, o roteamento de outras páginas em nosso projeto será feito por pastas dentro da pasta <code>@/src/app/</code>. 
 Por exemplo:
 
 ![Local Image](routing.png)

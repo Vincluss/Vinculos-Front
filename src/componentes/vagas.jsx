@@ -1,5 +1,5 @@
 import Style from "@/componentes/css/vagas.module.css";
-import "@/app/globals.css";
+import "@/src/app/globals.css";
 import Link from "next/link";
 
 export default function Vagas() {

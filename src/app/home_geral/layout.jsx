@@ -1,5 +1,5 @@
 import { Poppins } from "next/font/google";
-import "@/app/globals.css";
+import "@/src/app/globals.css";
 
 // A página layout é a página onde nosso código será renderizado.
 // Ela serve como uma página mãe para outras páginas
