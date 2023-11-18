@@ -1,10 +1,13 @@
 import Link from 'next/link'
+import Vagas from "@/src/app/vagas/page";
+import Curriculo from './curriculo/page';
+
 
 
 export default function Home() {
   return (
     <>
-
+    
     </>
   );
 }
