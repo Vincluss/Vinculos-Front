@@ -5,7 +5,7 @@
 
 .onda{
     transform: scaleX(-1);
-    width: 100%;
+    max-width: 100%;
 }
 
 .container_centro{
@@ -29,10 +29,47 @@
 
 .btn_enviarCurriculo{
     @apply bg-btn-home;
-    padding: 1.5rem 9rem;
+    width: 31.25rem;
+    height: 5rem;
+    /*padding: 1.5rem 9rem;*/
     border-radius: 10px;
     font-weight: 800;
     color: white;
-    margin-top: 3%;
+    margin: 3% 0 5% 0;
 }
 
+.btn_enviarCurriculo:hover{
+    @apply bg-header;
+}
+
+
+/* Responsividade */
+@media (min-width: 480px) and (max-width: 600px){
+    .titulo_curriculo{
+        font-size: 2rem;
+    }
+
+    .subtitulo_curriculo{
+        font-size: 1.6rem;
+    }
+
+    .btn_enviarCurriculo{
+        max-width: 25rem;
+        height: 4rem;
+    }
+}
+
+@media (max-width: 480px){
+    .titulo_curriculo{
+        font-size: 1.8rem;
+    }
+
+    .subtitulo_curriculo{
+        font-size: 1.3rem;
+    }
+
+    .btn_enviarCurriculo{
+        max-width: 17rem;
+        height: 3rem;
+    }
+}
