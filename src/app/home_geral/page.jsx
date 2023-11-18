@@ -1,23 +1,10 @@
-import Image from "next/image";
-import OndaCima from '@/src/assets/img-efeitos/onda_cima.svg';
-import Pessoas from '@/src/assets/img-pessoas/img-home.png';
+import Link from 'next/link';
+import HomeGeral from '@/src/componentes/home_geral';
 
-export default function HomeGeral() {
+export default function Home() {
   return (
     <>
-      <div>
-        <Image 
-          src={OndaCima}
-          alt="Onda"
-        />
-      </div>
-        <Image
-        src={Pessoas}
-        alt="Pessoas"
-        />
-      <div>
-        
-      </div>
+      <HomeGeral />
     </>
-  )
+  );
 }
