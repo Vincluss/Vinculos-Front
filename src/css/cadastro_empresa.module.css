@@ -1,0 +1,10 @@
+.caixaFormulario{
+    width: 50%;
+    height: auto;
+}
+
+.caixaSaudacao{
+    width: 50%;
+    height: auto;
+    @apply bg-btn-home;
+}
