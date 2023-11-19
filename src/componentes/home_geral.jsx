@@ -15,9 +15,8 @@ export default function HomeGeral() {
         <div className={Style.esquerda_onda}>
             <h1 className={Style.frase}>Faça Seu Cadastro e Tenha Acesso Aos <br/> Serviços</h1>
             <button className={Style.botao_candidato}>Para Candidatos</button>
-            <button className={Style.botao_empresa}>Para Empresa</button>
+            <button className={Style.botao_empresa}>Para Empresas</button>
         </div>
-        
     </>
   )
 }
