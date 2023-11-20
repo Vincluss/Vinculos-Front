@@ -1,0 +1,13 @@
+.container {
+  width: 100%;
+  height: 10vh;
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Centralizar horizontalmente */
+}
+
+.botao_veja {
+  cursor: pointer;
+  background-color: #e8a023; /* Cor corrigida conforme o comentário */
+  color: #FFFFFF;
+}
