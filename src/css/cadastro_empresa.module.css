@@ -4,24 +4,90 @@
     display: flex;
 }
 
-.caixaFormulário{
-    width: 50%;
-    height: 100%;
+/* Botão de sair*/
+.btn_sair{
+    background-color: #ffc24f;
 }
 
+/* Estrutura e formatação da section que irá ter os elementos de cadastro */
+.caixaFormulario{
+    width: 50%;
+    height: 100%;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center
+}
+
+.tituloEmpresa{
+    @apply text-font;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.tituloCadastro{
+    @apply text-font;
+    font-weight: bold;
+    font-size: 3.7rem;
+}
+
+.formulario{
+    width: 70%;
+}
+
+.estilizacaoInputs{
+    width: 100%;
+    border-bottom: 1px solid #000;
+    margin-bottom: 2%;
+    cursor: pointer;
+    outline: 0;
+}
+
+/* Div responsávwl por centralizar o botão de se inscrever */
+.centraalizarBtn{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn_inscrever_se{
+    background-color: #243b53;
+    color: #fff;
+    padding: 2%;
+    border-radius: 10px;
+    font-weight: bold;
+    margin: 4% 0; 
+}
+
+/* Estilização da section direita - Saudação de boas vindas */
 .caixaSaudacao{
     width: 50%;
     height: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: flex-start;
-    @apply bg-btn-home;
+    justify-content: center;
+    background: linear-gradient(47deg, #2f4e6d 75%, #ffc24f);
+}
+
+.titulo{
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.subtitulo{
+    color: #fff;
+    font-weight: bold;
+    text-align: center;
+    font-size: 1rem;
+    margin-bottom: 5%;
 }
 
 .logo{
-    width: 12.5rem;
-    height: 12.5rem;
+    width: 10rem;
+    height: 10rem;
     background-color: #fff;
     border-radius: 50%;
     display: flex;
@@ -29,3 +95,6 @@
     align-items: center;
     justify-content: center;
 }
+
+
+/* Mobile First */
