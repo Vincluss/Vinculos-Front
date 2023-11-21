@@ -1,15 +1,12 @@
 .container__vagas{
     width: 100%;
-    
     background-color: var(--clr-btn-orange);
     @apply bg-main-landing;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-
-    padding: 4rem;
-
+    padding: 150px;
 }
 
 .title__vagas{

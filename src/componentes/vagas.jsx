@@ -6,7 +6,7 @@ export default function Vagas() {
     <section className={Style.container__vagas}>
       <h3 className={Style.title__vagas}>Vagas disponíveis</h3>
 
-      <Link href="/homeCandidato" className={Style.subtitle__link}>
+      <Link href="" className={Style.subtitle__link}>
         <h4 className={Style.subTitle__vagas}>
             MAPA DO GOOGLE
         </h4>

@@ -1,0 +1,10 @@
+.fundo{
+    margin-top: 50px;
+}
+
+.frase2{
+    margin-left: 500px;
+    font-size: clamp(1rem, 5vw, 5rem);
+    font-weight: bold;
+    color: #302C29;
+}
