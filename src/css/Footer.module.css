@@ -24,5 +24,26 @@
     position: relative;
     width: 220px;
     height: 220px;
-    background-color: blue;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: space-around;
+
+}
+
+.Contato, .Email, .Telefone, .TituloLinks, .Inicio, .Vagas{
+    color: white;
+    font-size: 25px;
+    
+    
+}
+
+.Contato, .TituloLinks{
+    font-size: 40px;
+}
+
+.redesSociais{
+    font-size: 30px;
+    color: white;
 }
