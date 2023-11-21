@@ -44,6 +44,8 @@
     
 }
 
+
+
 .Contato, .TituloLinks{
     font-size: 40px;
 }
@@ -51,4 +53,11 @@
 .redesSociais{
     font-size: 30px;
     color: white;
+}
+
+.Email:hover, .Telefone:hover, .Inicio:hover, .Vagas:hover{
+    color: #003786;
+    transition: 0.5s;
+    
+    
 }
