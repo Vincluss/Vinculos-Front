@@ -1,11 +1,17 @@
 import Link from 'next/link'
-import Vagas from "@/src/componentes/vagas"
+import Cursos from '../componentes/cursos/cursos'
+
+
+
+
 
 
 export default function Home() {
   return (
     <>
-      <Vagas />
+      <Cursos />
+     
+   
     </>
   )
 }
