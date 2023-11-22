@@ -1,10 +1,10 @@
 import Image from "next/image"
 import Style from "@/src/css/Footer.module.css"
 import Link from "next/link"
-import Logo from "@/src/img/Logo_Vinculos_Redondo.png"
-import Instagram from "@/src/img/Logo_Instagram.png"
-import LinkedIn from "@/src/img/Logo_LinkedIn.png"
-import Linktree from "@/src/img/Logo_Linktree.png"
+import Logo from "@/src/assets/img-footer/Logo_Vinculos_Redondo.png"
+import Instagram from "@/src/assets/img-footer/Logo_Instagram.png"
+import LinkedIn from "@/src/assets/img-footer/Logo_LinkedIn.png"
+import Linktree from "@/src/assets/img-footer/Logo_Linktree.png"
 
 
 export default function Footer() {

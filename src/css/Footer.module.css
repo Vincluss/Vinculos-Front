@@ -3,7 +3,7 @@
     width: 100%;
     height: 400px;
     bottom: 0;
-    background-image: url(../img/FooterBackground.png);
+    background-image: url(../assets/img-footer/FooterBackground.png);
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
