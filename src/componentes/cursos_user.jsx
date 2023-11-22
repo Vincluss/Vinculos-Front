@@ -1,15 +1,15 @@
 'use client'
 import { useEffect, useState } from 'react';
-import Style from '../../css/cursos.module.css';
+import Style from '@/src/css/cursos_user.module.css';
 import Link from "next/link";
 import Image from 'next/image';
 import Contabilidade from '@/src/assets/img-pessoas/contabilidade.png';
 import Gestao from '@/src/assets/img-pessoas/gestao.png';
 import Programacao from '@/src/assets/img-pessoas/programacao.png';
 import dynamic from 'next/dynamic';
-import DynamicRating from './rating'; // Importe corretamente o componente DynamicRating
+import DynamicRating from '@/src/componentes/rating'; // Importe corretamente o componente DynamicRating
 
-const DynamicRatingComponent = dynamic(() => import('./rating'), { ssr: false });
+const DynamicRatingComponent = dynamic(() => import('@/src/componentes/rating'), { ssr: false });
 
 export default function Cursos_user() {
   const [isClient, setIsClient] = useState(false);
@@ -24,8 +24,9 @@ export default function Cursos_user() {
       <section className={Style.container_cursos}>
 
       <h2 className={Style.title_cursos}>Cursos</h2>
-        <Link href="/homeCandidato" className={Style.subtitle__link}>
+        
             <section className={Style.caixa}>
+                
                 
                 <div className={Style.curso1}>
                     <Image className={Style.contabilidade} src={Contabilidade} alt='deficientes na cadeira de roda' />
@@ -69,29 +70,27 @@ export default function Cursos_user() {
                 </div>
 
             </section>
-            
-          
-        </Link>
+        
+        
 
         <h2 className={Style.title_avaliacao}>Sugestão/Avaliações</h2>
             <section className={Style.rating}>
-                
                 <DynamicRating />
             </section>
 
-        <section className={Style.label}>
-            <div className={Style.nome}>
-                <label htmlFor="nome">Nome:</label>
-                <input type="text" id="nome" name="nome" required />
-            </div>
 
-            <div className={Style.nome}>
+        <form className={Style.formulario}>
 
-            </div>
+            <input className={Style.nome} type="text" name="nome" maxlength="50" size="50" required placeholder="Nome do curso" />
+            <br />
+            <br />
+            <textarea className={Style.campo} cols="20" rows="10" placeholder="Comentário"></textarea>
+            <br />
+            <input className={Style.botao2} type="submit" value="Enviar"></input>
 
-        </section>
-
-
+        </form>
+                
+            
 
 
       </section>
