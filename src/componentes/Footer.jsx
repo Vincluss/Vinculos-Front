@@ -21,7 +21,7 @@ export default function Footer() {
       </div> {/*Div dos contatos da Footer*/}
 
       <div className={Style.Links}>
-        <h1 className={Style.TituloLinks}>Links</h1>
+        <h1 className={Style.TituloLinks}>LINKS</h1>
         <h2 className={Style.Inicio}>Inicio</h2>
         <h2 className={Style.Vagas}>Vagas</h2>
       </div> {/*Div dos links do Site*/}
