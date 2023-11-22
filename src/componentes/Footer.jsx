@@ -2,6 +2,8 @@ import Image from "next/image"
 import Style from "@/src/css/Footer.module.css"
 import Link from "next/link"
 import Logo from "@/src/img/Logo_Vinculos_Redondo.png"
+import Instagram from "@/src/img/Logo_Instagram.png"
+import LinkedIn from "@/src/img/Logo_LinkedIn.png"
 
 
 export default function Footer() {
@@ -25,7 +27,10 @@ export default function Footer() {
 
       <div className={Style.redesSociais}>
         <h1>Redes Sociais</h1>
-        <h2></h2>
+        <Link href="https://instagram.com/vinculoss_?igshid=MTNiYzNiMzkwZA==">
+          <Image src={Instagram}/>
+        </Link>
+        <Link href=""><Image src={LinkedIn}/></Link>
       </div> {/*Div das redes sociais da Footer*/}
 
     </footer>
