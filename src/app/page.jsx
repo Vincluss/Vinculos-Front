@@ -1,5 +1,5 @@
 import Link from 'next/link'
-import Cursos from '../componentes/cursos/cursos'
+import Cursos_user from '../componentes/cursos/cursos_user'
 
 
 
@@ -9,7 +9,7 @@ import Cursos from '../componentes/cursos/cursos'
 export default function Home() {
   return (
     <>
-      <Cursos />
+      <Cursos_user />
      
    
     </>

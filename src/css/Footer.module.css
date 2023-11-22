@@ -25,7 +25,7 @@
     height: 100%;
 }
 
-.Contatos, .Links, .redesSociais{
+.Contatos, .Links{
     position: relative;
     width: 220px;
     height: 220px;
@@ -37,11 +37,20 @@
 
 }
 
+.redesSociais{
+    position: relative;
+    width: 250px;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    background-color: red;
+    
+}
+
+
 .Contato, .Email, .Telefone, .TituloLinks, .Inicio, .Vagas{
     color: white;
-    font-size: 25px;
-    
-    
+    font-size: 25px;  
 }
 
 
@@ -57,7 +66,13 @@
 
 .Email:hover, .Telefone:hover, .Inicio:hover, .Vagas:hover{
     color: #003786;
-    transition: 0.5s;
-    
-    
+    transition: 0.5s;   
+}
+
+.icones{
+    position: relative;
+    height: auto !important;
+    width: auto!important;
+    display: flex !important;
+    flex-direction: row !important;
 }

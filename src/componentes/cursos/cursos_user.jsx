@@ -1,12 +1,24 @@
+'use client'
+import { useEffect, useState } from 'react';
 import Style from '../../css/cursos.module.css';
 import Link from "next/link";
 import Image from 'next/image';
 import Contabilidade from '@/src/assets/img-pessoas/contabilidade.png';
 import Gestao from '@/src/assets/img-pessoas/gestao.png';
 import Programacao from '@/src/assets/img-pessoas/programacao.png';
+import dynamic from 'next/dynamic';
+import DynamicRating from './rating'; // Importe corretamente o componente DynamicRating
+
+const DynamicRatingComponent = dynamic(() => import('./rating'), { ssr: false });
+
+export default function Cursos_user() {
+  const [isClient, setIsClient] = useState(false);
+    
+  useEffect(() => {
+    setIsClient(true); // Define isClient como true quando o componente é montado no lado do cliente
+  }, []);
 
 
-export default function Cursos() {
     
     return (
       <section className={Style.container_cursos}>
@@ -62,10 +74,11 @@ export default function Cursos() {
         </Link>
 
         <h2 className={Style.title_avaliacao}>Sugestão/Avaliações</h2>
-        <section className={Style.rating}>
-        
+            <section className={Style.rating}>
+                
+                <DynamicRating />
+            </section>
 
-        </section>
         <section className={Style.label}>
             <div className={Style.nome}>
                 <label htmlFor="nome">Nome:</label>
