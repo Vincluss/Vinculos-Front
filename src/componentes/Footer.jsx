@@ -4,14 +4,15 @@ import Link from "next/link"
 import Logo from "@/src/img/Logo_Vinculos_Redondo.png"
 import Instagram from "@/src/img/Logo_Instagram.png"
 import LinkedIn from "@/src/img/Logo_LinkedIn.png"
+import Linktree from "@/src/img/Logo_Linktree.png"
 
 
 export default function Footer() {
   return (
     <footer className={Style.footer}> {/*Div Footer*/}
       <div className={Style.Logo}>
-        <Image src={Logo}/>
-        </div> {/*Div da logo da Footer*/}
+        <Image src={Logo} />
+      </div> {/*Div da logo da Footer*/}
 
       <div className={Style.Contatos}>
         <h1 className={Style.Contato}>Contato</h1>
@@ -27,10 +28,18 @@ export default function Footer() {
 
       <div className={Style.redesSociais}>
         <h1>Redes Sociais</h1>
-        <Link href="https://instagram.com/vinculoss_?igshid=MTNiYzNiMzkwZA==">
-          <Image src={Instagram}/>
-        </Link>
-        <Link href=""><Image src={LinkedIn}/></Link>
+        <div className="icones"> {/*Caixinha só para os icones das redes sociais*/}
+
+          <Link href="https://instagram.com/vinculoss_?igshid=MTNiYzNiMzkwZA==" target="_blank">
+            <Image src={Instagram} />
+          </Link>
+          <Link href="https://www.linkedin.com/company/vinculoss/?viewAsMember=true" target="_blank"><Image src={LinkedIn} />
+          </Link>
+          <Link href="https://linktr.ee/vinculos__" target="_blank">
+            <Image src={Linktree} />
+          </Link>
+
+        </div>
       </div> {/*Div das redes sociais da Footer*/}
 
     </footer>
