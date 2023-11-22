@@ -1,0 +1,105 @@
+
+.Page{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.Logo{
+    width: 50%;
+    height: 730px;
+    background: linear-gradient(45deg, #E1A54D 2%, #0048AE 55%);
+    
+}
+
+.Titulo{
+color: #fff;
+font-weight: 700;
+font-size: 30px;
+margin-left: 25%;
+margin-top: 200px;
+}
+
+.Subtitulo{
+color:#fff;
+font-size: 17px;
+margin-left: 10%;
+font-weight: 600;
+}
+
+.Redonda{
+    width: 215px;
+    height: 210px;
+    border-radius: 100%;
+    margin-left: 33%;
+    margin-top: 40px;
+}
+
+
+.Dados{
+    width: 50%;
+    height: 730px;
+    background-color: #fff;
+}
+
+
+.Buttonsair{
+    margin: 20px;
+    color: #393939;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+
+.TituloForms{
+    color: #393939;
+    margin-left: 40%;
+    font-size: 45px;
+    font-weight: 750;
+    margin-bottom: 40px;
+}
+
+.SubtituloForms{
+    color: #393939;
+    margin-left: 45%;
+    font-weight: 500;
+    margin-top: 120px;
+    font-size: 20px;
+}
+
+.Formulario{
+    color: #393939;
+    margin-left: 20%;
+}
+
+.Label{
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.Inputs{
+    width: 450px;
+    border-bottom: #393939 1px solid;
+    margin-top: 16px;
+    margin-bottom: 10px;
+}
+
+
+.Recuperacao_cadastrar{
+    color: #393939;
+    margin-left: 35%;
+    margin-top: 20px;
+}
+
+
+.ButEntrar{
+    background-color: #003786;
+    color:#fff;
+    padding: 10px;
+    border-radius: 10px;
+    margin-left: 48%;
+    margin-top: 20px;
+    font-size: 15px;
+}
