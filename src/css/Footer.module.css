@@ -1,0 +1,78 @@
+.footer {
+    position: relative;
+    width: 100%;
+    height: 400px;
+    bottom: 0;
+    background-image: url(../img/FooterBackground.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    
+}
+
+.Logo{
+    position: relative;
+    width: 150px;
+    height: 150px;
+    
+}
+
+.Logo img{
+    width: 100%;
+    height: 100%;
+}
+
+.Contatos, .Links{
+    position: relative;
+    width: 220px;
+    height: 220px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: space-around;
+
+}
+
+.redesSociais{
+    position: relative;
+    width: 250px;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    background-color: red;
+    
+}
+
+
+.Contato, .Email, .Telefone, .TituloLinks, .Inicio, .Vagas{
+    color: white;
+    font-size: 25px;  
+}
+
+
+
+.Contato, .TituloLinks{
+    font-size: 40px;
+}
+
+.redesSociais{
+    font-size: 30px;
+    color: white;
+}
+
+.Email:hover, .Telefone:hover, .Inicio:hover, .Vagas:hover{
+    color: #003786;
+    transition: 0.5s;   
+}
+
+.icones{
+    position: relative;
+    height: auto !important;
+    width: auto!important;
+    display: flex !important;
+    flex-direction: row !important;
+}

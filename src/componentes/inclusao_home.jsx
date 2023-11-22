@@ -1,5 +1,5 @@
 import Image from "next/image";
-import Style from "../css/inclusao.module.css";
+import Style from "../css/inclusao_home.module.css";
 import Inclusao from '@/src/assets/img-pessoas/img-inclusao1.png'
 import Inclusao1 from '@/src/assets/img-pessoas/img-inclusao2.png'
 import Inclusao2 from '@/src/assets/img-pessoas/img-inclusao3.png'
