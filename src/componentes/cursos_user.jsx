@@ -21,81 +21,78 @@ export default function Cursos_user() {
 
     
     return (
-      <section className={Style.container_cursos}>
+        <section className={Style.container_cursos}>
 
-      <h2 className={Style.title_cursos}>Cursos</h2>
-        
-            <section className={Style.caixa}>
-                
-                
-                <div className={Style.curso1}>
-                    <Image className={Style.contabilidade} src={Contabilidade} alt='deficientes na cadeira de roda' />
-                    <div className={Style.coluna}>
-                        <div className={Style.titulo}>
-                            <h2 className={Style.contabilidade_titulo}>Contabilidade</h2>
-                        </div>
-                        <div className={Style.descricao}>
-                            <p className={Style.contabilidade_descricao}>Este curso aborda os princípios contábeis e as técnicas de registro financeiro, permitindo que os alunos entendam e gerenciem as finanças de organizações de maneira eficaz. </p>
-                        </div>
-                    </div>
-                </div>
-
-
-
-                <div className={Style.curso2}>
-                    <Image className={Style.gestao} src={Gestao} alt='deficientes na cadeira de roda' />
+            <h2 className={Style.title_cursos}>Cursos</h2>
+            
+                <section className={Style.caixa}>
                     
-                    <div className={Style.coluna}>
-                        <div className={Style.titulo}>
-                            <h2 className={Style.gestao_titulo}>Gestão De Equipe</h2>
+                    <Link href="https://www.ev.org.br/cursos/Contabilidade-Empresarial" target="_blank" className={Style.subtitle__link}>
+                        <div className={Style.curso1}>
+                            <Image className={Style.contabilidade} src={Contabilidade} alt='Um grupo de pessoas sentadas ao redor de uma mesa com um laptop.' />
+                            <div className={Style.coluna}>
+                                <div className={Style.titulo}>
+                                    <h2 className={Style.contabilidade_titulo}>Contabilidade</h2>
+                                </div>
+                                <div className={Style.descricao}>
+                                    <p className={Style.contabilidade_descricao}>Este curso aborda os princípios contábeis e as técnicas de registro financeiro, permitindo que os alunos entendam e gerenciem as finanças de organizações de maneira eficaz. </p>
+                                </div>
+                            </div>
                         </div>
-                        <div className={Style.descricao}>
-                            <p className={Style.gestao_descricao}>Este curso oferece conhecimentos essenciais sobre gerenciamento de empresas e organizações. Os alunos aprendem a planejar, organizar e liderar equipes.</p>
+                    </Link>
+
+
+                    <Link href="https://sebrae.com.br/sites/PortalSebrae/cursosonline/gestao-de-pessoas,eda0b8a6a28bb610VgnVCM1000004c00210aRCRD" target="_blank" className={Style.subtitle__link}>
+                        <div className={Style.curso2}>
+                            <Image className={Style.gestao} src={Gestao} alt='Uma mulher sentada em uma mesa de trabalho com livros e um tablete sobre a mesma.' />
+                            <div className={Style.coluna}>
+                                <div className={Style.titulo}>
+                                    <h2 className={Style.gestao_titulo}>Gestão De Equipe</h2>
+                                </div>
+                                <div className={Style.descricao}>
+                                    <p className={Style.gestao_descricao}>Este curso oferece conhecimentos essenciais sobre gerenciamento de empresas e organizações. Os alunos aprendem a planejar, organizar e liderar equipes.</p>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                </div>
+                    </Link>
 
 
-
-                <div className={Style.curso3}>
-                    <Image className={Style.programacao} src={Programacao} alt='deficientes na cadeira de roda' />
-                    <div className={Style.coluna}>
-                        <div className={Style.titulo}>
-                            <h2 className={Style.programacao_titulo}>Programação</h2>
+                    <Link href="https://www.edx.org/learn/computer-programming" target="_blank" className={Style.subtitle__link}>
+                        <div className={Style.curso3}>
+                            <Image className={Style.programacao} src={Programacao} alt='Dedos digitando no teclado do computador.' />
+                            <div className={Style.coluna}>
+                                <div className={Style.titulo}>
+                                    <h2 className={Style.programacao_titulo}>Programação</h2>
+                                </div>
+                                <div className={Style.descricao}>
+                                    <p className={Style.programacao_descricao}>Neste curso, os participantes aprendem a criar software e aplicativos através da escrita de código, para uma ampla variedade de carreiras em tecnologia da informação e desenvolvimento de software.</p>
+                                </div>
+                            </div>
                         </div>
-                        <div className={Style.descricao}>
-                            <p className={Style.programacao_descricao}>Neste curso, os participantes aprendem a criar software e aplicativos através da escrita de código, para uma ampla variedade de carreiras em tecnologia da informação e desenvolvimento de software.</p>
-                        </div>
-                    </div>
-                </div>
+                    </Link>
 
-            </section>
-        
-        
-
-        <h2 className={Style.title_avaliacao}>Sugestão/Avaliações</h2>
-            <section className={Style.rating}>
-                <DynamicRating />
-            </section>
-
-
-        <form className={Style.formulario}>
-
-            <input className={Style.nome} type="text" name="nome" maxlength="50" size="50" required placeholder="Nome do curso" />
-            <br />
-            <br />
-            <textarea className={Style.campo} cols="20" rows="10" placeholder="Comentário"></textarea>
-            <br />
-            <input className={Style.botao2} type="submit" value="Enviar"></input>
-
-        </form>
-                
+                </section>
+            
             
 
+            <h2 className={Style.title_avaliacao}>Sugestão/Avaliações</h2>
+                <section className={Style.rating}>
+                    <DynamicRating />
+                </section>
 
-      </section>
 
-        
+            <form className={Style.formulario}>
+
+                <input className={Style.nome} type="text" name="nome" maxlength="50" size="50" required placeholder="Nome do curso" />
+                <br />
+                <br />
+                <textarea className={Style.campo} cols="20" rows="10" placeholder="Comentário"></textarea>
+                <br />
+                <input className={Style.botao2} type="submit" value="Enviar"></input>
+
+            </form>
+        </section>
     );
+   
   }
 
