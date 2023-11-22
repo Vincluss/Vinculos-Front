@@ -9,7 +9,7 @@ import Linktree from "@/src/img/Logo_Linktree.png"
 
 export default function Footer() {
   return (
-    <footer className={Style.footer}> {/*Div Footer*/}
+    <><footer className={Style.footer}> {/*Div Footer*/}
       <div className={Style.Logo}>
         <Image src={Logo} />
       </div> {/*Div da logo da Footer*/}
@@ -28,7 +28,7 @@ export default function Footer() {
 
       <div className={Style.redesSociais}>
         <h1>Redes Sociais</h1>
-        <div className="icones"> {/*Caixinha só para os icones das redes sociais*/}
+        <div className={Style.icones}> {/*Caixinha só para os icones das redes sociais*/}
 
           <Link href="https://instagram.com/vinculoss_?igshid=MTNiYzNiMzkwZA==" target="_blank">
             <Image src={Instagram} />
@@ -42,6 +42,11 @@ export default function Footer() {
         </div>
       </div> {/*Div das redes sociais da Footer*/}
 
+
     </footer>
+    <div className={Style.Direitos}>
+        <h1>Densenvolvido por Vinculos ©</h1>
+        
+      </div></>
   )
 }
