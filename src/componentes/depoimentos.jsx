@@ -5,6 +5,7 @@ export default function Depoimentos(){
         <div className={Style.fundo}>
             <h1 className={Style.frase1}>Depoimentos</h1>
             <div className={Style.fundo_colorido}>
+                {/* video do depoimento */}
             </div>
         </div>
     )
