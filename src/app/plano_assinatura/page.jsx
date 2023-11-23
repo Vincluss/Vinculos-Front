@@ -1,3 +1,4 @@
+import Footer from "@/src/componentes/Footer";
 import Style from "@/src/css/plano_assinatura.module.css"
 import Link from "next/link";
 
@@ -8,27 +9,27 @@ export default function PlanoAssinatura () {
             <h1 className={Style.titulo}>Planos De Assinatura</h1>
 
             <div className={Style.containerPlano}>
-                <h1 className={Style.tituloAssinatura}>Titulo</h1>
+                <h1 className={Style.tituloAssinatura}>MENSAL</h1>
                 <h2 className={Style.descricao}>Descrição</h2>
                 <h2 className={Style.preco}>Valor</h2>
             </div>
             <button type="submit" className={Style.btn_assinatura}>Assinar</button>
 
             <div className={Style.containerPlano}>
-                <h1 className={Style.tituloAssinatura}>Titulo</h1>
+                <h1 className={Style.tituloAssinatura}>TRIMENSAL</h1>
                 <h2 className={Style.descricao}>Descrição</h2>
                 <h2 className={Style.preco}>Valor</h2>
             </div>
             <button type="submit" className={Style.btn_assinatura}>Assinar</button>
 
             <div className={Style.containerPlano}>
-                <h1 className={Style.tituloAssinatura}>Titulo</h1>
+                <h1 className={Style.tituloAssinatura}>ANUAL</h1>
                 <h2 className={Style.descricao}>Descrição</h2>
                 <h2 className={Style.preco}>Valor</h2>
             </div>
             <button type="submit" className={Style.btn_assinatura}>Assinar</button>
 
-
+            <Footer/>
         </section>    
     );
 }

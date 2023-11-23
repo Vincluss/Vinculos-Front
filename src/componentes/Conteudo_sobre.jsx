@@ -9,10 +9,8 @@ export default function Conteudo_sobre() {
             <div className={Style.quadrado1}>
             A vínculos surgiu em 2023. A ideia é profissionalizar, incluir e integrar deficientes sensoriais no mercado de trabalho.
             </div>
-            <h1 className={Style.TituloDepoimentos}>Depoimentos</h1>
-            <div className={Style.quadrado2}>
                     
-            </div>
+        
             <h1 className={Style.TituloEquipe}>Nossa Equipe</h1>
             <div className={Style.quadrado3}></div>
         </section>

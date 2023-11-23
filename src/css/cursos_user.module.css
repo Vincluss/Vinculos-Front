@@ -12,9 +12,8 @@
     @apply text-font;
     font-size: 38px;
     font-weight: bold;
-    margin-left:150px;
+    margin-left:200px;
     margin-bottom: 10px;
-    background-color: antiquewhite
 }
 
 .caixa{
@@ -22,9 +21,8 @@
     width: 88%;
     height: 950px;
     flex-direction: column;
-    margin-left:150px;
+    margin-left:200px;
     margin-top: 5px;
-    background-color: rgb(123, 181, 16)
 }
 
 .curso1, .curso2, .curso3{
@@ -32,13 +30,11 @@
     height: 250px;
     display: flex;
     margin-bottom: 100px;
-    background-color: rgb(16, 145, 181)
 }
 
 .contabilidade, .gestao, .programacao{
     width: 30%;
     height: 250px;
-    background-color: bisque;
     border-radius: 15px;
     margin-left: -1px;
 }
@@ -47,7 +43,6 @@
     margin-left: 100px;
     width: 77%;
     flex-direction: column;
-    background-color: aquamarine;
 }
 
 .titulo{
@@ -68,7 +63,6 @@
     text-align: center;
     text-align: justify;
     margin-top: 30px;
-    background-color: #ff3311;
 }
 
 .contabilidade_descricao, .gestao_descricao, .programacao_descricao{
@@ -85,16 +79,43 @@
     margin-left:150px;
     margin-top: 80px;
     margin-bottom: 20px;
-    background-color: rgb(197, 114, 6)
 }
 
 /* RATING */
 .rating{
     width: 88%;
     height: 80px;
-    margin-left: 150px;
+    margin-left: 200px;
 }
 
 .ratingg{
     font-size: 60px;
+}
+
+.formulario{
+    margin-top: 50px;
+    width: 95%;
+    height: 450px;
+    margin-left: 200px;
+}
+
+.nome{
+    /* background-color: rgb(215, 215, 223); */
+    width: 80%;
+    height: 60px;
+    border: solid 1px;
+}
+.campo{
+    border: solid 1px;
+    width: 80%;
+}
+
+.botao2{
+    background-color: #003786;
+    color: #fff;
+    width: 15%;
+    height: 50px;
+    margin-top: 50px;
+    margin-left: 380px;
+    border-radius: 10px;
 }
