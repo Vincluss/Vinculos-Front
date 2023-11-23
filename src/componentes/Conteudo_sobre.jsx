@@ -11,8 +11,7 @@ export default function Conteudo_sobre() {
             </div>
                     
         
-            <h1 className={Style.TituloEquipe}>Nossa Equipe</h1>
-            <div className={Style.quadrado3}></div>
+           
         </section>
     )
 }

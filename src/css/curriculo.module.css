@@ -5,7 +5,7 @@
 
 .onda{
     transform: scaleX(-1);
-    max-width: 100%;
+    width: 100%;
 }
 
 .container_centro{
