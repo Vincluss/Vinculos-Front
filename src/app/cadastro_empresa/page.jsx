@@ -34,18 +34,17 @@ export default function CadastroEmpresa(){
                     
                 </form>
 
-                <h1>JÁ POSSUO UMA CONTA</h1>
+                <Link href="/login_empresa" >JÁ POSSUO UMA CONTA</Link>
 
             </div>
 
             {/* Saudação da página */}
             <div className={Style.caixaSaudacao}>
-                <h1 className={Style.titulo}>BEM VINDO DE VOLTA!</h1>
+                <h1 className={Style.titulo}>OLÁ!</h1>
 
                 <h2 className={Style.subtitulo}>
-                    para manter-se conectado <br/>
-                    conosco, faça login com seus <br/>
-                    dados pessoais
+                    insira seus dados pessoais para <br/>
+                    abrir uma conta conosco
                 </h2>
                 <div className={Style.logo}>
                     <Image src={logo} />

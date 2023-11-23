@@ -2,6 +2,7 @@ import Link from 'next/link';
 import Style from "@/src/css/curriculo.module.css"
 import Image from 'next/image';
 import onda from "@/src/assets/img-efeitos/onda_cima.svg";
+import Footer from '@/src/componentes/Footer';
 
 export default function Curriculo() {
   return (
@@ -16,7 +17,7 @@ export default function Curriculo() {
             <button type="submit" className={Style.btn_enviarCurriculo}>BAIXAR MODELO DE CURRÍCULO</button>
         </div>
 
-        
+        <Footer/>
     </section>
   )
 }
