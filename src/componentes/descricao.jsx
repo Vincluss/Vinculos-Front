@@ -1,4 +1,4 @@
-import Style from "../css/descriçao_vagas.module.css";
+import Style from "../css/descricao_vagas_.module.css";
 
 export default function Descriçao() {
     return(
