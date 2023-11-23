@@ -1,5 +1,5 @@
 import Image from "next/image";
-import Style from "../css/cursos.module.css";
+import Style from "../css/cursos_home.module.css";
 import Curso from '@/src/assets/img-pessoas/img-curso1.png'
 import Curso1 from '@/src/assets/img-pessoas/img-curso2.png'
 import Curso2 from '@/src/assets/img-pessoas/img-curso3.png'

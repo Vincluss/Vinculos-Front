@@ -12,6 +12,7 @@ export default function Home() {
       <Vagas />
       <Depoimentos />
       <Parceiros />
+      <carrossel />
       <Footer />
     </>
   );
