@@ -4,7 +4,7 @@ import Style from "@/src/css/cadastrar_vagas.module.css"
 
 export default function CadastrarVagas(){
     return(
-        <section className={Style.cadastrarVagas}>
+        <section className={Style.paginaPlanoAssinatura}>
             <Header/>
 
             <div className={Style.containerForms}>
