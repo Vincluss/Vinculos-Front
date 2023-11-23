@@ -2,39 +2,45 @@ import Style from "@/src/css/cadastro_empresa.module.css";
 import logo from "@/src/assets/logo-semfundo/5.png";
 import Image from "next/image";
 import Link from "next/link";
+import { VscArrowLeft } from "react-icons/vsc";
 
 export default function CadastroEmpresa(){
     return(
         <section className={Style.paginaCadastro}>
             {/* Formulário de cadastro da empresa */}
-            {/* PRECISA ADICIONAR O BOTÃO DE SAIR E FAZER O RESPONSIVO */}
-
+            {/* PRECISA FAZER O RESPONSIVO */}
+            
             <div className={Style.caixaFormulario}>
-                <h1 className={Style.tituloEmpresa}>EMPRESA</h1>
-                <h1 className={Style.tituloCadastro}>CADASTRE-SE</h1>
+                <button className={Style.btn_sair}>
+                    <VscArrowLeft/>&nbsp; Sair
+                </button>
 
-                {/* action serve para indicar o local que será enviado as informações do formulário */}
-                <form action="/" method="post" className={Style.formulario}>
-                    <label htmlFor="" >NOME DO COLABORADOR: </label><br/>
-                    <input type="text" name="nome" placeholder="DIGITE O SEU NOME" className={Style.estilizacaoInputs} required/><br/>
+                <div className={Style.containerForms}>
+                    <h1 className={Style.tituloEmpresa}>EMPRESA</h1>
+                    <h1 className={Style.tituloCadastro}>CADASTRE-SE</h1>
 
-                    <label htmlFor="">EMAIL DO COLABORADOR: </label><br/>
-                    <input type="email" name="email" placeholder="DIGITE SEU EMAIL" className={Style.estilizacaoInputs} required/><br/>
+                    {/* action serve para indicar o local que será enviado as informações do formulário */}
+                    <form action="/curriculo"  className={Style.formulario}>
+                        <label htmlFor="" >NOME DO COLABORADOR: </label><br/>
+                        <input type="text" name="nome" placeholder="DIGITE O SEU NOME" className={Style.estilizacaoInputs} required/><br/>
 
-                    <label htmlFor="">EMPRESA</label><br/>
-                    <input type="text" name="empresa" title="Nome da sua empresa" className={Style.estilizacaoInputs} required/><br/>
+                        <label htmlFor="">EMAIL DO COLABORADOR: </label><br/>
+                        <input type="email" name="email" placeholder="DIGITE SEU EMAIL" className={Style.estilizacaoInputs} required/><br/>
 
-                    <label htmlFor="">CNPJ</label><br/>
-                    <input type="text" name="cnpj" className={Style.estilizacaoInputs} title="Formato esperado: 00.000.000/0000-00"
-                    pattern="\d{2}\.\d{3}\.\d{3}/\d{4}-\d{2}" required/>
+                        <label htmlFor="">EMPRESA</label><br/>
+                        <input type="text" name="empresa" title="Nome da sua empresa" className={Style.estilizacaoInputs} required/><br/>
 
-                    <div className={Style.centraalizarBtn}>
-                        <button type="submit" className={Style.btn_inscrever_se}>INSCREVER-SE</button>
-                    </div>
-                    
-                </form>
+                        <label htmlFor="">CNPJ</label><br/>
+                        <input type="text" name="cnpj" className={Style.estilizacaoInputs} title="Formato esperado: 00.000.000/0000-00"
+                        pattern="\d{2}\.\d{3}\.\d{3}/\d{4}-\d{2}" required/>
 
-                <Link href="/login_empresa" >JÁ POSSUO UMA CONTA</Link>
+                        <div className={Style.centraalizarBtn}>
+                            <button type="submit" className={Style.btn_inscrever_se}>INSCREVER-SE</button>
+                        </div>
+                    </form>
+
+                    <Link href="#" >JÁ POSSUO UMA CONTA</Link>
+                </div>
 
             </div>
 

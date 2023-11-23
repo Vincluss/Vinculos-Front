@@ -4,31 +4,37 @@
     display: flex;
 }
 
-/* Botão de sair*/
-.btn_sair{
-    background-color: #ffc24f;
-}
 
 /* Estrutura e formatação da section que irá ter os elementos de cadastro */
 .caixaFormulario{
     width: 50%;
-    height: 100%;
-    display:flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center
+    height: auto;
+}
+
+.btn_sair{
+    display: flex;
+    align-items: center;
+    padding: 1%;
 }
 
 .tituloEmpresa{
     @apply text-font;
     font-weight: bold;
     font-size: 1.2rem;
+    margin-top: 10%
 }
 
 .tituloCadastro{
     @apply text-font;
     font-weight: bold;
-    font-size: 3.7rem;
+    font-size: 3rem;
+}
+
+.containerForms{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .formulario{
