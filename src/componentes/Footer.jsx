@@ -33,7 +33,8 @@ export default function Footer() {
           <Link href="https://instagram.com/vinculoss_?igshid=MTNiYzNiMzkwZA==" target="_blank">
             <Image src={Instagram} />
           </Link>
-          <Link href="https://www.linkedin.com/company/vinculoss/?viewAsMember=true" target="_blank"><Image src={LinkedIn} />
+          <Link href="https://www.linkedin.com/company/vinculoss/?viewAsMember=true" target="_blank">
+            <Image src={LinkedIn} />
           </Link>
           <Link href="https://linktr.ee/vinculos__" target="_blank">
             <Image src={Linktree} />
