@@ -39,7 +39,7 @@ export default function CadastroEmpresa(){
                         </div>
                     </form>
 
-                    <Link href="#" >JÁ POSSUO UMA CONTA</Link>
+                    <Link href="/login_empresa" >JÁ POSSUO UMA CONTA</Link>
                 </div>
 
             </div>

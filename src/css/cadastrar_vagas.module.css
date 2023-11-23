@@ -1,0 +1,10 @@
+.cadastrarVagas{
+    width: 100%;
+    height: auto;
+}
+
+.tituloCadastro{
+    @apply text-font;
+    font-weight: bold;
+    font-size: 2rem;
+}

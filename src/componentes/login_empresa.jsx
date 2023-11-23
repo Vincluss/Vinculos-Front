@@ -45,7 +45,7 @@ export default function LoginEmpresa(){
 
                     <br></br>
                     <Link href="" ><p className={Style.Recuperacao_cadastrar}> Esqueceu a senha? clique aqui </p></Link>
-                    <Link href="cadastro_empresa" ><p className={Style.Recuperacao_cadastrar}> Ainda não tem perfil? criar perfil</p></Link>
+                    <Link href="/cadastro_empresa" ><p className={Style.Recuperacao_cadastrar}> Ainda não tem perfil? criar perfil</p></Link>
                     <div className={Style.centraalizarBtn}>
                     <Link href="home_empresa" className={Style.btn_inscrever_se} ><button type="submit" >ENTRAR</button></Link>   
                     </div>
