@@ -83,6 +83,7 @@ font-weight: 600;
     border-bottom: #393939 1px solid;
     margin-top: 16px;
     margin-bottom: 10px;
+    outline: 0;
 }
 
 .Inputcheck{
