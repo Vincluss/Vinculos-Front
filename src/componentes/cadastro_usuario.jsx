@@ -10,7 +10,7 @@ export default function Caduser() {
 
     <div className={Style.Dados}>
 
-       <Link href=""><button className={Style.Buttonsair}> SAIR </button></Link> 
+       <Link href="home_geral"><button className={Style.Buttonsair}> SAIR </button></Link> 
 
         <h2 className={Style.SubtituloForms}> USUÁRIO </h2>
         <h1 className={Style.TituloForms}> CADASTRE-SE </h1>
@@ -42,7 +42,7 @@ export default function Caduser() {
         <input className={Style.Inputcheck} type="checkbox" id="termos" name="termos" required></input>
         <Link href=""> Li e aceito os TERMOS DE USO </Link>
          <br></br>
-        <Link href="" > <button className={Style.ButEntrar} type="submit" onClick="enviar formulario()"> INSCREVER-SE </button></Link>
+        <Link href="home_usuario" > <button className={Style.ButEntrar} type="submit" onClick="enviar formulario()"> INSCREVER-SE </button></Link>
         
         
     </div>

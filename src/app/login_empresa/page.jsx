@@ -1,20 +1,13 @@
 import Link from 'next/link';
 import Loginempresa from '@/src/componentes/login_empresa';
+import Footer from '@/src/componentes/Footer';
 
 
 export default function Home() {
     return (
         <>
         <Loginempresa />
+        <Footer/>
         </>
     )
-}
-import Style from "@/src/css/login_empresa.module.css"
-
-export default function LoginEmpresa(){
-    return(
-        <section className={Style.paginaLogin}>
-            Deu bom
-        </section>    
-    );
 }
