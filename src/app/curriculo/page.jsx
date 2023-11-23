@@ -2,13 +2,13 @@ import Link from "next/link";
 import Style from "@/src/css/curriculo.module.css";
 import Image from "next/image";
 import onda from "@/src/assets/img-efeitos/onda_cima.svg";
-import Header from "@/src/componentes/header";
+import Footer from "@/src/componentes/Footer";
 
 export default function Curriculo() {
   return (
     <section className={Style.container_curriculo}>
       <Header />
-      
+
       <Image src={onda} className={Style.onda} />
 
       <div className={Style.container_centro}>
@@ -20,6 +20,8 @@ export default function Curriculo() {
           BAIXAR MODELO DE CURRÍCULO
         </button>
       </div>
+
+      <Footer />
     </section>
   );
 }

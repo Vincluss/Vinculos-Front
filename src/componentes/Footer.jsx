@@ -1,15 +1,15 @@
 import Image from "next/image"
 import Style from "@/src/css/Footer.module.css"
 import Link from "next/link"
-import Logo from "@/src/img/Logo_Vinculos_Redondo.png"
-import Instagram from "@/src/img/Logo_Instagram.png"
-import LinkedIn from "@/src/img/Logo_LinkedIn.png"
-import Linktree from "@/src/img/Logo_Linktree.png"
+import Logo from "@/src/assets/img-footer/Logo_Vinculos_Redondo.png"
+import Instagram from "@/src/assets/img-footer/Logo_Instagram.png"
+import LinkedIn from "@/src/assets/img-footer/Logo_LinkedIn.png"
+import Linktree from "@/src/assets/img-footer/Logo_Linktree.png"
 
 
 export default function Footer() {
   return (
-    <footer className={Style.footer}> {/*Div Footer*/}
+    <><footer className={Style.footer}> {/*Div Footer*/}
       <div className={Style.Logo}>
         <Image src={Logo} />
       </div> {/*Div da logo da Footer*/}
@@ -21,14 +21,14 @@ export default function Footer() {
       </div> {/*Div dos contatos da Footer*/}
 
       <div className={Style.Links}>
-        <h1 className={Style.TituloLinks}>Links</h1>
+        <h1 className={Style.TituloLinks}>LINKS</h1>
         <h2 className={Style.Inicio}>Inicio</h2>
         <h2 className={Style.Vagas}>Vagas</h2>
       </div> {/*Div dos links do Site*/}
 
       <div className={Style.redesSociais}>
         <h1>Redes Sociais</h1>
-        <div className="icones"> {/*Caixinha só para os icones das redes sociais*/}
+        <div className={Style.icones}> {/*Caixinha só para os icones das redes sociais*/}
 
           <Link href="https://instagram.com/vinculoss_?igshid=MTNiYzNiMzkwZA==" target="_blank">
             <Image src={Instagram} />
@@ -42,6 +42,11 @@ export default function Footer() {
         </div>
       </div> {/*Div das redes sociais da Footer*/}
 
+
     </footer>
+    <div className={Style.Direitos}>
+        <h1>Densenvolvido por Vinculos ©</h1>
+        
+      </div></>
   )
 }
