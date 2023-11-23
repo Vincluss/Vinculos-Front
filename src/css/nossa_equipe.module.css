@@ -1,0 +1,47 @@
+.NossaEquipe{
+    position: relative;
+    width: 100%;
+    height: 800px;
+    margin-top: 150px;
+    text-align: center;
+    font-size: 10vh;
+}
+
+.Perfis{
+    position: relative;
+    width: 90%;
+    height: 600px;
+    margin:auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.Perfil1, .Perfil2, .Perfil3, .Perfil4, .Perfil5, .Perfil6, .Perfil7{
+    width: 250px;
+    height: 250px;
+    
+}
+
+.ImagemPerfil1, .ImagemPerfil2, .ImagemPerfil3, .ImagemPerfil4, .ImagemPerfil5, .ImagemPerfil6, .ImagemPerfil7{
+    margin: auto;
+    width: 150px;
+    height: 150px;
+    
+}
+
+.ImagemPerfil1 img, .ImagemPerfil2 img, .ImagemPerfil3 img, .ImagemPerfil4 img, .ImagemPerfil5 img, .ImagemPerfil6 img, .ImagemPerfil7 img{
+    width: 100%;
+    height: 100%;
+}
+
+.TextoPerfil1, .TextoPerfil2, .TextoPerfil3, .TextoPerfil4, .TextoPerfil5, .TextoPerfil6, .TextoPerfil7{
+    font-size: 20px;
+}
+
+.TextoPerfil1:hover, .TextoPerfil2:hover, .TextoPerfil3:hover, .TextoPerfil4:hover, .TextoPerfil5:hover, .TextoPerfil6:hover, .TextoPerfil7:hover{
+    transition: 0.5S;
+    color: #CF8E21;
+}
