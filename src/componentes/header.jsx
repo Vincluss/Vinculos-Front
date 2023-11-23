@@ -35,7 +35,7 @@ export default function Header() {
 
         <Link href={`/`} className="flex w-1/3 justify-center">
           <div>
-            <Image src={Logo} alt="False" className="rounded-full w-44 h-44" />
+            <Image src={Logo} alt="False" className="rounded-full w-48 h-48" />
           </div>
         </Link>
 

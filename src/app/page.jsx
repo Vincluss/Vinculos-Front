@@ -4,14 +4,21 @@ import Vagas from '@/src/componentes/vagas';
 import Depoimentos from '@/src/componentes/depoimentos';
 import Parceiros from '@/src/componentes/parceiros';
 import Footer from '@/src/componentes/Footer';
-
+import Header from '../componentes/header';
+import Wave from '../componentes/wave';
 export default function Home() {
   return (
     <>
-      <HomeGeral />
-      <Vagas />
-      <Depoimentos />
-      <Parceiros />
+      <header className='relative'>
+        <Header />
+        <Wave />
+      </header>
+      <HomeGeral/>
+      <main>
+        <Vagas />
+        <Depoimentos />
+        <Parceiros />
+      </main>
       <Footer />
     </>
   );
