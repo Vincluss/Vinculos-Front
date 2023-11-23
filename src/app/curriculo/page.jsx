@@ -4,13 +4,13 @@ import Image from "next/image";
 import onda from "@/src/assets/img-efeitos/onda_cima.svg";
 import Footer from "@/src/componentes/Footer";
 import Wave from "@/src/componentes/wave";
+import Header from "@/src/componentes/header";
 
 export default function Curriculo() {
   return (
     <section className={Style.container_curriculo}>
       <Header />
       <Wave />
-      <Image src={onda} className={Style.onda} />
 
       <div className={Style.container_centro}>
         <h1 className={Style.titulo_curriculo}>Curriculo</h1>

@@ -3,7 +3,7 @@
 }
 
 .frase1{
-    margin-left: 450px;
+    text-align: center;
     font-size: clamp(1rem, 5vw, 5rem);
     font-weight: bold;
     color: #302C29;
