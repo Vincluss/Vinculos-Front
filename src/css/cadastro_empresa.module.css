@@ -1,6 +1,6 @@
 .paginaCadastro{
     width: 100%;
-    height: 100%;
+    height: 100vh;
     display: flex;
 }
 
@@ -8,7 +8,7 @@
 /* Estrutura e formatação da section que irá ter os elementos de cadastro */
 .caixaFormulario{
     width: 50%;
-    height: auto;
+    height: 100%;
 }
 
 .btn_sair{

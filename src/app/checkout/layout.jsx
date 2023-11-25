@@ -18,7 +18,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="pt-br">
-      <Script src="https://cdn.userway.org/widget.js" data-account="0PWSHa9uTA"/>
+      {/* <Script src="https://cdn.userway.org/widget.js" data-account="0PWSHa9uTA"/> */}
       <body className={poppins.className}>{children}</body>
     </html>
   );

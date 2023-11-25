@@ -66,13 +66,7 @@
 	font-weight: bold;
 }
 
-.wave-container {
-	display: block;
-	position: absolute;
-	z-index: 10;
-	width: 100%;
-	top: 20vh;
-}
+
 
 .img-wave {
 	display: block;
