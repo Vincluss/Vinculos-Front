@@ -15,7 +15,7 @@ export default function HomeGeral() {
           </div>
 
           <div className="w-2/5 pb-8 pr-8">
-            <h1 className={Style.frase}>Faça Seu Cadastro e Tenha Acesso Aos <br /> Serviços</h1>
+            <h1 className={Style.frase}>Faça Seu Cadastro e Tenha Acesso Aos <br/> Serviços</h1>
             <Link href={'/home_usuario'}>
               <button className={Style.botao_candidato}>
                 Para candidatos
@@ -24,7 +24,6 @@ export default function HomeGeral() {
             <Link href={'/home_empresa'}>
               <button className={Style.botao_empresa}>Para Empresas</button>
             </Link>
-
           </div>
         </div>
       </section>

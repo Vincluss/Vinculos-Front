@@ -6,8 +6,6 @@ import Header from '@/src/componentes/header';
 import Wave from '@/src/componentes/wave';
 import HomeGeral from '@/src/componentes/home_geral';
 
-
-
 export default function Empresa() {
     return (
         <>

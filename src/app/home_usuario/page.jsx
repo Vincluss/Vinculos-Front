@@ -6,6 +6,7 @@ import Cursos from "@/src/componentes/cursos_home";
 import Footer from "@/src/componentes/Footer";
 import Header from '@/src/componentes/header';
 import Wave from '@/src/componentes/wave';
+
 export default function Usuario() {
   return (
     <>
