@@ -1,5 +1,5 @@
 import Footer from "@/src/componentes/Footer";
-import Header from "@/src/componentes/header";
+import Header from "@/src/componentes/header_publico";
 import Style from "@/src/css/plano_assinatura.module.css"
 import Link from "next/link";
 
