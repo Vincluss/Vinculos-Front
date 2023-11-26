@@ -3,7 +3,7 @@ import Style from "../css/header_publico.module.css";
 import Link from "next/link";
 import Logo from "@/src/img/Logo_Vinculos_Redondo.png";
 import { Squash as Hamburger } from "hamburger-react";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Image from "next/image";
 import { CiHeart } from "react-icons/ci";
 import { CiUser } from "react-icons/ci";
@@ -11,6 +11,11 @@ import { CiUser } from "react-icons/ci";
 export default function Header({ bgColor }) {
   const [isOpen, setOpen] = useState(false);
   const [isVisible, setIsVisible] = useState(false);
+  const [windowWidth, setWindowWidth] = useState(0);
+
+  useEffect(() => {
+    setWindowWidth(window.innerWidth);
+  }, []);
 
   const toggleMenu = () => {
     setOpen(!isOpen);
@@ -19,7 +24,7 @@ export default function Header({ bgColor }) {
     if (isOpen) {
       setTimeout(() => {
         setIsVisible(false);
-      }, 300)
+      }, 300);
     }
   };
 
@@ -33,8 +38,8 @@ export default function Header({ bgColor }) {
         />
         <p>Apoie Vínculos</p>
       </button>
-    )
-  }
+    );
+  };
 
   const SideBar = () => {
     return (
@@ -53,20 +58,18 @@ export default function Header({ bgColor }) {
             <p>para candidatos</p>
           </details>
 
-          {window.innerWidth < 721 && (
-            <ApoieVinculos />
-          )}
+          {window.innerWidth < 721 && <ApoieVinculos />}
         </ul>
       </div>
-    );
+    )
   }
 
   return (
-    <header id='header' className={Style.header} style={{ backgroundColor: `${bgColor}` }}>
+    <header id='header' className={style.header} style={{ backgroundColor: `${bgColor}` }}>
       {window.innerWidth > 720 && (
         <ApoieVinculos />
       )}
-      <button className={Style.logo}>
+      <button className={style.logo}>
         <Image
           src={Logo}
           alt="Logo"
@@ -87,10 +90,7 @@ export default function Header({ bgColor }) {
         />
       </button>
 
-      {isVisible && (
-        <SideBar />
-      )}      
-    
+      {isVisible && <SideBar />}
     </header>
   );
 }

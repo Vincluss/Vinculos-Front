@@ -8,52 +8,52 @@ export default function Candidato() {
 
         <label>
           Nome Completo
-          <input type="text" className={Style.inputStyle}/>
+          <input type="text" className={Style.inputStyle} />
         </label>
 
         <label>
           Email <br />
-          <input type="text" className={Style.inputStyle}/>
+          <input type="text" className={Style.inputStyle} />
         </label>
 
         <label>
           Telefone Principal
-          <input type="text" className={Style.inputStyle}/>
+          <input type="text" className={Style.inputStyle} />
         </label>
 
         <label>
           Qual é o seu CEP?
-          <input type="text" className={Style.inputStyle}/>
+          <input type="text" className={Style.inputStyle} />
         </label>
 
         <label>
           Logradouro (Rua, avenida..)
-          <input type="text" className={Style.inputStyle}/>
+          <input type="text" className={Style.inputStyle} />
         </label>
 
         <label>
           Sua cidade
-          <input type="text" className={Style.inputStyle}/>
+          <input type="text" className={Style.inputStyle} />
         </label>
 
         <label>
-          Bairro <br/>
-          <input type="text" className={Style.inputStyle}/>
+          Bairro <br />
+          <input type="text" className={Style.inputStyle} />
         </label>
 
         <label>
-          Numero <br/>
-          <input type="text" className={Style.inputStyle}/>
+          Numero <br />
+          <input type="text" className={Style.inputStyle} />
         </label>
 
         <label>
           Complemento
-          <input type="text" className={Style.inputStyle}/>
+          <input type="text" className={Style.inputStyle} />
         </label>
 
         <label>
           data de nascimento (idade minima 14 anos) <br />
-          <input type="text" className={Style.inputStyle}/>
+          <input type="text" className={Style.inputStyle} />
         </label>
 
         <label>Gênero:</label>
@@ -71,16 +71,11 @@ export default function Candidato() {
           <option value="casado">Casado/(a)</option>
           <option value="divorciado">Divorciado/(a)</option>
           <option value="viuvo">Viúvo/(a)</option>
-        </select> 
+        </select>
 
-        <button className={Style.botao_salvar}> 
-          Salvar
-        </button>
+        <button className={Style.botao_salvar}>Salvar</button>
 
-        <button className={Style.botao_voltar}>
-          Voltar
-        </button>
-
+        <button className={Style.botao_voltar}>Voltar</button>
       </form>
     </section>
   );
