@@ -43,7 +43,7 @@ export default function Header({ bgColor }) {
 
   const SideBar = () => {
     return (
-      <div className={`${Style.sideBar} ${isOpen ? Style.modalEnter : Style.modalExit}`} >
+      <div className={`${style.sideBar} ${isOpen ? style.modalEnter : style.modalExit}`} >
         <ul>
           <li>INÍCIO</li>
           <li>SOBRE</li>
