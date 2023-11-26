@@ -1,5 +1,5 @@
-"use client";
-import style from "@/src/css/header_publico.module.css";
+'use client'
+import Style from "../css/header_publico.module.css";
 import Link from "next/link";
 import Logo from "@/src/img/Logo_Vinculos_Redondo.png";
 import { Squash as Hamburger } from "hamburger-react";
@@ -25,7 +25,7 @@ export default function Header({ bgColor }) {
 
   const ApoieVinculos = () => {
     return (
-      <button className={style.coracao}>
+      <button className={Style.coracao}>
         <CiHeart
           size={32}
           className="font-bold"
@@ -38,7 +38,7 @@ export default function Header({ bgColor }) {
 
   const SideBar = () => {
     return (
-      <div className={`${style.sideBar} ${isOpen ? style.modalEnter : style.modalExit}`} >
+      <div className={`${Style.sideBar} ${isOpen ? Style.modalEnter : Style.modalExit}`} >
         <ul>
           <li>INÍCIO</li>
           <li>SOBRE</li>
@@ -58,15 +58,15 @@ export default function Header({ bgColor }) {
           )}
         </ul>
       </div>
-    )
+    );
   }
 
   return (
-    <header id='header' className={style.header} style={{ backgroundColor: `${bgColor}` }}>
+    <header id='header' className={Style.header} style={{ backgroundColor: `${bgColor}` }}>
       {window.innerWidth > 720 && (
         <ApoieVinculos />
       )}
-      <button className={style.logo}>
+      <button className={Style.logo}>
         <Image
           src={Logo}
           alt="Logo"
@@ -74,7 +74,7 @@ export default function Header({ bgColor }) {
         />
       </button>
 
-      <button className={style.menu} onClick={toggleMenu}>
+      <button className={Style.menu} onClick={toggleMenu}>
         <Hamburger
           color="#E8A023"
           size={40}

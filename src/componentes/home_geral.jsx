@@ -27,7 +27,6 @@ export default function HomeGeral() {
           </div>
         </div>
       </section>
-
     </>
   )
 }
