@@ -43,7 +43,7 @@ export default function Header({ bgColor }) {
 
   const SideBar = () => {
     return (
-      <div className={`${style.sideBar} ${isOpen ? style.modalEnter : style.modalExit}`} >
+      <div className={`${Style.sideBar} ${isOpen ? Style.modalEnter : Style.modalExit}`} >
         <ul>
           <li>INÍCIO</li>
           <li>SOBRE</li>
@@ -58,18 +58,18 @@ export default function Header({ bgColor }) {
             <p>para candidatos</p>
           </details>
 
-          {window.innerWidth < 721 && <ApoieVinculos />}
+          {windowWidth < 721 && <ApoieVinculos />}
         </ul>
       </div>
     )
   }
 
   return (
-    <header id='header' className={style.header} style={{ backgroundColor: `${bgColor}` }}>
-      {window.innerWidth > 720 && (
+    <header id='header' className={Style.header} style={{ backgroundColor: `${bgColor}` }}>
+      {windowWidth > 720 && (
         <ApoieVinculos />
       )}
-      <button className={style.logo}>
+      <button className={Style.logo}>
         <Image
           src={Logo}
           alt="Logo"
