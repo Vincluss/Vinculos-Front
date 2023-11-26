@@ -1,5 +1,5 @@
 import Footer from "@/src/componentes/footer";
-import Header from "@/src/componentes/header";
+import Header from "@/src/componentes/header_publico";
 import Style from "@/src/css/cadastrar_vagas.module.css"
 
 export default function CadastrarVagas(){

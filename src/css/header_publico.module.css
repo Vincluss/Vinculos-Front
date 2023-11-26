@@ -1,0 +1,62 @@
+@keyframes slide {
+    from {
+        transform: translateX(0px);
+    }
+
+    to {
+        transform: translateX(250px);
+    }
+}
+
+
+.modalScroll {
+	
+	transform: translateX(250px);
+}
+
+/*Estilização Principal*/
+.header {
+	width: 100%;
+	display: flex;
+	align-items: center;
+	padding: 12px 40px;
+}
+
+.header .coracao {
+	display: flex;
+	align-items: center;
+	background-color: #AFC2FF;
+	color: #003786;
+	padding: 8px 8px;
+	border-radius: 10px;
+}
+
+.header .coracao p {
+	font-weight: bold;
+}
+
+.header .logo {
+	margin: auto;
+}
+
+.header .logo img {
+	transform: translate(-35%);
+
+}
+
+.header .menu {
+	display: flex;
+	align-items: center;
+	z-index: 2;
+}
+
+.header .sideBar {
+	position: absolute;
+	width: 250px;
+	height: 250px;
+	background-color: bisque;
+	right: 0px;
+	top: 0;
+	transform: translateX(250px);
+	transition: all 0.3s ease;
+}
