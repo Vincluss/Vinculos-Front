@@ -1,17 +1,29 @@
-@keyframes slide {
+@keyframes slideIn {
     from {
-        transform: translateX(0px);
+        transform: translateX(100%);
     }
 
     to {
-        transform: translateX(250px);
+        transform: default
     }
 }
 
+@keyframes slideOut {
+    from {
+        transform: default
+    }
 
-.modalScroll {
-	
-	transform: translateX(250px);
+    to {
+        transform: translateX(100%);
+    }
+}
+
+.modalEnter {
+	animation: slideIn 0.3s ease-in-out;
+}
+
+.modalExit {
+	animation: slideOut .3s ease-in-out forwards;
 }
 
 /*Estilização Principal*/
@@ -37,26 +49,93 @@
 
 .header .logo {
 	margin: auto;
+	z-index: 13;
 }
 
 .header .logo img {
 	transform: translate(-35%);
-
 }
 
 .header .menu {
 	display: flex;
 	align-items: center;
-	z-index: 2;
+	z-index: 12;
 }
 
 .header .sideBar {
 	position: absolute;
 	width: 250px;
-	height: 250px;
-	background-color: bisque;
+	background-color: #fff;
 	right: 0px;
 	top: 0;
-	transform: translateX(250px);
-	transition: all 0.3s ease;
+	transform: translateX(0%);
+	z-index: 11;
+	border-radius: 10px 0 0 10px;
+	padding-bottom: 42px;
+}
+
+.header .sideBar ul {
+	list-style: none;
+	margin-top: 140px;
+	margin-left: 8%;
+}
+
+.header .sideBar ul li {
+	text-transform: uppercase;
+	font-weight: bold;
+	font-size: 24px;
+}
+
+.header .sideBar ul .coracao {
+	margin-top: 20px;
+}
+
+
+.header .sideBar details summary {
+	font-size: 14px;
+	margin-top: 8px;
+}
+
+.header .sideBar details p {
+	font-size: 20px !important;
+}
+
+.header .sideBar summary::after {
+	content: '\25B6';
+	margin-left: 0.5em; 
+  }
+
+.header .sideBar details[open] summary::after {
+	content: '\25BC'; 
+}
+/*Responsividade*/
+
+@media (max-width: 1000px) {
+	.header {
+		padding: 6px 22px;
+	}
+}
+
+@media (max-width: 720px) {
+	.header .logo {
+		width: 120px;
+	}
+
+	.header .logo img {
+		transform: translate(40%);
+	}
+
+	.header .sideBar ul {
+		margin-top: 82px;
+	}
+}
+
+@media (max-width: 720px) {
+	.header .logo {
+		width: 70px;
+	}
+
+	.header .sideBar {
+		width: 210px;
+	}
 }
