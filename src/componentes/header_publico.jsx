@@ -10,9 +10,17 @@ import { CiUser } from "react-icons/ci";
 
 export default function Header({ bgColor }) {
   const [isOpen, setOpen] = useState(false);
+  const [isVisible, setIsVisible] = useState(false);
 
   const toggleMenu = () => {
     setOpen(!isOpen);
+    setIsVisible(true);
+
+    if (isOpen) {
+      setTimeout(() => {
+        setIsVisible(false);
+      }, 300)
+    }
   };
 
   const ApoieVinculos = () => {
@@ -30,15 +38,34 @@ export default function Header({ bgColor }) {
 
   const SideBar = () => {
     return (
-      <div className={style.sideBar} >
+      <div className={`${style.sideBar} ${isOpen ? style.modalEnter : style.modalExit}`} >
+        <ul>
+          <li>INÍCIO</li>
+          <li>SOBRE</li>
+          <details>
+            <summary>INCLUSÃO</summary>
+            <p>encontrar talentos</p>
+            <p>vagas</p>
+          </details>
 
+          <details>
+            <summary>CURSOS</summary>
+            <p>para candidatos</p>
+          </details>
+
+          {window.innerWidth < 721 && (
+            <ApoieVinculos />
+          )}
+        </ul>
       </div>
     )
   }
 
   return (
     <header id='header' className={style.header} style={{ backgroundColor: `${bgColor}` }}>
-      <ApoieVinculos />
+      {window.innerWidth > 720 && (
+        <ApoieVinculos />
+      )}
       <button className={style.logo}>
         <Image
           src={Logo}
@@ -49,8 +76,8 @@ export default function Header({ bgColor }) {
 
       <button className={style.menu} onClick={toggleMenu}>
         <Hamburger
-          color="#fafafa"
-          size={48}
+          color="#E8A023"
+          size={40}
           label="Abrir o menu"
           toggled={isOpen}
           toggle={setOpen}
@@ -60,8 +87,9 @@ export default function Header({ bgColor }) {
         />
       </button>
 
-    
-      <SideBar />
+      {isVisible && (
+        <SideBar />
+      )}      
     
     </header>
   );
