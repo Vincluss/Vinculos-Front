@@ -11,6 +11,7 @@ import dynamic from "next/dynamic";
 export default function Header({ bgColor }) {
   const [isOpen, setOpen] = useState(false);
   const [isVisible, setIsVisible] = useState(false);
+  
   const toggleMenu = () => {
     setOpen(!isOpen);
     setIsVisible(true);
