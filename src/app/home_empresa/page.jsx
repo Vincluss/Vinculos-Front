@@ -5,6 +5,7 @@ import Link from 'next/link';
 import Header from '@/src/componentes/header_publico';
 import WaveEmpresa from '@/src/componentes/wave_empresa';
 import ResultadoEmpresa from '@/src/componentes/resultado_empresa';
+import InclusaoEmpresa from '@/src/componentes/candidato_empresa';
 
 export default function Empresa() {
     return (
@@ -15,6 +16,7 @@ export default function Empresa() {
             </header>
             <HomeEmpresa/>
             <ResultadoEmpresa />
+            <InclusaoEmpresa />
             <AssinaturaHome />
             <Footer />
         </>

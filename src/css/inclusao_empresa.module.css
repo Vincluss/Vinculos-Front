@@ -1,0 +1,36 @@
+.fundo_candidato{
+    height: 480px;
+    background-color: #E1A54D;
+}
+
+.titulo{
+    text-align: center;
+    color: #fff;
+    font-size: clamp(1rem, 5vw, 5rem);
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.imagens{
+    display: flex;
+    padding-left: 320px;
+    padding-top: 50px;
+}
+
+.inclusao1, .inclusao2, .inclusao3{
+    width: 190px;
+    height: 190px;
+    cursor: pointer;
+    margin-left: 30px;
+}
+
+.botao5{
+    width: 150px;
+    padding: 10px;
+    background-color: #243B53;
+    color: #fff;
+    font-weight: bold;
+    border-radius: 10px;
+    margin-top: 60px;
+    margin-left: 590px;
+}
