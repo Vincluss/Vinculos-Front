@@ -10,7 +10,7 @@ export default function Empresa() {
     return (
         <>
             <header className='relative'>
-                <Header />
+                <Header bgColor="#243B53"/>
                 <Wave />
             </header>
             <HomeEmpresa/>
