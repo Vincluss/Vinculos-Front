@@ -2,7 +2,7 @@ import Link from "next/link";
 import Style from "@/src/css/curriculo.module.css";
 import Image from "next/image";
 import onda from "@/src/assets/img-efeitos/onda_cima.svg";
-import Footer from "@/src/componentes/Footer";
+import Footer from "@/src/componentes/footer";
 import Wave from "@/src/componentes/wave";
 import Header from "@/src/componentes/header_publico";
 

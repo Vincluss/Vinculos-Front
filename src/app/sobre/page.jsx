@@ -1,7 +1,7 @@
 import Link from "next/link";
 import Conteudo_sobre from "@/src/componentes/Conteudo_sobre";
 import NossaEquipe from "@/src/componentes/nossa_equipe";
-import Footer from "@/src/componentes/Footer";
+import Footer from "@/src/componentes/footer";
 
 
 export default function sobre() {
@@ -13,4 +13,4 @@ export default function sobre() {
         </>
 
     )
-}
+}   

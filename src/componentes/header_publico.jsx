@@ -1,22 +1,16 @@
-'use client'
+"use client";
 import Style from "../css/header_publico.module.css";
 import Link from "next/link";
 import Logo from "@/src/img/Logo_Vinculos_Redondo.png";
 import { Squash as Hamburger } from "hamburger-react";
-import { useState, useEffect } from "react";
+import { useState, useCallback, useEffect } from "react";
 import Image from "next/image";
 import { CiHeart } from "react-icons/ci";
-import { CiUser } from "react-icons/ci";
+import dynamic from "next/dynamic";
 
 export default function Header({ bgColor }) {
   const [isOpen, setOpen] = useState(false);
   const [isVisible, setIsVisible] = useState(false);
-  const [windowWidth, setWindowWidth] = useState(0);
-
-  useEffect(() => {
-    setWindowWidth(window.innerWidth);
-  }, []);
-
   const toggleMenu = () => {
     setOpen(!isOpen);
     setIsVisible(true);
@@ -30,7 +24,7 @@ export default function Header({ bgColor }) {
 
   const ApoieVinculos = () => {
     return (
-      <button className={Style.coracao}>
+      <button className={`${Style.coracao} ${Style.hidden}`}>
         <CiHeart
           size={32}
           className="font-bold"
@@ -43,38 +37,41 @@ export default function Header({ bgColor }) {
 
   const SideBar = () => {
     return (
-      <div className={`${Style.sideBar} ${isOpen ? Style.modalEnter : Style.modalExit}`} >
+      <div
+        className={`${Style.sideBar} ${
+          isOpen ? Style.modalEnter : Style.modalExit
+        }`}
+      >
         <ul>
           <li>INÍCIO</li>
           <li>SOBRE</li>
           <details>
             <summary>INCLUSÃO</summary>
-            <p>encontrar talentos</p>
-            <p>vagas</p>
+            <p>Encontrar talentos</p>
+            <p>Vagas</p>
           </details>
 
           <details>
             <summary>CURSOS</summary>
-            <p>para candidatos</p>
+            <p>Para candidatos</p>
           </details>
-
-          {windowWidth < 721 && <ApoieVinculos />}
         </ul>
+
+        <ApoieVinculos />
       </div>
-    )
-  }
+    );
+  };
 
   return (
-    <header id='header' className={Style.header} style={{ backgroundColor: `${bgColor}` }}>
-      {windowWidth > 720 && (
-        <ApoieVinculos />
-      )}
+    <header
+      id="header"
+      className={Style.header}
+      style={{ backgroundColor: `${bgColor}` }}
+    >
+      <ApoieVinculos className="xl:hidden"/>
+
       <button className={Style.logo}>
-        <Image
-          src={Logo}
-          alt="Logo"
-          priority
-        />
+        <Image src={Logo} alt="Logo" priority />
       </button>
 
       <button className={Style.menu} onClick={toggleMenu}>

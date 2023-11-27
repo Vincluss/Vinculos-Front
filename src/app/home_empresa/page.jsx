@@ -1,4 +1,4 @@
-import Footer from '@/src/componentes/Footer';
+import Footer from '@/src/componentes/footer';
 import AssinaturaHome from '@/src/componentes/assinatura_home';
 import HomeEmpresa from '@/src/componentes/home_empresa';
 import Link from 'next/link';

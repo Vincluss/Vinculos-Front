@@ -108,6 +108,7 @@
 .header .sideBar details[open] summary::after {
 	content: '\25BC'; 
 }
+
 /*Responsividade*/
 
 @media (max-width: 1000px) {
@@ -128,6 +129,12 @@
 	.header .sideBar ul {
 		margin-top: 82px;
 	}
+
+	.header .hidden{
+		display: none;
+	}
+	
+	
 }
 
 @media (max-width: 720px) {
