@@ -22,7 +22,6 @@ export default function Usuario() {
       <section className="flex w-full">
         <Candidatos />
         <Cursos />
-        <CarrosselParceiro />
       </section>
       <Footer />
     </>
