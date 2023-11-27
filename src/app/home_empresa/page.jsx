@@ -4,6 +4,7 @@ import HomeEmpresa from '@/src/componentes/home_empresa';
 import Link from 'next/link';
 import Header from '@/src/componentes/header_publico';
 import WaveEmpresa from '@/src/componentes/wave_empresa';
+import ResultadoEmpresa from '@/src/componentes/resultado_empresa';
 
 export default function Empresa() {
     return (
@@ -13,6 +14,7 @@ export default function Empresa() {
                 <WaveEmpresa />
             </header>
             <HomeEmpresa/>
+            <ResultadoEmpresa />
             <AssinaturaHome />
             <Footer />
         </>
