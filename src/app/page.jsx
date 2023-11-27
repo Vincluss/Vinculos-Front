@@ -1,4 +1,3 @@
-"use client";
 import HomeGeral from "@/src/componentes/home_geral";
 import Vagas from "@/src/componentes/vagas";
 import Depoimentos from "@/src/componentes/depoimentos";
