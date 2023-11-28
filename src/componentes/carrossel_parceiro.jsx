@@ -1,6 +1,5 @@
 import styles from '../css/carrossel_home.module.css';
 import Image from 'next/image';
-
 import jj from '../img/Logo_Vinculos_Redondo.png'
 
 const PartnersCarousel = ({ image }) => {
