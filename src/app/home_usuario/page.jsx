@@ -14,7 +14,7 @@ export default function Usuario() {
     <>
       <header className="relative">
         <Header bgColor="#003786" />
-        <Wave />
+        <Wave bgColor="#003786"/>
       </header>
         <HomeUsuario />
         <ResultadoComunidade />

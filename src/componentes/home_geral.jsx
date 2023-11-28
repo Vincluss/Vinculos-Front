@@ -9,7 +9,6 @@ export default function HomeGeral() {
     <>
       <section className="relative">
         <div className="bg-main-empresa w-full h-[90vh] mt-[15vh] flex items-end justify-between relative">
-
           <div className="w-6/12 flex items-baseline relative h-300">
             <Image src={ImageMain} alt="Código" className="z-10 w-full h-full" />
           </div>
