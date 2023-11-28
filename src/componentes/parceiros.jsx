@@ -1,5 +1,4 @@
 import Style from "../css/parceiros.module.css";
-
 import { CarrosselParceiros } from "./carrossel_parceiro";
 
 export default function Parceiros(){

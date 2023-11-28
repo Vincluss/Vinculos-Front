@@ -7,7 +7,8 @@ import Footer from "@/src/componentes/footer";
 import Header from '@/src/componentes/header_publico';
 import Wave from '@/src/componentes/wave';
 import ResultadoComunidade from "@/src/componentes/resultados_comunidade";
-import CarrosselParceiro from "@/src/componentes/carrossel_parceiro";
+import Parceiros from "@/src/componentes/parceiros";
+
 
 export default function Usuario() {
   return (
@@ -23,6 +24,7 @@ export default function Usuario() {
         <Candidatos />
         <Cursos />
       </section>
+      <Parceiros />
       <Footer />
     </>
   );
