@@ -2,8 +2,8 @@ import Style from "../css/conectar.module.css";
 
 export default function Conectar() {
   return (
-    <section className={Style.imagem2}>
-        
+    <section className={Style.container_conectar}>
+        <h2 className={Style.titulo_conectar}>Candidato</h2>
 
         <button className={Style.botao_conectar}>
           Conecte-se
