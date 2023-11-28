@@ -4,5 +4,95 @@
     background-color: green;
     margin: auto;
     margin-top: 10vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
 
+.Mission{
+    width: 80%;
+    height: 40vh;
+    background-color: brown;
+    display: flex;
+    flex-direction: row;
+    
+}
+
+.SimboloMission{
+    width: 30%;
+    height: 40vh;
+    background-color: yellowgreen;
+    background-image: url(../assets/img-pilares/Mission.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.TextoMission{
+    width: 70%;
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: black;
+    font-size: 30px;
+}
+
+.Vision{
+    width: 80%;
+    height: 40vh;
+    background-color: brown;
+    display: flex;
+    flex-direction: row;
+    
+}
+
+.SimboloVision{
+    width: 30%;
+    height: 40vh;
+    background-image: url(../assets/img-pilares/Vision.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.TextoVision{
+    width: 70%;
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: black;
+    font-size: 30px;
+}
+
+
+.Value{
+    width: 80%;
+    height: 81vh;
+    background-color: brown;
+    display: flex;
+    flex-direction: row;
+    
+}
+
+.SimboloValue{
+    width: 30%;
+    height: 40vh;
+    background-image: url(../assets/img-pilares/Values.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.TextoValue{
+    width: 70%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    color: black;
+    font-size: 25px;
 }
