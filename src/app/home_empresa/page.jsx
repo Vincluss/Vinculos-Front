@@ -12,7 +12,7 @@ export default function Empresa() {
         <>
             <header className="relative">
                 <Header bgColor="#243B53"/>
-                <Wave bgColor="#243B53"/>
+                <Wave position={"absolute"} bgColor="#243B53"/>
             </header>
             <HomeEmpresa/>
             <ResultadoEmpresa />
