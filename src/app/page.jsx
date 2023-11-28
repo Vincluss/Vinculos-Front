@@ -10,7 +10,7 @@ export default function Home() {
     <>
       <header className="relative">
         <Header bgColor="#003786" />
-        <Wave bgColor="#003786"/>
+        <Wave position={"absolute"} bgColor="#003786"/>
       </header>
       <HomeGeral />
       <main>
