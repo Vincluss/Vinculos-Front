@@ -26,7 +26,7 @@ export default function Footer() {
         <div className={Style.Links}>
           <h1 className={Style.TituloLinks}>links</h1>
           <h2 className={Style.Inicio}>Inicio</h2>
-          <h2 className={Style.Vagas}>Vagas</h2>
+          <h2 className={Style.Vagas}>Sobre</h2>
         </div>{" "}
         {/*Div dos links do Site*/}
         <div className={Style.redesSociais}>

@@ -9,7 +9,6 @@ import Wave from '@/src/componentes/wave';
 import ResultadoComunidade from "@/src/componentes/resultados_comunidade";
 import Parceiros from "@/src/componentes/parceiros";
 
-
 export default function Usuario() {
   return (
     <>

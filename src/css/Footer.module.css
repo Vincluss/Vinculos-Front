@@ -68,7 +68,8 @@
 
 .Email:hover, .Telefone:hover, .Inicio:hover, .Vagas:hover{
     color: #003786;
-    transition: 0.5s;   
+    transition: 0.5s;
+    cursor: pointer; 
 }
 
 .icones{
