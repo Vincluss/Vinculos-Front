@@ -14,10 +14,20 @@
 }
 
 .quadrado1, .quadrado2, .quadrado3{
-    border: 1px solid #243B53;
+    border: 1px solid #E8A023;;
     width: 400px;
-    height: 300px;
+    height: 400px;
     border-radius: 10px;
+}
+
+.redonda1, .redonda2, .redonda3{
+   margin-top: 20px;
+   margin-left: 80px;
+}
+
+.redonda1 img, .redonda2 img, .redonda3 img{
+    width: 300px;
+    height: 300px;
 }
 
 .titulo1{
@@ -26,23 +36,9 @@
 }
 
 .descricao{
-    font-size: clamp(1rem, 1.5vw, 2rem);
-    margin-left: 140px;
-    margin-top: 40px;
+    font-size: clamp(1rem, 2vw, 2rem);
+    text-align: center;
+    padding-top: 60px;
 }
 
-.money{
-    font-size: clamp(1rem, 1vw, 1rem);
-    margin-left: 140px;
-}
 
-.botao5{
-    width: 160px;
-    padding: 10px;
-    background-color: #243B53;
-    color: #fff;
-    font-weight: bold;
-    border-radius: 10px;
-    margin-left: 600px;
-    margin-top: 25px;
-}
