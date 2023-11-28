@@ -15,8 +15,6 @@ export default function Usuario() {
      <Vagas1 />
      <Vagas2 />
      <Veja />
-    
-   
     </> 
   );
 }
