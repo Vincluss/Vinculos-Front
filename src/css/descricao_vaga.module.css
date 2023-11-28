@@ -1,0 +1,15 @@
+.containerDescricaoVaga{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.titulo{
+    @apply text-font;
+    font-weight: bold;
+    padding: 2% 0;
+    font-size: clamp(1.5rem, 4vw, 3rem);
+}
