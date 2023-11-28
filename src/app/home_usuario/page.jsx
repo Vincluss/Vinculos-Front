@@ -12,7 +12,7 @@ import CarrosselParceiro from "@/src/componentes/carrossel_parceiro";
 export default function Usuario() {
   return (
     <>
-      <header className='relative'>
+      <header className="relative">
         <Header bgColor="#003786" />
         <Wave />
       </header>
