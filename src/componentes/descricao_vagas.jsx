@@ -1,6 +1,6 @@
 import Style from "../css/descricao_vagas.module.css";
 
-export default function Descriao_Vagas() {
+export default function Descricao_Vagas() {
   return (
     <section className={Style.container}>
       Descrição: <br /> <br />

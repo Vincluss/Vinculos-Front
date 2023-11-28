@@ -1,6 +1,6 @@
 import Style from "../css/descricao_vagas_.module.css";
 
-export default function Descriçao() {
+export default function Descricao() {
     return(
         <section className={Style.container}>
         <div className={Style.caixa1}>

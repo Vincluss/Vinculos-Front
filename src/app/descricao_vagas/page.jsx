@@ -1,10 +1,11 @@
+import Descricao_Vagas from "@/src/componentes/descricao_vagas";
 import Link from "next/link";
-import DescricaoVagas from "@/src/componentes/descricao";
+
 
 export default function Home() {
   return (
     <>
-      <DescricaoVagas />
+      <Descricao_Vagas />
 
     </>
   );
