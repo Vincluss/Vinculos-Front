@@ -18,6 +18,7 @@ module.exports = {
         'main-empresa': '#E8A023',
         'detalhes-empresa': '#2F4E6D',
         'main-landing': '#F0F2FF',
+        'main-donate' : '#D2DEEE',
       },
     },
   },

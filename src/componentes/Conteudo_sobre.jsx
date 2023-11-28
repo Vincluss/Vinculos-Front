@@ -1,5 +1,4 @@
 import Style from "@/src/css/conteudo_sobre.module.css"
-import { Poppins } from "next/font/google";
 
 export default function Conteudo_sobre() {
     return (
@@ -9,9 +8,6 @@ export default function Conteudo_sobre() {
             <div className={Style.quadrado1}>
             A vínculos surgiu em 2023. A ideia é profissionalizar, incluir e integrar deficientes sensoriais no mercado de trabalho.
             </div>
-                    
-        
-           
         </section>
     )
 }

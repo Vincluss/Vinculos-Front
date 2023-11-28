@@ -53,7 +53,7 @@ export default function CadastroEmpresa(){
                     abrir uma conta conosco
                 </h2>
                 <div className={Style.logo}>
-                    <Image src={logo} />
+                    <Image src={logo} alt="Logo da Vínculos"/>
                 </div>
                 
             </div>

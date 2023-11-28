@@ -1,4 +1,4 @@
-.containers {
+.container {
   display: flex;
   justify-content: space-around; /* ou space-between, dependendo do espaçamento desejado */
 }
@@ -10,9 +10,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background-image: url(../assets/img-ondas/empresa.gif);
   background-repeat: no-repeat;
-
 }
 
 .caixa4 {

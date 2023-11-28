@@ -26,14 +26,14 @@ export default function Login() {
         <h1 className={Style.TituloForms}> ENTRAR </h1>
 
         <form className={Style.Formulario} action="/processar-login" method="post" required>
-        <label className={Style.Label} for="email"> EMAIL: </label>
+        <label className={Style.Label} htmlFor="email"> EMAIL: </label>
 
         <br></br>
 
         <input className={Style.Inputs} type="email" id="email" name="email" placeholder="DIGITE SEU EMAIL" required></input>
         <br></br>
     
-        <label className={Style.Label} for="senha"> SENHA: </label>
+        <label className={Style.Label} htmlFor="senha"> SENHA: </label>
 
         <br></br>
 

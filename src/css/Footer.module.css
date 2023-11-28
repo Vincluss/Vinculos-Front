@@ -27,42 +27,43 @@
 
 .Contatos, .Links{
     position: relative;
-    width: 220px;
+    width: 280px;
     height: 220px;
     display: flex;
     flex-direction: column;
     text-align: center;
     align-items: center;
     justify-content: space-around;
-
+    padding-top: 60px;
 }
 
 .redesSociais{
     position: relative;
-    width: 220px;
+    width: 300px;
     height: 220px;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
-    margin-bottom: 40px;
+    padding-top: 60px;
+    padding-right: 60px;
+}
+
+.titulo_redes, .TituloLinks, .titulo_contato{
+    font-size: clamp(1rem, 3vw, 2rem);
+    color: #fff;
+    font-weight: bold;
+    text-transform: uppercase;
 }
 
 
-.Contato, .Email, .Telefone, .TituloLinks, .Inicio, .Vagas{
-    color: white;
-    font-size: 25px;  
-}
-
-
-
-.Contato, .TituloLinks{
-    font-size: 40px;
+.Email, .Telefone, .Inicio, .Vagas{
+    color: #fff;
+    font-size: clamp(1rem, 2vw, 3rem);
 }
 
 .redesSociais{
-    font-size: 30px;
-    color: white;
+    color: #fff;
 }
 
 .Email:hover, .Telefone:hover, .Inicio:hover, .Vagas:hover{
@@ -87,6 +88,13 @@
     align-items: center;
     justify-content: space-around;
     background-color: #003786;
-    color: white;
-    font-size: 4vh;
+    color: #fff;
+    font-size: clamp(1rem, 2vw, 3rem);
+    padding-left: 330px;
+}
+
+.cima{
+    display: flex;
+    width: 50px;
+    height: 45px;
 }

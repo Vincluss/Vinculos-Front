@@ -1,0 +1,79 @@
+.container_conectar{
+    margin: auto;
+}
+
+.botao_conectar {
+    color: #302C29;  
+    border-radius: 5px;
+    cursor: pointer;
+    height: 40px;  
+    width: 150px;  
+    font-size: 16px;  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;  
+    border-bottom: 2px solid #302C29;
+}
+  
+.botao_linkedlin{
+    background-color: #0077b5; 
+    color: #ffffff; 
+    border-radius: 5px;
+    cursor: pointer;
+    height: 40px; 
+    width: 200px; 
+    font-size: 16px; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto; 
+}
+  
+.botao_facebook{
+    background-color: #1778f2; 
+    color: #ffffff; 
+    border-radius: 5px;
+    cursor: pointer;
+    height: 40px; 
+    width: 200px; 
+    font-size: 16px; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto; 
+}
+  
+.botao_CPF {
+    background-color: #3e4656; 
+    color: #ffffff; 
+    border-radius: 5px;
+    cursor: pointer;
+    height: 40px; 
+    width: 200px; 
+    font-size: 16px; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto; 
+}
+  
+.botao_editar{
+    color: #302C29;  
+    border-radius: 5px;
+    cursor: pointer;
+    height: 40px;  
+    width: 150px;  
+    font-size: 16px;  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;  
+    border-bottom: 2px solid #302C29;
+}
+  
+.botoes-container {
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+}
