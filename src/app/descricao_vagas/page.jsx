@@ -8,7 +8,7 @@ export default function Home() {
   return (
     <>
       <header className="relative">
-        <Header bgColor={"#003786"} />
+        <Header bgColor="#003786" />
         <Wave bgColor="#003786" position= "relative" />
       </header>
       

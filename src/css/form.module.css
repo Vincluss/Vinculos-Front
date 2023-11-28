@@ -1,5 +1,8 @@
 .titulo_form{
-    
+    font-size: clamp(1rem, 4vw, 4rem);
+    font-weight: bold;
+    color: #302C29;
+    margin-left: 200px;
 }
 
 .container{
@@ -47,7 +50,7 @@
     width: 200px;
     padding: 20px;
     margin-top: 20px;
-    margin-left: 550px;
+    margin-left: 580px;
     background-color: #E8A023;
     color: #fff;
     text-transform: uppercase;

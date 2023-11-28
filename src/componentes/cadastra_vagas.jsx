@@ -47,7 +47,7 @@ export default function CadastroVagas() {
                     </div>
                         
                         
-                    <input list="estado" placeholder="Insira Aqui Seu Estado" className={Style.estilizacaoInput}></input>
+                    <input list="estado" placeholder="Insira aqui sua Região" className={Style.estilizacaoInput}></input>
 
 
                     <textarea name="" id="" cols="30" rows="10" placeholder="Insira Aqui A Descrição" className={Style.estilizacaoInput}></textarea>

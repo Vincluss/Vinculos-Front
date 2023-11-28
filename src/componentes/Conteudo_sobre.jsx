@@ -6,7 +6,8 @@ export default function Conteudo_sobre() {
         <section className={Style.Conteudo} >
             <h1 className={Style.TituloSobre}>Sobre o Projeto</h1>
             <div className={Style.quadrado1}>
-            A vínculos surgiu em 2023. A ideia é profissionalizar, incluir e integrar deficientes sensoriais no mercado de trabalho.
+            Vínculos vem de conexões e relações entre pessoas!
+            Empregabilidade e visibilidade para pessoas com deficiência sensorial.  
             </div>
         </section>
     )

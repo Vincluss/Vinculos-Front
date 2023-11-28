@@ -7,14 +7,14 @@ import Footer from "@/src/componentes/footer";
 import Header from '@/src/componentes/header_publico';
 import Wave from '@/src/componentes/wave';
 import ResultadoComunidade from "@/src/componentes/resultados_comunidade";
-import CarrosselParceiro from "@/src/componentes/carrossel_parceiro";
+import Parceiros from "@/src/componentes/parceiros";
 
 export default function Usuario() {
   return (
     <>
-      <header className='relative'>
+      <header className="relative">
         <Header bgColor="#003786" />
-        <Wave />
+        <Wave position={"absolute"} bgColor="#003786"/>
       </header>
         <HomeUsuario />
         <ResultadoComunidade />
@@ -23,6 +23,7 @@ export default function Usuario() {
         <Candidatos />
         <Cursos />
       </section>
+      <Parceiros />
       <Footer />
     </>
   );

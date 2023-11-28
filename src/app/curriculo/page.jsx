@@ -10,8 +10,7 @@ export default function Curriculo() {
   return (
     <section className={Style.container_curriculo}>
       <Header />
-      
-
+    
       <div className={Style.container_centro}>
         <h1 className={Style.titulo_curriculo}>Curriculo</h1>
 

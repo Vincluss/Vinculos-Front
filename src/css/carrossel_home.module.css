@@ -1,0 +1,34 @@
+@keyframes scroll {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+.logos {
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
+    white-space: nowrap;
+    -webkit-mask: linear-gradient(
+        90deg,
+        transparent,
+        white 20%,
+        white 80%,
+        transparent
+    );
+    mask: linear-gradient(90deg, transparent, white 20%, white 80%, transparent);
+}
+
+.logosSlide {
+    padding-block: 1rem;
+    display: inline-flex;
+    gap: 1rem;  
+
+    animation: scroll 10s infinite linear;
+}
+
