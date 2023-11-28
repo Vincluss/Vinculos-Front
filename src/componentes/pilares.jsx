@@ -28,13 +28,13 @@ export default function pilares() {
                 </div>
                 <div className={Style.TextoValue}>
                     <br></br>
-                    Inclusão e Diversidade: Comprometemo-nos a criar um ambiente de trabalho que celebre a diversidade em todas as suas formas.
+                    <b>Inclusão e Diversidade:</b> Comprometemo-nos a criar um ambiente de trabalho que celebre a diversidade em todas as suas formas.
                     <br></br>
                     <br></br>
-                    Igualdade de Oportunidades: Acreditamos em proporcionar igualdade de oportunidades para todos os membros da nossa equipe.
+                    <b>Igualdade de Oportunidades:</b> Acreditamos em proporcionar igualdade de oportunidades para todos os membros da nossa equipe.
                     <br></br>
                     <br></br>
-                    Respeito e Empatia: Cultivamos um ambiente baseado no respeito mútuo e na empatia, onde cada pessoa é tratada com dignidade e compreensão.
+                    <b>Respeito e Empatia:</b> Cultivamos um ambiente baseado no respeito mútuo e na empatia, onde cada pessoa é tratada com dignidade e compreensão.
                 </div>
             </div>
 
