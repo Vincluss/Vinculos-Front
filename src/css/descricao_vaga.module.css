@@ -3,13 +3,94 @@
     height: auto;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    align-items: center
 }
 
 .titulo{
     @apply text-font;
     font-weight: bold;
-    padding: 2% 0;
-    font-size: clamp(1.5rem, 4vw, 3rem);
+    margin: 2% 0;
+    font-size: clamp(1.5rem, 4vw, 5rem);
+}
+
+.conteudoVaga{
+    width: 60%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 2% 0;
+    @apply bg-slate-400
+}
+
+.caixa{
+    width: 150px;
+    height: 150px;
+    @apply bg-slate-500
+}
+
+.tituloVaga{
+    font-weight: bold;
+    font-size: clamp(0.7rem, 2vw, 2rem);
+    text-align: left;
+    margin: 2%;
+}
+
+.formatacaoIcones{
+    display: flex;
+    align-items: center;
+    margin: 2% 0;
+}
+
+.icon{
+    width: clamp(1.25rem, 4.5vw,1.875rem);
+    height: clamp(1.25rem, 4.5vw,1.875rem);
+    margin-right: 1%;
+}
+
+.descricao{
+    width: 60%;
+    height: auto;
+    margin: 2%;
+}
+
+.subtitulos{
+    font-weight: bold;
+    font-size: clamp(1rem, 2vw, 2rem);
+    margin-bottom: 2%;
+}
+
+.paragrafo{
+    margin: 2% 0 4% 0;
+    font-size: clamp(0.75rem, 2.6vw,1.25rem);
+}
+
+.lista{
+    margin: 2% 0 2% 4%;
+    font-size: clamp(0.75rem, 2.6vw,1.25rem);
+    list-style: disc;
+}
+
+.btnAplicar{
+    width: clamp(6.25rem,24vw,18.75rem);
+    height: clamp(2.5rem,7.97vh,3.125rem);
+    background-color: #E8A023;
+    color: #fff;
+    border-radius: 10px;
+    font-weight: bold;
+    transition: 1s all;
+}
+
+.btnAplicar:hover{
+    box-shadow: 2px 2px 15px 1px #7a7a7a;
+    transition: 1s all;
+}
+
+@media (max-width: 502px){
+    .conteudoVaga{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
 }
