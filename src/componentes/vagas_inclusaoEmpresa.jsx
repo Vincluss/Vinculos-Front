@@ -28,7 +28,7 @@ export default function VagasInclusãoEmpresa(){
             </div>
 
             <div className={Style.BotaoVermais1}>
-                <Link href="/Cursos">Ver mais</Link>
+                <Link href="/cadastro_vagas">Cadastrar</Link>
             </div>
         </section>
 
