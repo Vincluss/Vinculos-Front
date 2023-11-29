@@ -1,49 +1,52 @@
+.section {
+    width: 65%;
+    margin: auto;
+}
 
 .Titulo{
+    margin-top: 20px;
+}
+
+.Titulo h2 {
     font-size: 35px;
     font-weight: 700;
-    margin-top: 20px;
-    margin-left: 24%;
 }
 
-.Candidato{
+.candidatosContainer {
+    width: 100%;
     display: flex;
-    flex-direction: row;
-    margin-left: 23%;
-    margin-top: 30px;
+    flex-direction: column;
+    align-items: flex-start;
 }
 
-.Position{
-    width: 250px;
-    height: 200px;
-    border-radius: 20px;
+.candidatosContent {
+    display: flex;
+    column-gap: 25px;
+    margin-top: 45px;
 }
 
-.Ajusteimg{
-    width: 250px;
-    height: 230px;
-    border-radius: 20px;
+.candidatosContent .candidatosInfo {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
-.NomeMatch{
-    width:550px ;
-    margin-left: 20px;
-}
-
-.HDois{
+.candidatosContent .candidatosInfo h3 {
+    font-size: 40px;
     font-weight: 700;
-    font-size: 25px;
-    margin-bottom: 30px;
 }
 
-.SaibaMais{
-    width: 150px;
-    background-color:#243b53;
+.candidatosContent .candidatosInfo p {
+    font-size: 25px;
+}
+
+.candidatosContent .candidatosInfo .saibaMais {
+    font-size: 25px;
     color: #fff;
-    font-weight: 400;
-    margin-top: 37px;
-    padding: 12px;
+    background-color: #243b53;
+    padding: 8px 20px;
     border-radius: 10px;
+    align-self: flex-start;
 }
 
 .VejaMais{
