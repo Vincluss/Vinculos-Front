@@ -50,3 +50,9 @@
     margin: auto;
     margin-top: 15vh;
 }
+
+.BotaoVermais1:hover{
+    transition: 0.5s;
+    background-color: #D2DEEE;
+    color: #243B53;
+}
