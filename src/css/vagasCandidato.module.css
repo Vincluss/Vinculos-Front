@@ -31,13 +31,20 @@
     margin-top: 20px;
 }
 
-.Veja{
+.vejaContainer{
+    max-width: 80%;
+    margin: 15px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.veja{
     background-color: #E8A023;
-    width: 180px;
+    width: 30%;
     color: #fff;
     padding: 15px;
-    margin-top: 10px;
     border-radius: 10px;
     font-weight: bold;
-    margin-left: 580px;
+    text-align: center;
 }

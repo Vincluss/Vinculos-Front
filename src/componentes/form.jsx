@@ -2,46 +2,38 @@ import Style from "../css/form.module.css";
 
 export default function Form() {
   return (
-    <>
-      <h2 className={Style.titulo_form}>Vagas</h2>
-      <section className={Style.container}>
-        <form className={Style.caixa_pequena1}>
+    <div className={Style.formContainer}>
+      <h2 className={Style.formTitle}>Vagas</h2>
+      <section className={Style.formSection}>
+        <form className={Style.formBox}>
 
-          <label className={Style.label}>Empresa:
-            <input type="text" placeholder="digite nome da empresa" className={Style.inputStyle} />
-          </label>
+          {['Empresa', 'Cargo', 'Região', 'Salário', 'Área de atuação'].map((label, index) => (
+            <div key={index} className={Style.formGroup}>
+              <label className={Style.formLabel}>
+                <span className={Style.labelText}>{label}:</span>
+                <input type="text" placeholder={`Digite ${label.toLowerCase()}`} className={Style.formInput} aria-label={label} />
+              </label>
+            </div>
+          ))}
 
-          <label className={Style.label}>Cargo:
-            <input type="text" placeholder="digite numero da vaga" className={Style.inputStyle} />
-          </label>
-
-          <label className={Style.label}>Região:
-            <input type="text" placeholder="exemplo: zona oeste" className={Style.inputStyle} />
-          </label>
-
-          <label className={Style.label}>Salário:
-            <input type="text" placeholder="0,00" className={Style.inputStyle} />
-          </label>
-
-          <label className={Style.label}>Área de atuação:
-            <input type="text" placeholder="digite a área que deseja" className={Style.inputStyle} />
-          </label>
-
-          <label className={Style.label}>Modelo de trabalho:
-            <select className={Style.inputStyle} >
-              <option value="">Selecione...</option>
-              <option value="presencial">Presencial</option>
-              <option value="remoto">Remoto</option>
-              <option value="hibrido">Hibrido</option>
-            </select>
-          </label>
+          <div className={Style.formGroup}>
+            <label className={Style.formLabel}>
+              <span className={Style.labelText}>Modelo de trabalho:</span>
+              <select className={Style.formSelect} aria-label="Modelo de trabalho">
+                <option value="">Selecione...</option>
+                <option value="presencial">Presencial</option>
+                <option value="remoto">Remoto</option>
+                <option value="hibrido">Híbrido</option>
+              </select>
+            </label>
+          </div>
         </form>
       </section>
-      <div>
-        <button className={Style.botao_filtar}> 
-            Filtrar
+      <div className={Style.formButtonContainer}>
+        <button type="submit" className={Style.formButton}>
+          Filtrar
         </button>
       </div>
-    </>
+    </div>
   );
-}
+};
