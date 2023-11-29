@@ -4,16 +4,16 @@ import Link from "next/link";
 import VagasInclusãoEmpresa from "@/src/componentes/vagas_inclusaoEmpresa";
 
 export default function inclusao() {
-    return(
+    return (
 
         <>
-        <header className='relative'>
-        <Header bgColor="#E8A023"  />
-        <Wave bgColor="#E8A023" />
-    </header>
-        <VagasInclusãoEmpresa />
+            <header className='relative'>
+                <Header bgColor="#E8A023" />
+                <Wave position={"relative"} bgColor="#E8A023" />
+            </header>
+            <VagasInclusãoEmpresa />
 
 
-    </>
+        </>
     )
 }
