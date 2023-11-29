@@ -3,7 +3,6 @@ import Style from "../css/formulario.module.css";
 export default function Candidato() {
   return (
     <>
-      <h2 className={Style.titulo_form}>Perfil do Candidato</h2>
       <section className={Style.container}>
         <form className={Style.caixa_pequena1}>
 
@@ -40,7 +39,7 @@ export default function Candidato() {
               <input type="number" placeholder="ex:200" className={Style.numero} />
             </label>
           </div>
-          
+
           <label className={Style.label}>Complemento
             <input type="text" placeholder="ex: casa 3" className={Style.inputStyle} />
           </label>
@@ -51,30 +50,46 @@ export default function Candidato() {
 
           <label htmlFor="" className={Style.titulo_area}>Área De Atuação</label>
           <div className={Style.tags}>
-            <input list="areas_atuacao" placeholder="Selecione Uma Tag" className={Style.estilizacaoTags}/>
-            <input list="areas_atuacao" placeholder="Selecione Uma Tag" className={Style.estilizacaoTags}/>
-            <input list="areas_atuacao" placeholder="Selecione Uma Tag" className={Style.estilizacaoTags}/>
+            <input list="areas_atuacao" placeholder="Selecione Uma Tag" className={Style.estilizacaoTags} />
+            <datalist id="areas_atuacao">
+              <option value="Administração"></option>
+              <option value="Desenvolvedor Junior"></option>
+              <option value="Financeiro"></option>
+            </datalist>
+            <input list="areas_atuacao" placeholder="Selecione Uma Tag" className={Style.estilizacaoTags} />
+            <datalist id="areas_atuacao">
+              <option value="Administração"></option>
+              <option value="Desenvolvedor Junior"></option>
+              <option value="Financeiro"></option>
+            </datalist>
+            <input list="areas_atuacao" placeholder="Selecione Uma Tag" className={Style.estilizacaoTags} />
+            <datalist id="areas_atuacao">
+              <option value="Administração"></option>
+              <option value="Desenvolvedor Junior"></option>
+              <option value="Financeiro"></option>
+            </datalist>
           </div>
 
-          <select className={Style.select}>
-            <label>Gênero:</label>
-            <option value="">Selecione...</option>
-            <option value="masculino">Masculino</option>
-            <option value="feminino">Feminino</option>
-            <option value="outro">Outro</option>
-          </select>
+          <label className={Style.label}>Gênero:
+            <select className={Style.inputStyle} >
+              <option value="">Selecione...</option>
+              <option value="masculino">Masculino</option>
+              <option value="feminino">Feminino</option>
+              <option value="hibrido">Outro</option>
+            </select>
+          </label>
 
-          <select className={Style.select}>
-            <label htmlFor="estadoCivil">Escolha o Estado Civil:</label>
-            <option value="">Selecione...</option>
-            <option value="solteiro">Solteiro/(a)</option>
-            <option value="casado">Casado/(a)</option>
-            <option value="divorciado">Divorciado/(a)</option>
-            <option value="viuvo">Viúvo/(a)</option>
-          </select>
+          <label className={Style.label}>Escolha o Estado Civil:
+            <select className={Style.inputStyle} >
+              <option value="">Selecione...</option>
+              <option value="solteiro">Solteiro/(a)</option>
+              <option value="casado">Casado/(a)</option>
+              <option value="divorciado">Divorciado/(a)</option>
+              <option value="viuvo">Viúvo/(a)</option>
+            </select>
+          </label>
 
           <button className={Style.botao_salvar}>Salvar</button>
-
           <button className={Style.botao_voltar}>Voltar</button>
         </form>
       </section>
