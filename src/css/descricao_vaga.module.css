@@ -31,7 +31,7 @@
 
 .tituloVaga{
     font-weight: bold;
-    font-size: clamp(0.7rem, 2vw, 2rem);
+    font-size: clamp(1.2rem, 2vw, 2rem);
     text-align: left;
     margin: 2%;
 }
@@ -43,9 +43,13 @@
 }
 
 .icon{
-    width: clamp(1.25rem, 4.5vw,1.875rem);
-    height: clamp(1.25rem, 4.5vw,1.875rem);
+    width: clamp(1.5rem, 2vw, 2rem);
+    height: clamp(1.5rem, 2vw, 2rem);
     margin-right: 1%;
+}
+
+.iconText{
+    font-size: clamp(1.5rem, 2.6vw,2rem);
 }
 
 .descricao{
@@ -56,18 +60,18 @@
 
 .subtitulos{
     font-weight: bold;
-    font-size: clamp(1rem, 2vw, 2rem);
+    font-size: clamp(1.5rem, 2.6vw,2rem);
     margin-bottom: 2%;
 }
 
 .paragrafo{
     margin: 2% 0 4% 0;
-    font-size: clamp(0.75rem, 2.6vw,1.25rem);
+    font-size: clamp(1.2rem, 2.6vw,1.5rem);
 }
 
 .lista{
     margin: 2% 0 2% 4%;
-    font-size: clamp(0.75rem, 2.6vw,1.25rem);
+    font-size: clamp(1.2rem, 2.6vw,1.5rem);
     list-style: disc;
 }
 
@@ -86,7 +90,21 @@
     transition: 1s all;
 }
 
-@media (max-width: 502px){
+@media screen and (max-width: 768px){
+    .descricao{
+        width: 80%;
+    }
+    .conteudoVaga{
+        width: 80%;
+    }
+    
+    .btnAplicar{
+        width: 90%;
+    }
+}
+
+
+@media screen and (max-width: 502px){
     .conteudoVaga{
         display: flex;
         flex-direction: column;
@@ -94,3 +112,4 @@
         justify-content: center;
     }
 }
+

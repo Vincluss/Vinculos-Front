@@ -1,67 +1,129 @@
-.titulo_candidato{
-    font-size: clamp(1rem, 4vw, 4rem);
-    font-weight: bold;
-    color: #302C29;
-    margin-left: 200px;
+.container_conectar {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem 0;
 }
 
-.titulo_conecte{
-    font-size: clamp(1rem, 2vw, 3rem);
-    color: #302C29;
-    text-align: center;
-    margin-top: 20px;
+.titulo_candidato {
+  font-size: clamp(1rem, 4vw, 4rem);
+  font-weight: bold;
+  color: #302c29;
 }
 
-.botao_linkedin, .botao_email{
-    display: flex;
-    flex-direction: row;
-    background-color: #0077B5;
-    margin: auto;
-    border-radius: 10px;
-    padding: 10px;
-    align-items: center;
-    justify-content: center;
+.titulo_conecte {
+  font-size: clamp(1rem, 2vw, 3rem);
+  color: #302c29;
+  text-align: center;
 }
 
-.botao_email{
-    margin-top: 10px;
-    background-color: #3E4656;
+.botao_linkedin,
+.botao_email {
+  display: flex;
+  flex-direction: row;
+  background-color: #0077b5;
+  border-radius: 10px;
+  padding: 15px;
+  width: 50%;
+  align-items: center;
+  margin-top: 20px;
 }
 
-.texto_linkedin, .texto_email{
-    font-size: clamp(1rem, 2vw, 3rem);
-    color: #fff;
+.botao_email {
+  margin-top: 20px;
+  background-color: #3e4656;
 }
 
-.corIcone{
-    color: #fff;
+.texto_linkedin,
+.texto_email {
+  font-size: clamp(1rem, 2vw, 3rem);
+  color: #fff;
+  flex: 3;
 }
 
-.baixe{
-    font-size: clamp(1rem, 4vw, 3rem);
-    font-weight: bold;
-    color: #302C29;
-    text-align: center;
-    margin-top: 30px;
+.corIcone {
+  color: #fff;
+  flex: 1;
 }
 
-.botao_editar{
-    font-size: clamp(1rem, 2vw, 2rem);
-    border-bottom: 1px solid black;
-    margin-top: 15px;
-    margin-left: 570px;
-    color: #302C29;
+.baixe {
+  font-size: clamp(1rem, 4vw, 3rem);
+  font-weight: bold;
+  color: #302c29;
+  text-align: center;
+  margin-top: 40px;
 }
 
-.clique{
-    background-color: #0048AE;
-    padding: 20px;
-    color: #F0F2FF;
-    font-weight: bold;
-    border-radius: 10px;
-    width: 400px;
-    margin-left: 460px;
-    text-transform: uppercase;
-    margin-top: 30px;
+.botao_editar {
+  font-size: clamp(1rem, 2vw, 2rem);
+  border-bottom: 1px solid #0048ae;
+  color: #302c29;
+  margin-top: 30px;
+  transition: 1s all;
+  background-position: 0 100%;
+  background-repeat: repeat-x;
+  background-size: 1px 1px;
 }
 
+.botao_editar:hover {
+  background-size: 100%;
+}
+
+.clique {
+  background-color: #0048ae;
+  padding: 15px;
+  color: #f0f2ff;
+  /* font-weight: bold; */
+  border-radius: 10px;
+  width: 50%;
+  text-transform: uppercase;
+  margin-top: 20px;
+  font-size: clamp(1rem, 2vw, 3rem);
+}
+
+.container_curriculo {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+/* Style for the container */
+.containerSubline {
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+}
+
+/* Style for the subline and its rising effect */
+.subline {
+  display: inline-block;
+  position: relative;
+  z-index: 1;
+  padding: 5px 10px;
+  transition: all 0.5s ease;
+}
+
+.containerSubline::before {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #0048ae; /* Change this to your desired background color */
+  z-index: 0;
+  transition: all 0.5s ease;
+}
+
+/* Style for the hover effect */
+.containerSubline:hover .subline {
+  background-color: transparent; /* Change this to your desired background color */
+  @apply text-white;
+}
+
+.containerSubline:hover::before {
+  top: 0;
+}

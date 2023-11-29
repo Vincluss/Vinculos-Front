@@ -30,7 +30,9 @@ export default function Usuario() {
             <VagasCandidato Empresa={"empresa"} Local={"São Paulo | SP"} Salario={"R$ 1.650,00"} Vaga={"Vaga de Estágio"}/>
           </div>
         </div>
-        <button className={Style.Veja}>Veja Mais</button>
+        <div className={Style.vejaContainer}>
+        <button className={Style.veja}>Veja Mais</button>
+        </div>
         <Footer />
     </> 
   );
