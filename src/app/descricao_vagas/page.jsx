@@ -1,8 +1,8 @@
-import Descricao_Vagas from "@/src/componentes/descricao_vagas";
 import Link from "next/link";
-import DescricaoVagas from "@/src/componentes/descricao";
 import Wave from "@/src/componentes/wave";
 import Header from "@/src/componentes/header_publico";
+import DescricaoVagas from "@/src/componentes/descricao_vagas";
+import Footer from "@/src/componentes/footer";
 
 export default function Home() {
   return (
@@ -11,7 +11,10 @@ export default function Home() {
         <Header bgColor="#003786" />
         <Wave bgColor="#003786" position= "relative" />
       </header>
-      <DescricaoVagas />
+      
+      <DescricaoVagas/>
+
+      <Footer/>
     </>
   );
 }
