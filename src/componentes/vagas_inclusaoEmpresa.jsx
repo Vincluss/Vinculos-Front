@@ -1,5 +1,5 @@
 import Style from "@/src/css/vagas_inclusãoEmpresa.module.css"
-
+import Link from "next/link"
 
 export default function VagasInclusãoEmpresa(){
     return(
@@ -28,7 +28,7 @@ export default function VagasInclusãoEmpresa(){
             </div>
 
             <div className={Style.BotaoVermais1}>
-                Ver Mais
+                <Link href="/Cursos">Ver mais</Link>
             </div>
         </section>
 
