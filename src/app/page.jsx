@@ -5,6 +5,7 @@ import Parceiros from "@/src/componentes/parceiros";
 import Footer from "@/src/componentes/footer";
 import Header from "../componentes/header_publico";
 import Wave from "../componentes/wave";
+
 export default function Home() {
   return (
     <>

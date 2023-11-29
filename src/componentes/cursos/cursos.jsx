@@ -1,4 +1,4 @@
-import Style from '../../css/cursos.module.css';
+import Style from "@/src/css/cursos.module.css";
 import Link from "next/link";
 import Image from 'next/image';
 import Contabilidade from '@/src/assets/img-pessoas/contabilidade.png';

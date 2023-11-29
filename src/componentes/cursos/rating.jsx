@@ -1,13 +1,12 @@
 // Rating.js
 import { useState } from 'react';
-import Style from '../../css/cursos.module.css';
+import Style from "@/src/css/cursos.module.css";
 
 const Rating = ({ maxRating = 5, onChange }) => {
   const [rating, setRating] = useState(0);
 
   const handleClick = (value) => {
-    setRating(value);
-    onChange(value);        
+    setRating(value);        
   };
 
   return (
