@@ -2,46 +2,74 @@
   width: 100%;
   height: 100vh;
   display: flex;
-  align-items: center;
-  justify-content: center ;
+}
+
+.titulo_form{
+  background-color: brown;
+  width: 100%;
+  height: 100px;
+  font-size: clamp(1rem, 4vw, 4rem);
+  font-weight: bold;
+  color: #302C29;
+  padding-left: 210px;
 }
 
 .caixa_pequena1 {
-  width: 50%;
-  max-width: 400px;
-  height: auto;
+  margin: auto;
   display: flex;
-  flex-direction: column;
   font-size: 20px;
-  z-index: 1; /* Adicione essa propriedade */
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 30px;
+  width: 300px;
 }
 
-.labelWrapper {
-  display: flex;
-  flex-direction: column;
+.select{
+  width: 800px;
+  margin-top: 10px;
 }
 
 .inputStyle {
-  border-radius: 5px;
-  color: #ffffff; 
-  border: none;
-  border-radius: 5px;
+  height: 40px;
+  width: 800px;
+  padding: 8px;
   border: 2px solid black;
+  outline: 0;
+}
 
-  height: 25px;
+.titulo_area{
+  background-color: brown;
   width: 300px;
-  padding: 8px; 
+  height: 30px;
 }
 
-.botao_salvar {
-  @apply bg-header;
-  
-
+.tags{
+  display: flex;
 }
 
-.botao_voltar {
-  @apply bg-orange-400;
- /* #E8A023*/
-  cursor: pointer;
+.diferente{
+  display: flex;
+}
 
+.bairro, .numero{
+  border: 2px solid black;
+  height: 40px;
+  width: 398px;
+  padding: 8px;
+  margin-left: 2px;
+}
+
+.botao_voltar, .botao_salvar {
+  background-color: #E8A023;
+  width: 800px;
+  color: #fff;
+  padding: 10px;
+  margin-top: 10px;
+  border-radius: 10px;
+  font-weight: bold;
+}
+
+.botao_salvar{
+  background-color: #003786;
 }

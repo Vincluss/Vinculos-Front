@@ -20,7 +20,7 @@ export default function Form() {
           </label>
 
           <label className={Style.label}>Salário:
-            <input type="text" placeholder="0,000" className={Style.inputStyle} />
+            <input type="text" placeholder="0,00" className={Style.inputStyle} />
           </label>
 
           <label className={Style.label}>Área de atuação:

@@ -1,12 +1,12 @@
 import Style from "../css/candidato.module.css";
 
-export default function Candidato() {
+export default function perfilCandidato() {
   return (
     <section className={Style.container}>
       <form  className={Style.caixa_grande}>
       <div>
         <label>
-          Por favor, coloque o upload do laudo da sua deficiência <br /> <br />
+          Por favor, coloque o upload do laudo da sua deficiência
           <input
             type="file"
             id="avatar"
