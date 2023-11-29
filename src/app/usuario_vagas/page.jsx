@@ -16,7 +16,6 @@ export default function Usuario() {
       </header>
         <Conectar/>
         <Form/>
-        <section className={Style.alinhamento}></section>
         <div className={Style.alinhamento}>
           <div>
             <VagasCandidato Empresa={"empresa"} Local={"Santana de P. | SP"} Salario={"R$ 2.320,00"} Vaga={"Vaga de Estágio"}/>
