@@ -1,33 +1,20 @@
-.container__vagas{
-    width: 100%;
-    background-color: var(--clr-btn-orange);
-    @apply bg-main-landing;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    padding: 150px;
-    margin-top: 10px;
+#map{
+    height: 100%;
 }
 
-.title__vagas{
-    @apply text-font;
-    font-size: 68px;
-    font-weight: bold;
+.custom-map-control-button{
+    background-color: #fff;
+    border: 0;
+    border-radius: 2px;
+    box-shadow: 0 1px 4px -1px rgba(0, 0, 0, 0.3);
+    margin: 10px;
+    padding: 0 0.5em;
+    font: 400 18px Roboto, Arial, sans-serif;
+    overflow: hidden;
+    height: 40px;
+    cursor: pointer;
 }
 
-.subtitle__link{
-    margin-top: 2rem;
+.custom-map-control-button:hover{
+    background: rgb(235, 235, 235);
 }
-
-.subtitle__vagas{
-    @apply text-font;
-    font-size: 33px;
-}
-
-/* classes tailwind -  */
-
-/* text-font = Classe de cor de fonte */
-/* bg = background-color*/
-/* Ex: bg-main-empresa */
-/* border = cor da borda */
