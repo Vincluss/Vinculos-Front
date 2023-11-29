@@ -21,7 +21,7 @@
     width: 88%;
     height: 950px;
     flex-direction: column;
-    margin-left:200px;
+    margin-left:150px;
     margin-top: 5px;
 }
 
@@ -76,16 +76,16 @@
     font-size: 38px;
     font-weight: bold;
     text-align: center;
-    margin-left:150px;
-    margin-top: 80px;
+    margin-left:100px;
+    margin-top: 100px;
     margin-bottom: 20px;
 }
 
-/* RATING */
+
 .rating{
     width: 88%;
     height: 80px;
-    margin-left: 200px;
+    margin-left: 150px;
 }
 
 .ratingg{
@@ -96,15 +96,15 @@
     margin-top: 50px;
     width: 95%;
     height: 450px;
-    margin-left: 200px;
+    margin-left: 150px;
 }
 
 .nome{
-    /* background-color: rgb(215, 215, 223); */
     width: 80%;
     height: 60px;
     border: solid 1px;
 }
+
 .campo{
     border: solid 1px;
     width: 80%;
@@ -116,6 +116,6 @@
     width: 15%;
     height: 50px;
     margin-top: 50px;
-    margin-left: 380px;
+    margin-left: 300px;
     border-radius: 10px;
 }
