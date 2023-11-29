@@ -1,101 +1,108 @@
 .footer {
-    position: relative;
-    width: 100%;
-    height: 400px;
-    bottom: 0;
-    background-image: url(../assets/img-footer/FooterBackground.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-around;
-    margin-top: 50px;
+  position: relative;
+  width: 100%;
+  height: 400px;
+  bottom: 0;
+  background-image: url(../assets/img-footer/FooterBackground.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 50px;
 }
 
-.Logo{
-    position: relative;
-    width: 150px;
-    height: 150px;
-    
+.Logo {
+  position: relative;
+  width: 150px;
+  height: 150px;
 }
 
-.Logo img{
-    width: 100%;
-    height: 100%;
+.Logo img {
+  width: 100%;
+  height: 100%;
 }
 
-.Contatos, .Links{
-    position: relative;
-    width: 280px;
-    height: 220px;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    align-items: center;
-    justify-content: space-around;
-    padding-top: 60px;
+.Contatos,
+.Links {
+  position: relative;
+  width: 280px;
+  height: 220px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  justify-content: space-around;
+  padding-top: 60px;
 }
 
-.redesSociais{
-    position: relative;
-    width: 300px;
-    height: 220px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
-    padding-top: 60px;
-    padding-right: 60px;
+.redesSociais {
+  position: relative;
+  width: 300px;
+  height: 220px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  padding-top: 60px;
+  padding-right: 60px;
 }
 
-.titulo_redes, .TituloLinks, .titulo_contato{
-    font-size: clamp(1rem, 3vw, 2rem);
-    color: #fff;
-    font-weight: bold;
-    text-transform: uppercase;
+.titulo_redes,
+.TituloLinks,
+.titulo_contato {
+  font-size: clamp(1rem, 3vw, 2rem);
+  color: #fff;
+  font-weight: bold;
+  text-transform: uppercase;
 }
 
-
-.Email, .Telefone, .Inicio, .Vagas{
-    color: #fff;
-    font-size: clamp(1rem, 2vw, 3rem);
+.Email,
+.Telefone,
+.Inicio,
+.Vagas {
+  color: #fff;
+  font-size: clamp(1rem, 2vw, 3rem);
 }
 
-.redesSociais{
-    color: #fff;
+.redesSociais {
+  color: #fff;
 }
 
-.Email:hover, .Telefone:hover, .Inicio:hover, .Vagas:hover{
-    color: #003786;
-    transition: 0.5s;
-    cursor: pointer; 
+.Email:hover,
+.Telefone:hover,
+.Inicio:hover,
+.Vagas:hover {
+  color: #003786;
+  transition: 0.5s;
+  cursor: pointer;
 }
 
-.icones{
-    position: relative;
-    height: auto;
-    width: 220px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+.icones {
+  position: relative;
+  height: auto;
+  width: 220px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
 }
 
-.Direitos{
-    width: 100%;
-    height: 90px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-around;
-    background-color: #003786;
-    color: #fff;
-    font-size: clamp(1rem, 2vw, 3rem);
-    padding-left: 330px;
+.Direitos {
+  width: 100%;
+  height: 90px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  background-color: #003786;
+  color: #fff;
+  font-size: clamp(1rem, 2vw, 3rem);
+  padding-left: 330px;
 }
 
-.cima{
-    display: flex;
-    width: 50px;
-    height: 45px;
+.cima {
+  display: flex;
+  width: 50px;
+  height: 45px;
 }

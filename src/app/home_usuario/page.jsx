@@ -8,6 +8,7 @@ import Header from '@/src/componentes/header_publico';
 import Wave from '@/src/componentes/wave';
 import ResultadoComunidade from "@/src/componentes/resultados_comunidade";
 import Parceiros from "@/src/componentes/parceiros";
+import VLibras from "@/src/componentes/vlibras";
 
 export default function Usuario() {
   return (
@@ -25,6 +26,8 @@ export default function Usuario() {
       </section>
       <Parceiros />
       <Footer />
+      <VLibras forceOnload={true} />
+
     </>
   );
 }

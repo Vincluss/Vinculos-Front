@@ -6,6 +6,7 @@ import Wave from "@/src/componentes/wave";
 import VagasCandidato from "@/src/componentes/vagasCandidato";
 import Style from "@/src/css/vagasCandidato.module.css";
 import Footer from "@/src/componentes/footer";
+import VLibras from "@/src/componentes/vlibras";
 
 export default function Usuario() {
   return (
@@ -34,6 +35,7 @@ export default function Usuario() {
         <button className={Style.veja}>Veja Mais</button>
         </div>
         <Footer />
+        <VLibras forceOnload={true} />
     </> 
   );
 }

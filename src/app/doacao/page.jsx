@@ -3,6 +3,7 @@ import Doe from '@/src/componentes/doacao_vinculos';
 import Footer from '@/src/componentes/footer';
 import Header from '@/src/componentes/header_publico';
 import Wave from '@/src/componentes/wave';
+import VLibras from "@/src/componentes/vlibras";
 
 export default function Home() {
     return (
@@ -13,6 +14,8 @@ export default function Home() {
         </header>
         <Doe />
         <Footer />
+        <VLibras forceOnload={true} />
+
         </>
     )
 }

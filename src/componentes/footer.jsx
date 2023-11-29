@@ -1,5 +1,5 @@
 import Image from "next/image";
-import Style from "@/src/css/Footer.module.css";
+import Style from "../css/Footer.module.css";
 import Link from "next/link";
 import Logo from "@/src/assets/img-footer/Logo_Vinculos_Redondo.png";
 import Instagram from "@/src/assets/img-footer/Logo_Instagram.png";
@@ -56,13 +56,10 @@ export default function Footer() {
       <div className={Style.Direitos}>
         <h1>Densenvolvido por Vínculos ©</h1>
         <Link href="#header">
-          <button >
-            <FaArrowUpLong
-            className={Style.cima}
-            />
+          <button>
+            <FaArrowUpLong className={Style.cima} />
           </button>
         </Link>
-        
       </div>
     </>
   );

@@ -5,13 +5,14 @@ import Parceiros from "@/src/componentes/parceiros";
 import Footer from "@/src/componentes/footer";
 import Header from "../componentes/header_publico";
 import Wave from "../componentes/wave";
+import VLibras from "@/src/componentes/vlibras";
 
 export default function Home() {
   return (
     <>
       <header className="relative">
         <Header bgColor="#003786" />
-        <Wave position={"absolute"} bgColor="#003786"/>
+        <Wave position={"absolute"} bgColor="#003786" />
       </header>
       <HomeGeral />
       <main>
@@ -20,6 +21,7 @@ export default function Home() {
         <Parceiros />
       </main>
       <Footer />
+      <VLibras />
     </>
   );
 }

@@ -2,6 +2,7 @@ import CadastroVagas from "@/src/componentes/cadastra_vagas";
 import Footer from "@/src/componentes/footer";
 import Header from "@/src/componentes/header_publico";
 import Wave from "@/src/componentes/wave";
+import VLibras from "@/src/componentes/vlibras";
 
 export default function CadastrarVagas(){
     return(
@@ -12,6 +13,8 @@ export default function CadastrarVagas(){
             </header>
             <CadastroVagas/>
             <Footer/>
+            <VLibras forceOnload={true} />
+
         </>    
     );
 }

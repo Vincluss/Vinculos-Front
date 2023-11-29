@@ -3,6 +3,7 @@ import Header from "@/src/componentes/header_publico";
 import Perfil from "@/src/componentes/perfilCandidato";
 import Wave from "@/src/componentes/wave";
 import Footer from "@/src/componentes/footer";
+import VLibras from "@/src/componentes/vlibras";
 
 export default function EditarPerfil() {
   return (
@@ -17,6 +18,8 @@ export default function EditarPerfil() {
       <Perfil />
       <Candidato />
       <Footer />
+      <VLibras forceOnload={true} />
+
     </>
   );
 }

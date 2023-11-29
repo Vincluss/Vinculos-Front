@@ -11,8 +11,14 @@ import dynamic from "next/dynamic";
 export default function Header({ bgColor }) {
   const [isOpen, setOpen] = useState(false);
   const [isVisible, setIsVisible] = useState(false);
-  
-  
+  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+
+  useEffect(() => {
+    const handleResize = () => setWindowWidth(window.innerWidth);
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
   const toggleMenu = () => {
     setOpen(!isOpen);
     setIsVisible(true);
@@ -59,7 +65,7 @@ export default function Header({ bgColor }) {
           </details>
         </ul>
 
-        <ApoieVinculos />
+        {windowWidth < 720 && <ApoieVinculos/>}
       </div>
     );
   };
@@ -70,7 +76,7 @@ export default function Header({ bgColor }) {
       className={Style.header}
       style={{ backgroundColor: `${bgColor}` }}
     >
-      <ApoieVinculos className="xl:hidden"/>
+      {windowWidth > 721 && <ApoieVinculos />}
 
       <button className={Style.logo}>
         <Image src={Logo} alt="Logo" priority />

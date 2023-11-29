@@ -5,6 +5,7 @@ import onda from "@/src/assets/img-efeitos/onda_cima.svg";
 import Footer from "@/src/componentes/footer";
 import Wave from "@/src/componentes/wave";
 import Header from "@/src/componentes/header_publico";
+import VLibras from "@/src/componentes/vlibras";
 
 export default function Curriculo() {
   return (
@@ -22,6 +23,8 @@ export default function Curriculo() {
       </div>
 
       <Footer />
+      <VLibras forceOnload={true} />
+
     </section>
   );
 }

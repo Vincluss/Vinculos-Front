@@ -4,6 +4,7 @@ import Header from "@/src/componentes/header_publico";
 import DescricaoVagas from "@/src/componentes/descricao_vagas";
 import Footer from "@/src/componentes/footer";
 import FormularioRH from "@/src/componentes/formularioRH";
+import VLibras from "@/src/componentes/vlibras";
 
 export default function Home() {
   return (
@@ -17,6 +18,7 @@ export default function Home() {
         <FormularioRH />
       </main>
       <Footer />
+      <VLibras forceOnload={true} />
     </>
   );
 }

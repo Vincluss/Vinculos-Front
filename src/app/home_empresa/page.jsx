@@ -6,6 +6,7 @@ import Header from '@/src/componentes/header_publico';
 import ResultadoEmpresa from '@/src/componentes/resultado_empresa';
 import InclusaoEmpresa from '@/src/componentes/candidato_empresa';
 import Wave from '@/src/componentes/wave';
+import VLibras from "@/src/componentes/vlibras";
 
 export default function Empresa() {
     return (
@@ -19,6 +20,8 @@ export default function Empresa() {
             <InclusaoEmpresa />
             <AssinaturaHome />
             <Footer />
+            <VLibras forceOnload={true} />
+
         </>
     )
 }

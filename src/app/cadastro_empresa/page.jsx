@@ -3,6 +3,7 @@ import logo from "@/src/assets/logo-semfundo/5.png";
 import Image from "next/image";
 import Link from "next/link";
 import { VscArrowLeft } from "react-icons/vsc";
+import VLibras from "@/src/componentes/vlibras";
 
 export default function CadastroEmpresa(){
     return(
@@ -57,6 +58,8 @@ export default function CadastroEmpresa(){
                 </div>
                 
             </div>
+            <VLibras forceOnload={true} />
+
         </section>    
     );
 }
