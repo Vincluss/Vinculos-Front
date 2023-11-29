@@ -1,4 +1,3 @@
-import Footer from "@/src/componentes/footer";
 import Candidato from "@/src/componentes/formulario";
 import Header from "@/src/componentes/header_publico";
 import Perfil from "@/src/componentes/perfilCandidato";
@@ -13,6 +12,7 @@ export default function EditarPerfil() {
       </header>
       <Perfil />
       <Candidato />
+
     </>
   );
 }
