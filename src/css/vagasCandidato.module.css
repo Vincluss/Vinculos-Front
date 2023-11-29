@@ -1,18 +1,15 @@
-.fundo_colorido{
-    background-color: #F0F2FF;
-    padding-top: 20px;
-}
-
 .alinhamento{
+    background-color: #F0F2FF;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
+    padding: 25px;
 }
 
 .fundo_redondo{
     background-color: #D1DAFF;
     padding: 30px;
-    width: 25%;
+    width: 300px;
     border-radius: 20px;
 }
 
@@ -32,4 +29,15 @@
     border-radius: 10px;
     color: #F0F2FF;
     margin-top: 20px;
+}
+
+.Veja{
+    background-color: #E8A023;
+    width: 180px;
+    color: #fff;
+    padding: 15px;
+    margin-top: 10px;
+    border-radius: 10px;
+    font-weight: bold;
+    margin-left: 580px;
 }

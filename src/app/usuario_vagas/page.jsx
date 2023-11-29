@@ -4,6 +4,8 @@ import Conectar from "@/src/componentes/conectar";
 import Header from "@/src/componentes/header_publico";
 import Wave from "@/src/componentes/wave";
 import VagasCandidato from "@/src/componentes/vagasCandidato";
+import Style from "@/src/css/vagasCandidato.module.css";
+import Footer from "@/src/componentes/footer";
 
 export default function Usuario() {
   return (
@@ -14,9 +16,23 @@ export default function Usuario() {
       </header>
         <Conectar/>
         <Form/>
-        <section>
-          <VagasCandidato fundo_colorido={"#F0F2FF"} fundo_colorido={""}/>
-        </section>
+        <section className={Style.alinhamento}></section>
+        <div className={Style.alinhamento}>
+          <div>
+            <VagasCandidato Empresa={"empresa"} Local={"Santana de P. | SP"} Salario={"R$ 2.320,00"} Vaga={"Vaga de Estágio"}/>
+            <VagasCandidato Empresa={"empresa"} Local={"São Paulo | SP"} Salario={"R$ 2.320,00"} Vaga={"Vaga de Estágio"}/>
+          </div>
+          <div>
+            <VagasCandidato Empresa={"empresa"} Local={"São Paulo | SP"} Salario={"R$ 1.650,00"} Vaga={"Vaga de Estágio"}/>
+            <VagasCandidato Empresa={"empresa"} Local={"Santana de P. | SP"} Salario={"R$ 2.320,00"} Vaga={"Vaga de Estágio"}/>
+          </div>
+          <div>
+            <VagasCandidato Empresa={"empresa"} Local={"São Paulo | SP"} Salario={"R$ 2.320,00"} Vaga={"Vaga de Estágio"}/>
+            <VagasCandidato Empresa={"empresa"} Local={"São Paulo | SP"} Salario={"R$ 1.650,00"} Vaga={"Vaga de Estágio"}/>
+          </div>
+        </div>
+        <button className={Style.Veja}>Veja Mais</button>
+        <Footer />
     </> 
   );
 }
