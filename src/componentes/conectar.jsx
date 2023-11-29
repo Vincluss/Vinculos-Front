@@ -11,17 +11,17 @@ export default function Conectar() {
         </div>
 
         <button className={Style.botao_linkedin}>
-          <FaLinkedin size={50}/> 
+          <FaLinkedin size={50} className={Style.corIcone}/> 
           <p className={Style.texto_linkedin}>Entrar com Linkedin</p>
         </button>
         <button className={Style.botao_email}>
-          <MdOutlineEmail size={50}/> 
+          <MdOutlineEmail size={50} className={Style.corIcone}/> 
           <p className={Style.texto_email}>Entrar com Email ou CPF</p>
         </button>
 
         <div>
           <button className={Style.botao_editar}>Editar Meu Perfil</button>
-          <h2 className={Style.baixe}>Baixe seu Modelo de Curriculo</h2>
+          <h2 className={Style.baixe}>Baixe seu Modelo de Currículo</h2>
           <button className={Style.clique}>Clique Aqui</button>
         </div>
     </section>

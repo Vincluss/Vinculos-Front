@@ -1,0 +1,36 @@
+.fundo_colorido{
+    background-color: #F0F2FF;
+    padding-top: 20px;
+    margin-top: 20px;
+}
+
+.alinhamento{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.fundo_redondo{
+    background-color: #D1DAFF;
+    padding: 30px;
+    width: 25%;
+    border-radius: 20px;
+}
+
+.conteudo{
+    font-size: clamp(1rem, 1.5vw, 2rem);
+    text-align: center;
+}
+
+.conteudo h2, .conteudo h3, .conteudo p{
+    padding-top: 10px;
+}
+
+.saiba{
+    background-color: #005BD2;
+    padding: 8px;
+    width: 150px;
+    border-radius: 10px;
+    color: #F0F2FF;
+    margin-top: 20px;
+}
