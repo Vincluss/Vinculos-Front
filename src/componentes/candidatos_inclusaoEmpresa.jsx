@@ -1,8 +1,6 @@
 import Style from "@/src/css/candidatos_inclusãoEmpresa.module.css"
 import Link from "next/link"
 
-import Candidato3 from "@/src/assets/img-inclusaoEmpresa/Candidato3.png"
-
 export default function CandidatosInclusãoEmpresa() {
     return (
         <section className={Style.Candidatos}>

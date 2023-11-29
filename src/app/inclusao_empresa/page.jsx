@@ -4,6 +4,8 @@ import Link from "next/link";
 import VagasInclusãoEmpresa from "@/src/componentes/vagas_inclusaoEmpresa";
 import CandidatosInclusãoEmpresa from "@/src/componentes/candidatos_inclusaoEmpresa";
 import VLibras from "@/src/componentes/vlibras";
+import Footer from "@/src/componentes/footer";
+
 
 export default function inclusao() {
   return (
@@ -14,6 +16,7 @@ export default function inclusao() {
       </header>
       <VagasInclusãoEmpresa />
       <CandidatosInclusãoEmpresa />
+      <Footer />
       <VLibras forceOnload={true} />
     </>
   );
