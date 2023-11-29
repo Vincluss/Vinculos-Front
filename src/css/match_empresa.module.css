@@ -1,0 +1,58 @@
+
+.Titulo{
+    font-size: 35px;
+    font-weight: 700;
+    margin-top: 20px;
+    margin-left: 24%;
+}
+
+.Candidato{
+    display: flex;
+    flex-direction: row;
+    margin-left: 23%;
+    margin-top: 30px;
+}
+
+.Position{
+    width: 250px;
+    height: 200px;
+    border-radius: 20px;
+}
+
+.Ajusteimg{
+    width: 250px;
+    height: 200px;
+    border-radius: 20px;
+}
+
+.NomeMatch{
+    width:550px ;
+    margin-left: 20px;
+}
+
+.HDois{
+    font-weight: 700;
+    font-size: 25px;
+    margin-bottom: 30px;
+}
+
+.SaibaMais{
+    width: 150px;
+    background-color:#243b53;
+    color: #fff;
+    font-weight: 400;
+    margin-top: 37px;
+    padding: 12px;
+    border-radius: 10px;
+}
+
+.VejaMais{
+    width: 250px;
+    font-size: 20px;
+    background-color:#243b53;
+    color: #fff;
+    border-radius: 10px;
+    margin-top: 60px;
+    padding: 15px;
+    margin-left: 40%;
+}
