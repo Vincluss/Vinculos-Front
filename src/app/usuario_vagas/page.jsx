@@ -15,7 +15,7 @@ export default function Usuario() {
         <Conectar/>
         <Form/>
         <section>
-          <VagasCandidato />
+          <VagasCandidato fundo_colorido={"#F0F2FF"} fundo_colorido={""}/>
         </section>
     </> 
   );

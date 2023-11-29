@@ -23,10 +23,11 @@
 
 .lista_empresa li{
     color: #F0F4FA;
-    padding-left: 120px;
+    margin-left: 120px;
     padding-bottom: 20px;
     font-size: clamp(1rem, 2vw, 4rem);
     font-weight: bold;
+    list-style-type: disc;
 }
 
 .imagem_resultado{
