@@ -6,8 +6,11 @@ import Style from "../css/match_empresa.module.css";
 import Dani from "@/public/img/img-pessoas/img-inclusao1.png"
 import Gus from "@/public/img/img-pessoas/img-inclusao2.png"
 import Danilo from "@/public/img/img-pessoas/img-inclusao3.png"
+import { ModalCandidatos } from "./modal_candidatos";
+import { Daniele } from "./modalCandidatosInfo";
 
-const CandidatosProps = ({ imagemCandidato, nomeCandidato, matchPorcentagem }) => {
+const CandidatosProps = ({ imagemCandidato, nomeCandidato, matchPorcentagem, candidato, onSaibaMais }) => {
+
   return (
     <div className={Style.candidatosContent}>
       <div className={Style.candidatosImagem}>
@@ -22,7 +25,9 @@ const CandidatosProps = ({ imagemCandidato, nomeCandidato, matchPorcentagem }) =
       <div className={Style.candidatosInfo}>
         <h3>{nomeCandidato}</h3>
         <p>Possui Um Match de {matchPorcentagem}% Com Sua Vaga De Estágio</p>
-        <button className={Style.saibaMais}>Saiba Mais</button>
+        <button className={Style.saibaMais} onClick={() => onSaibaMais(candidato)}>
+          Saiba Mais
+        </button>
       </div>
     </div>
   )
@@ -38,17 +43,27 @@ export default function Candidatos() {
   }
 
   const candidatos = [
-    { imagemCandidato: Dani, nomeCandidato: 'Daniele Almeida', matchPorcentagem: '50' },
+    { imagemCandidato: Dani, nomeCandidato: 'Daniele Almeida', matchPorcentagem: '50', candidato: Daniele },
     { imagemCandidato: Gus, nomeCandidato: 'Gustavo Renato', matchPorcentagem: '70' },
     { imagemCandidato: Danilo, nomeCandidato: 'Danilo Santos', matchPorcentagem: '80' },
-    
-    { imagemCandidato: Dani, nomeCandidato: 'Daniele Almeida', matchPorcentagem: '50' },
+
+    { imagemCandidato: Dani, nomeCandidato: 'Daniele Almeida', matchPorcentagem: '50', candidato: Daniele },
     { imagemCandidato: Gus, nomeCandidato: 'Gustavo Renato', matchPorcentagem: '70' },
     { imagemCandidato: Danilo, nomeCandidato: 'Danilo Santos', matchPorcentagem: '80' },
   ]
 
   const dividirCandidatos = mostrarTodos ? candidatos : candidatos.slice(0, 3);
 
+  //Informações do Modal
+  const [candidatoAtivo, setCandidatoAtivo] = useState(null)
+
+  const openModal = (candidato) => {
+    setCandidatoAtivo(candidato);
+  }
+
+  const closeModal = () => {
+    setCandidatoAtivo(null)
+  }
 
   return (
     <section className={Style.section}>
@@ -62,8 +77,17 @@ export default function Candidatos() {
           <CandidatosProps
             key={index}
             {...candidato}
+            onSaibaMais={openModal}
           />
         ))}
+
+        {candidatoAtivo && (
+          <ModalCandidatos
+            {...candidatoAtivo[0]}
+            onClose={closeModal}
+          />
+        )}
+       
       </div>
 
       <button className={Style.VejaMais} onClick={vejaMais}>{displayText} Candidatos</button>

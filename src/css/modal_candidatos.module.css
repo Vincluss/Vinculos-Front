@@ -1,0 +1,36 @@
+#modalCandidatos {
+    position: fixed;
+    width: 95%;
+    height: 95%;
+    left: 5%;
+    right: 5%;
+    top: 2.5%;
+    padding: 2.5% 0;
+    background-color: aliceblue;
+    
+    display: grid;
+    justify-items: center;
+    grid-template-columns: 50% 50%;
+    grid-template-areas: 'image info' 'about about' 'skills skills';
+    z-index: 999;
+}
+
+#modalCandidatos .imagem {
+    position: relative;
+    grid-area: image;
+}
+
+#modalCandidatos .info {
+    position: relative;
+    grid-area: info;
+}
+
+#modalCandidatos .about {
+    position: relative;
+    grid-area: about;
+}
+
+#modalCandidatos .skills {
+    position: relative;
+    grid-area: skills;
+}
