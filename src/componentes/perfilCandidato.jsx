@@ -7,8 +7,7 @@ export default function Perfil() {
       <section className={Style.container}>
         <form className={Style.caixa_grande}>
           <div>
-            <label className={Style.label}>Email:
-              Por favor, coloque o upload do laudo da sua deficiência
+            <label className={Style.label}>Por favor, coloque o upload do laudo da sua deficiência
               <input
                 type="file"
                 id="avatar"
@@ -18,13 +17,13 @@ export default function Perfil() {
             </label>
           </div>
           <div>
-            <label className={Style.label}>Email:
+            <label className={Style.label}>
             <input
               type="checkbox"
               id="termosDeUso"
             />
             </label>
-            <label htmlFor="termosDeUso">
+            <label htmlFor="termosDeUso" className={Style.label}>
               Li e aceito os{' '}
               <a href="/termos-de-uso" target="_blank">
                 termos de uso
@@ -32,9 +31,8 @@ export default function Perfil() {
               .
             </label>
           </div>
-
-          <button className={Style.enviar} type="submit">Enviar</button>
         </form>
+        <button className={Style.enviar} type="submit">Enviar</button>
       </section>
     </>
   );
