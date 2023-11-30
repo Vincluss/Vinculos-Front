@@ -1,4 +1,4 @@
-.titulo4{
+.titulo{
     text-align: center;
     font-weight: bold;
     color: #302C29;
@@ -13,36 +13,42 @@
     justify-content: space-around;
 }
 
-.quadrado1, .quadrado2, .quadrado3{
-    border: 1px solid #243B53;
-    width: 400px;
-    height: 300px;
+.quadrado{
+    border: 3px solid #243B53;
+    width: 30%;
+    padding: 3.5rem 2rem;
+    display: flex;
+    flex-direction: column;
     border-radius: 10px;
+    align-items: center;
 }
 
 .titulo1{
     font-size: clamp(1rem, 3vw, 3rem);
-    margin-left: 140px;
 }
 
 .descricao{
-    font-size: clamp(1rem, 1.5vw, 2rem);
-    margin-left: 140px;
+    font-size: clamp(1.5rem, 1.5vw, 2rem);
     margin-top: 40px;
 }
 
 .money{
-    font-size: clamp(1rem, 1vw, 1rem);
-    margin-left: 140px;
+    font-size: clamp(1.5rem, 2vw, 2rem);
 }
 
-.botao5{
-    width: 160px;
-    padding: 10px;
+.btnContainer{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn{
+    width: 30%;
+    padding: 15px 0;
     background-color: #243B53;
     color: #fff;
     font-weight: bold;
     border-radius: 10px;
-    margin-left: 600px;
     margin-top: 25px;
 }

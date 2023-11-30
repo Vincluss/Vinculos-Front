@@ -1,76 +1,77 @@
-.Candidatos{
-    position: relative;
-    width: 80%;
-    height: 85vh;
-    margin: auto;
-    margin-top: 15vh;
+.Candidatos {
+  position: relative;
+  width: 80%;
+  height: 85vh;
+  margin: auto;
+  margin-top: 15vh;
 }
 
-.TituloCandidatos{
-    font-size: 50px;
-    
+.TituloCandidatos {
+  font-size: 50px;
 }
 
-.CandidatosConteudo{
-    height: 45vh;
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-evenly;
-    margin-top: 5vh;
+.CandidatosConteudo {
+  height: 45vh;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-top: 5vh;
 }
 
-.Candidato1, .Candidato2, .Candidato3{
-    width: 30%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-evenly;
-    background-color: #D2DEEE;
-    border-radius: 5vh;
-    font-size: 4vh;
+.Candidato1,
+.Candidato2,
+.Candidato3 {
+  width: 30%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: #d2deee;
+  border-radius: 5vh;
+  font-size: 4vh;
 }
 
-.Candidato1{
-    background-image: url(../assets/img-inclusaoEmpresa/Candidato1.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
+.Candidato1 {
+  background-image: url(../assets/img-inclusaoEmpresa/Candidato1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
-.Candidato2{
-    background-image: url(../assets/img-inclusaoEmpresa/Candidata2.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
+.Candidato2 {
+  background-image: url(../assets/img-inclusaoEmpresa/Candidata2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
-.Candidato3{
-    background-image: url(../assets/img-inclusaoEmpresa/Candidato3.png);
-    background-repeat: no-repeat;
-    background-size: cover;
+.Candidato3 {
+  background-image: url(../assets/img-inclusaoEmpresa/Candidato3.png);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
-.BotaoVermais1{
-    width: 15%;
-    height: 10vh;
-    background-color: #243B53;
-    border-radius: 2vh;
-    font-size: 5vh;
-    color: #FFF;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-evenly;
-    margin: auto;
-    margin-top: 15vh;
+.BotaoVermais1 {
+  width: 15%;
+  height: 10vh;
+  background-color: #243b53;
+  border-radius: 2vh;
+  font-size: 5vh;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  margin: auto;
+  margin-top: 15vh;
 }
 
-.BotaoVermais1:hover{
-    transition: 0.5s;
-    background-color: #D2DEEE;
-    color: #243B53;
+.BotaoVermais1:hover {
+  transition: 0.5s;
+  background-color: #d2deee;
+  color: #243b53;
 }

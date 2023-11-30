@@ -19,7 +19,7 @@ export default function Usuario() {
       </header>
         <HomeUsuario />
         <ResultadoComunidade />
-        <Vagas />
+        {/* <Vagas /> */}
       <section className="flex w-full">
         <Candidatos />
         <Cursos />

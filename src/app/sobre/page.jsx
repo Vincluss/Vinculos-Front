@@ -1,5 +1,5 @@
 import Link from "next/link";
-import Conteudo_sobre from "@/src/componentes/Conteudo_sobre";
+import Conteudo_sobre from "@/src/componentes/conteudo_sobre";
 import NossaEquipe from "@/src/componentes/nossa_equipe";
 import Footer from "@/src/componentes/footer";
 import Header from "@/src/componentes/header_publico";

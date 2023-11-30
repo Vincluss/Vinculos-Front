@@ -1,6 +1,7 @@
 .fundo_candidato{
-    height: 480px;
     background-color: #E1A54D;
+    padding: 2rem 0;
+    margin-top: 5vh;
 }
 
 .titulo{
@@ -8,29 +9,34 @@
     color: #fff;
     font-size: clamp(1rem, 5vw, 5rem);
     font-weight: bold;
-    margin-top: 10px;
 }
 
 .imagens{
+    margin-top: 1rem;       
     display: flex;
-    padding-left: 320px;
-    padding-top: 50px;
+    justify-content: space-evenly;
 }
 
-.inclusao1, .inclusao2, .inclusao3{
-    width: 190px;
-    height: 190px;
+.inclusao{
+    width: 29%;
+    height: 300px;
     cursor: pointer;
-    margin-left: 30px;
+    border-radius: 2rem;
 }
 
-.botao5{
-    width: 150px;
-    padding: 10px;
+.btnContainer{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn{
+    width: 30%;
+    padding: 15px 0;
     background-color: #243B53;
     color: #fff;
     font-weight: bold;
     border-radius: 10px;
-    margin-top: 60px;
-    margin-left: 590px;
+    margin-top: 25px;
 }
