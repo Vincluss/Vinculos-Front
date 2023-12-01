@@ -34,11 +34,6 @@ export default function pilares() {
                     <b>Respeito e Empatia:</b> Cultivamos um ambiente baseado no respeito mútuo e na empatia, onde cada pessoa é tratada com dignidade e compreensão.
                 </div>
             </div>
-
-
-
-
-
         </section>
 
 

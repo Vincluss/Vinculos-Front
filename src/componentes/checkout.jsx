@@ -32,9 +32,11 @@ export default function PlanoAssinatura() {
                     <h2 className={Style.descricao}>Descrição</h2>
                     <h2 className={Style.preco}>Valor</h2>
                 </div>
-                <button type="submit" className={Style.btn_assinatura}>
-                    Assinar
-                </button>
+                <Link href="/checkout">
+                    <button type="submit" className={Style.btn_assinatura}>
+                        Assinar
+                    </button>
+                </Link>
             </div>
             
         </section>

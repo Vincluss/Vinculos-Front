@@ -3,6 +3,7 @@ import Inclusao from "@/src/assets/img-pcds/grupoTrabalhando.jpg";
 import Inclusao1 from "@/src/assets/img-pcds/homemTrabalhando.jpg";
 import Inclusao2 from "@/src/assets/img-pcds/mulherLinguagem.jpg";
 import Style from "@/src/css/inclusao_empresa.module.css";
+import Link from 'next/link';
 
 export default function CandidatoEmpresa() {
   return (
@@ -14,9 +15,11 @@ export default function CandidatoEmpresa() {
           <Image className={Style.inclusao} src={Inclusao1} alt="inclusao1" />
           <Image className={Style.inclusao} src={Inclusao2} alt="inclusao2" />
         </div>
-        <div className={Style.btnContainer}>
-          <button className={Style.btn}>Ver Mais</button>
-        </div>
+        <Link href="">
+          <div className={Style.btnContainer}>
+            <button className={Style.btn}>Ver Mais</button>
+          </div>
+        </Link>
       </div>
     </>
   );

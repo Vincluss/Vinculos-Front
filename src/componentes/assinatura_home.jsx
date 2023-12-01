@@ -1,4 +1,5 @@
 import Style from "@/src/css/assinatura_home.module.css";
+import Link from "next/link";
 
 export default function AssinaturaHome() {
   return (
@@ -24,9 +25,11 @@ export default function AssinaturaHome() {
           <p className={Style.money}>R$</p>
         </div>
       </div>
-      <div className={Style.btnContainer}>
-        <button className={Style.btn}>Ver Mais</button>
-      </div>
+      <Link href="/checkout">
+        <div className={Style.btnContainer}>
+          <button className={Style.btn}>Ver Mais</button>
+        </div>
+      </Link>
     </section>
   );
 }

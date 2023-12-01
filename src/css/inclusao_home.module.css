@@ -43,3 +43,9 @@
     margin-top: 60px;
 }
 
+.botao3:hover{
+    background-color: #D1DAFF;
+    color: #003786;
+    transition: 1s;
+}
+

@@ -1,4 +1,5 @@
 import Style from "@/src/css/cadastrar_vagas.module.css";
+import Link from "next/link";
 
 export default function CadastroVagas() {
     return(
@@ -58,7 +59,7 @@ export default function CadastroVagas() {
 
                 </form>
 
-                <button type="submit" className={Style.btn_cadastrar}>CADASTRAR</button>
+                <Link href="/usuario_vagas"><button type="submit" className={Style.btn_cadastrar}>CADASTRAR</button></Link>
             </div>    
     );
 }

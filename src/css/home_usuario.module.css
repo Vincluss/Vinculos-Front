@@ -36,3 +36,9 @@
     border-radius: 0px 10px 10px 0px;
 }
 
+.botao2:hover{
+    background-color: #005BD2;
+    color: #F0F2FF;
+    transition: 1s;
+}
+

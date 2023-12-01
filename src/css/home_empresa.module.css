@@ -35,3 +35,9 @@
     font-weight: bold;
     border-radius: 0px 10px 10px 0px;
 }
+
+.botao3:hover{
+    background-color: #3E6185;
+    color: #F0F2FF;
+    transition: 1s;
+}

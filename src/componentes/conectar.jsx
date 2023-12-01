@@ -1,6 +1,7 @@
 import Style from "../css/conectar.module.css";
 import { FaLinkedin } from "react-icons/fa";
 import { MdOutlineEmail } from "react-icons/md";
+import Link from "next/link";
 
 export default function Conectar() {
   return (
@@ -24,9 +25,10 @@ export default function Conectar() {
         <button className={Style.clique}>
           Baixe seu modelo de currículo
         </button>
-        <button className={`${Style.botao_editar} ${Style.containerSubline}`}>
-          <span className={Style.subline}>Editar meu perfil</span>
-        </button>
+        <Link href="/editar_perfil"><button className={`${Style.botao_editar} ${Style.containerSubline}`}>
+                <span className={Style.subline}>Editar meu perfil</span>
+              </button>
+        </Link>
       </div>
     </section>
   );
