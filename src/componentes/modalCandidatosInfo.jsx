@@ -16,7 +16,8 @@ export const Daniele = [
 
         habilidades: ['Psicologia clínica para surdos', 'Pacote Office', 'Aula de Libras']
     }
-];  const Gustavo = {
+];  const Gustavo = [
+    {
     imagem: Gus,
     nome: 'Gustavo Renato',
     email: 'gustavo',
@@ -28,7 +29,10 @@ export const Daniele = [
     sobre: 'destaca-se como uma engenheira de software com experiência sólida, trazendo inovação e habilidades técnicas excepcionais para desafios complexos.',
 
     habilidades: ['Desenvolvimento de Software Avançado', 'Resolução de Problemas Complexos', 'Trabalho em Equipe Colaborativo']
-}; const Danilo = {
+    }
+]; 
+    const Danilo = [
+    {
     imagem: Danil,
     nome: 'Danilo Santos',
     email: 'danilo',
@@ -40,5 +44,6 @@ export const Daniele = [
     sobre: 'é um gestor de projetos multifacetado, combinando visão estratégica, liderança inspiradora e expertise em administração para impulsionar o sucesso corporativo.',
 
     habilidades: ['Gestão de Projetos', 'Liderança Inspiradora', 'Visão Estratégica']
-};
+    }
+];
 
