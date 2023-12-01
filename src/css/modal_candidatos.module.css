@@ -1,12 +1,13 @@
 #modalCandidatos {
     position: fixed;
     width: 70%;
-    height: 90%;
+    height: 95%;
     top: 2.5%;
     background-color: aliceblue;
     grid-template-areas: 'image info' 'about about' 'skills skills';
     z-index: 999;
     border-radius: 10px;
+    padding: 30px 50px 30px 50px;
 }
 
 #modalCandidatos .imagem {
@@ -41,14 +42,12 @@
     flex-direction: column;
 }
 
-
 #modalCandidatos .about {
     grid-area: about;
     display: flex;
     flex-direction: column;
-    width: 50%;
+    width: 100%;
     height: 30%;
-    padding-left: 50px;
 }
 
 .texto_sobre{
@@ -61,14 +60,12 @@
     flex-direction: column;
     width: 50%;
     height: 30%;
-    padding-left: 50px;
 }
 
 .titulo_candidato{
     font-size: clamp(1rem, 2.6vw, 4rem);
     font-weight: bold;
     width: 50%;
-    padding-left: 50px;
 }
 
 .botaoFechar{
@@ -87,10 +84,6 @@
     display: flex;
     flex-direction: column;
     color: #302C29;
-}
-
-.informacoes{
-    padding-top: 5px;
 }
 
 .voltar{
