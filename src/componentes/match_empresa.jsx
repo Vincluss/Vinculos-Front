@@ -44,12 +44,12 @@ export default function Candidatos() {
 
   const candidatos = [
     { imagemCandidato: Dani, nomeCandidato: 'Daniele Almeida', matchPorcentagem: '50', candidato: Daniele },
-    { imagemCandidato: Gus, nomeCandidato: 'Gustavo Renato', matchPorcentagem: '70' },
-    { imagemCandidato: Danilo, nomeCandidato: 'Danilo Santos', matchPorcentagem: '80' },
+    { imagemCandidato: Gus, nomeCandidato: 'Gustavo Renato', matchPorcentagem: '70', candidato: Gus },
+    { imagemCandidato: Danilo, nomeCandidato: 'Danilo Santos', matchPorcentagem: '80', candidato: Danilo },
 
     { imagemCandidato: Dani, nomeCandidato: 'Daniele Almeida', matchPorcentagem: '50', candidato: Daniele },
-    { imagemCandidato: Gus, nomeCandidato: 'Gustavo Renato', matchPorcentagem: '70' },
-    { imagemCandidato: Danilo, nomeCandidato: 'Danilo Santos', matchPorcentagem: '80' },
+    { imagemCandidato: Gus, nomeCandidato: 'Gustavo Renato', matchPorcentagem: '70', candidato: Gus },
+    { imagemCandidato: Danilo, nomeCandidato: 'Danilo Santos', matchPorcentagem: '80', candidato: Danilo },
   ]
 
   const dividirCandidatos = mostrarTodos ? candidatos : candidatos.slice(0, 3);

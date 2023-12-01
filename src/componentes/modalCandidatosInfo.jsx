@@ -1,6 +1,6 @@
-import Dani from "@/public/img/img-pessoas/img-inclusao1.png"
-import Gus from "@/public/img/img-pessoas/img-inclusao2.png"
-import Danilo from "@/public/img/img-pessoas/img-inclusao3.png"
+import Dani from "@/src/assets/img-pessoas/img-inclusao1.png"
+import Gus from "@/src/assets/img-pessoas/img-inclusao2.png"
+import Danil from "@/src/assets/img-pessoas/img-inclusao3.png"
 
 export const Daniele = [
     {
@@ -16,4 +16,29 @@ export const Daniele = [
 
         habilidades: ['Psicologia clínica para surdos', 'Pacote Office', 'Aula de Libras']
     }
-]
+];  const Gustavo = {
+    imagem: Gus,
+    nome: 'Gustavo Renato',
+    email: 'gustavo',
+    localidade: 'São Paulo',
+    deficiencia: 'Auditiva',
+    genero: 'Masculino',
+    estadoCivil: '?',
+
+    sobre: 'destaca-se como uma engenheira de software com experiência sólida, trazendo inovação e habilidades técnicas excepcionais para desafios complexos.',
+
+    habilidades: ['Desenvolvimento de Software Avançado', 'Resolução de Problemas Complexos', 'Trabalho em Equipe Colaborativo']
+}; const Danilo = {
+    imagem: Danil,
+    nome: 'Danilo Santos',
+    email: 'danilo',
+    localidade: 'São Paulo',
+    deficiencia: 'Auditiva',
+    genero: 'Masculino',
+    estadoCivil: '?',
+
+    sobre: 'é um gestor de projetos multifacetado, combinando visão estratégica, liderança inspiradora e expertise em administração para impulsionar o sucesso corporativo.',
+
+    habilidades: ['Gestão de Projetos', 'Liderança Inspiradora', 'Visão Estratégica']
+};
+

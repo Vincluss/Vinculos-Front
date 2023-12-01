@@ -1,36 +1,117 @@
 #modalCandidatos {
     position: fixed;
-    width: 95%;
-    height: 95%;
-    left: 5%;
-    right: 5%;
+    width: 70%;
+    height: 90%;
     top: 2.5%;
-    padding: 2.5% 0;
     background-color: aliceblue;
-    
-    display: grid;
-    justify-items: center;
-    grid-template-columns: 50% 50%;
     grid-template-areas: 'image info' 'about about' 'skills skills';
     z-index: 999;
+    border-radius: 10px;
 }
 
 #modalCandidatos .imagem {
-    position: relative;
     grid-area: image;
 }
 
-#modalCandidatos .info {
-    position: relative;
+#modalCandidatos .info{
     grid-area: info;
+    font-size: clamp(1rem, 1.2vw, 4rem);
+    display: flex;
+    width: 50%;
+    height: 60%;
 }
 
+.nome_candidato{
+    font-size: clamp(1rem, 2vw, 4rem);
+    font-weight: bold;
+}
+
+.quadrado_cima {
+    display: flex;
+    justify-content: space-between;
+}
+
+.quadrado_meio, .quadrado_baixo{
+    display: flex;
+    justify-content: space-around;
+}
+
+.quadrado_baixo{
+    display: flex;
+    flex-direction: column;
+}
+
+
 #modalCandidatos .about {
-    position: relative;
     grid-area: about;
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    height: 30%;
+    padding-left: 50px;
+}
+
+.texto_sobre{
+    font-size: clamp(1rem, 1.6vw, 4rem);
 }
 
 #modalCandidatos .skills {
-    position: relative;
     grid-area: skills;
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    height: 30%;
+    padding-left: 50px;
 }
+
+.titulo_candidato{
+    font-size: clamp(1rem, 2.6vw, 4rem);
+    font-weight: bold;
+    width: 50%;
+    padding-left: 50px;
+}
+
+.botaoFechar{
+    background-color: red;
+    width: 40px;
+    height: 40px;
+    font-size: clamp(1rem, 2vw, 4rem);
+    color: #fff;
+    border-radius: 10px;
+    text-align: center;
+    cursor: pointer;
+    justify-content: center;
+}
+
+.info{
+    display: flex;
+    flex-direction: column;
+    color: #302C29;
+}
+
+.informacoes{
+    padding-top: 5px;
+}
+
+.voltar{
+    background-color: #E8A023;
+    width: 210px;
+    height: 50px;
+    border-radius: 10px;
+    color: #fff;
+    font-size: clamp(1rem, 1.6vw, 4rem);
+    font-weight: bold;
+    text-align: center;
+}
+
+.alinhamento_botao{
+    display: flex;
+    justify-content: center;
+}
+
+.titulo_sobre, .titulo_conhecimento{
+    font-size: clamp(1rem, 2vw, 4rem);
+    font-weight: bold;
+    color: #302C29;
+}
+
