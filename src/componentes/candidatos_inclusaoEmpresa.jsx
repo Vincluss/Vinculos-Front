@@ -15,7 +15,7 @@ export default function CandidatosInclusãoEmpresa() {
             </div>
 
             <div className={Style.BotaoVermais1}>
-                <Link href="#">Ver Mais</Link>
+                <Link href="/match">Ver Mais</Link>
             </div>
         </section>
     )
