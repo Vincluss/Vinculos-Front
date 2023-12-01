@@ -1,19 +1,36 @@
 'use client'
 
+import React, { useEffect, useState } from "react";
 import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
+import { jobsData } from "./data/jobs";
+import 'leaflet/dist/leaflet.css';
 
-export const Map = ({ center, zoom, jobs }) => {
-    return (
-        <MapContainer center={center} zoom={zoom} style={{ height: '500px', width: '100%' }}>
+export const JobMap = () => {
+    const [position, setPosition] = useState([-23.545497048645824, -46.63660925760619]);
+
+    useEffect (() => {
+        if ('geolocation' in navigator) {
+            navigator.geolocation.getCurrentPosition((userPosition) => {
+                const { latitude, longitude } = userPosition.coords
+                setPosition([latitude, longitude]);
+            }, (error) => {
+                console.error('Error getting user location', error)
+            })
+        }
+    }, [])
+
+    return (       
+        <MapContainer center={position} zoom={10} style={{ height: '700px', width: '85%' }}>
             <TileLayer
                 url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
                 attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
             />
-            {jobs.map((job, index) => (
-                <Marker key={index} position={job.location}>
+
+            {jobsData.map((job) => (
+                <Marker key={job.id} position={job.position}>
                     <Popup>{job.title}</Popup>
                 </Marker>
             ))}
-        </MapContainer>
+        </MapContainer>       
     )
 }
