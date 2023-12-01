@@ -23,7 +23,7 @@ export default function VagasInclusãoEmpresa(){
                 <h1>Empresa</h1>
                     <h1>Vaga de Estágio</h1>
                     <h1>São Paulo| SP Híbrido</h1>
-                    <h1>R$2.320,00</h1>
+                    <h1>R$1.650,00</h1>
                 </div>
             </div>
 

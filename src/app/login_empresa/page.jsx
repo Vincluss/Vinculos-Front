@@ -6,9 +6,8 @@ import VLibras from "@/src/componentes/vlibras";
 export default function Home() {
     return (
         <>
-        <Loginempresa />
-        <VLibras forceOnload={true} />
-
+            <Loginempresa />
+            <VLibras forceOnload={true} />
         </>
     )
 }

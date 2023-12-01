@@ -7,7 +7,6 @@ export default function Home() {
     <>
       <Caduser />
       <VLibras forceOnload={true} />
-
     </>
   );
 }

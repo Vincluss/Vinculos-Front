@@ -25,7 +25,7 @@ export default function Perfil() {
             </label>
             <label htmlFor="termosDeUso" className={Style.label}>
               Li e aceito os{' '}
-              <a href="/termos-de-uso" target="_blank">
+              <a className={Style.linha} href="/termos-de-uso" target="_blank">
                 termos de uso
               </a>
               .

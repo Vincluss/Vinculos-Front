@@ -41,3 +41,7 @@
 .label{
   font-size: clamp(1rem, 2vw, 2rem);
 }
+
+.linha{
+  border-bottom: 1px solid black;
+}

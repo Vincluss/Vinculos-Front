@@ -15,7 +15,6 @@ export default function Home() {
       <Cursos_user />
       <Footer />
       <VLibras forceOnload={true} />
-
     </>
   )
 }

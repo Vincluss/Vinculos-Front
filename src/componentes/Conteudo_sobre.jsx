@@ -7,7 +7,7 @@ export default function Conteudo_sobre() {
             <h1 className={Style.TituloSobre}>Sobre o Projeto</h1>
             <div className={Style.quadrado1}>
             Vínculos vem de conexões e relações entre pessoas!
-            Empregabilidade e visibilidade para pessoas com deficiência sensorial.  
+            Empregabilidade e visibilidade para pessoas com deficiência sensorial e motora.  
             </div>
         </section>
     )

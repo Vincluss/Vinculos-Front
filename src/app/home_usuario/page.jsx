@@ -27,7 +27,6 @@ export default function Usuario() {
       <Parceiros />
       <Footer />
       <VLibras forceOnload={true} />
-
     </>
   );
 }

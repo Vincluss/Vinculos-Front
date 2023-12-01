@@ -24,7 +24,6 @@ export default function Curriculo() {
 
       <Footer />
       <VLibras forceOnload={true} />
-
     </section>
   );
 }

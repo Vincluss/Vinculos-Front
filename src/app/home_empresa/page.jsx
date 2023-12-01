@@ -21,7 +21,6 @@ export default function Empresa() {
             <AssinaturaHome />
             <Footer />
             <VLibras forceOnload={true} />
-
         </>
     )
 }

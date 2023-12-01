@@ -14,7 +14,6 @@ export default function CadastrarVagas(){
             <CadastroVagas/>
             <Footer/>
             <VLibras forceOnload={true} />
-
         </>    
     );
 }

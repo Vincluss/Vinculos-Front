@@ -42,7 +42,7 @@ export default function Login() {
 
         <br></br>
         <Link href="" ><p className={Style.Recuperacao_cadastrar}> Esqueceu a senha? clique aqui </p></Link>
-        <Link href="cadastro_usuario" ><p className={Style.Recuperacao_cadastrar}> Ainda não tem perfil? criar perfil</p></Link>
+        <Link href="/cadastro_usuario" ><p className={Style.Recuperacao_cadastrar}> Ainda não tem perfil? criar perfil</p></Link>
         <Link href="home_usuario" > <button className={Style.ButEntrar} type="submit" onClick="enviar formulario()"> ENTRAR </button></Link>
         
         

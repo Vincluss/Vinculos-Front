@@ -16,9 +16,7 @@ export default function sobre() {
         <Wave bgColor="#003786" />
       </header>
       <Conteudo_sobre />
-
       <Pilares />
-
       <NossaEquipe />
       <Footer />
       <VLibras forceOnload={true} />
