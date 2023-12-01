@@ -1,6 +1,6 @@
 import Dani from "@/src/assets/img-pessoas/img-inclusao1.png"
 import Gus from "@/src/assets/img-pessoas/img-inclusao2.png"
-import Danil from "@/src/assets/img-pessoas/img-inclusao3.png"
+import Danilo from "@/src/assets/img-pessoas/img-inclusao3.png"
 
 export const Daniele = [
     {
@@ -16,34 +16,37 @@ export const Daniele = [
 
         habilidades: ['Psicologia clínica para surdos', 'Pacote Office', 'Aula de Libras']
     }
-];  const Gustavo = [
+];
+
+export const Gustavo = [
     {
-    imagem: Gus,
-    nome: 'Gustavo Renato',
-    email: 'gustavo',
-    localidade: 'São Paulo',
-    deficiencia: 'Auditiva',
-    genero: 'Masculino',
-    estadoCivil: '?',
+        imagem: Gus,
+        nome: 'Gustavo Renato',
+        email: 'gustavo',
+        localidade: 'São Paulo',
+        deficiencia: 'Auditiva',
+        genero: 'Masculino',
+        estadoCivil: '?',
 
-    sobre: 'destaca-se como uma engenheira de software com experiência sólida, trazendo inovação e habilidades técnicas excepcionais para desafios complexos.',
+        sobre: 'destaca-se como uma engenheira de software com experiência sólida, trazendo inovação e habilidades técnicas excepcionais para desafios complexos.',
 
-    habilidades: ['Desenvolvimento de Software Avançado', 'Resolução de Problemas Complexos', 'Trabalho em Equipe Colaborativo']
+        habilidades: ['Desenvolvimento de Software Avançado', 'Resolução de Problemas Complexos', 'Trabalho em Equipe Colaborativo']
     }
 ]; 
-    const Danilo = [
+
+export const DaniloModal = [
     {
-    imagem: Danil,
-    nome: 'Danilo Santos',
-    email: 'danilo',
-    localidade: 'São Paulo',
-    deficiencia: 'Auditiva',
-    genero: 'Masculino',
-    estadoCivil: '?',
+        imagem: Danilo,
+        nome: 'Danilo Santos',
+        email: 'danilo',
+        localidade: 'São Paulo',
+        deficiencia: 'Auditiva',
+        genero: 'Masculino',
+        estadoCivil: '?',
 
-    sobre: 'é um gestor de projetos multifacetado, combinando visão estratégica, liderança inspiradora e expertise em administração para impulsionar o sucesso corporativo.',
+        sobre: 'é um gestor de projetos multifacetado, combinando visão estratégica, liderança inspiradora e expertise em administração para impulsionar o sucesso corporativo.',
 
-    habilidades: ['Gestão de Projetos', 'Liderança Inspiradora', 'Visão Estratégica']
+        habilidades: ['Gestão de Projetos', 'Liderança Inspiradora', 'Visão Estratégica']
     }
 ];
 

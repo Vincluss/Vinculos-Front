@@ -7,7 +7,8 @@ import Dani from "@/public/img/img-pessoas/img-inclusao1.png"
 import Gus from "@/public/img/img-pessoas/img-inclusao2.png"
 import Danilo from "@/public/img/img-pessoas/img-inclusao3.png"
 import { ModalCandidatos } from "./modal_candidatos";
-import { Daniele } from "./modalCandidatosInfo";
+
+import { Daniele, Gustavo, DaniloModal } from "./modalCandidatosInfo";
 
 const CandidatosProps = ({ imagemCandidato, nomeCandidato, matchPorcentagem, candidato, onSaibaMais }) => {
 
@@ -44,12 +45,12 @@ export default function Candidatos() {
 
   const candidatos = [
     { imagemCandidato: Dani, nomeCandidato: 'Daniele Almeida', matchPorcentagem: '50', candidato: Daniele },
-    { imagemCandidato: Gus, nomeCandidato: 'Gustavo Renato', matchPorcentagem: '70', candidato: Gus },
-    { imagemCandidato: Danilo, nomeCandidato: 'Danilo Santos', matchPorcentagem: '80', candidato: Danilo },
+    { imagemCandidato: Gus, nomeCandidato: 'Gustavo Renato', matchPorcentagem: '70', candidato: Gustavo },
+    { imagemCandidato: Danilo, nomeCandidato: 'Danilo Santos', matchPorcentagem: '80', candidato: DaniloModal },
 
     { imagemCandidato: Dani, nomeCandidato: 'Daniele Almeida', matchPorcentagem: '50', candidato: Daniele },
-    { imagemCandidato: Gus, nomeCandidato: 'Gustavo Renato', matchPorcentagem: '70', candidato: Gus },
-    { imagemCandidato: Danilo, nomeCandidato: 'Danilo Santos', matchPorcentagem: '80', candidato: Danilo },
+    { imagemCandidato: Gus, nomeCandidato: 'Gustavo Renato', matchPorcentagem: '70', candidato: Gustavo },
+    { imagemCandidato: Danilo, nomeCandidato: 'Danilo Santos', matchPorcentagem: '80', candidato: DaniloModal },
   ]
 
   const dividirCandidatos = mostrarTodos ? candidatos : candidatos.slice(0, 3);

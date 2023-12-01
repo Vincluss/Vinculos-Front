@@ -54,9 +54,9 @@ export const ModalCandidatos = ({ imagem, nome, email, localidade, deficiencia, 
                 <div className={styles.skills}>
                     <h3 className={styles.titulo_conhecimento}>Conhecimentos</h3>
                     <ul className={styles.informacoesSobre}>
-                        {skills.map((skill, index) => (
+                        {habilidades.map((skill, index) => (
                             <li key={index} {...skill}>
-                                {habilidades}
+                                {skill}
                             </li>
                         ))}
                     </ul>
