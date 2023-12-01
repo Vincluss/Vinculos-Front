@@ -9,11 +9,11 @@
 }
 
 .TituloSobre{
-
+    font-weight: bold;
     color: Black;
     text-align: center;
     margin-bottom: 20px;
-    font-size: 10vh;
+    font-size: clamp(1rem, 4vw, 4rem);
 }
 
 .quadrado1{
@@ -27,7 +27,8 @@
     justify-content: center;
     align-items: center;
     color: white;
-    font-size: 45px;
+    font-size: clamp(1rem, 3vw, 3rem);
+    padding: 35px;
     text-align: center;
 }
 

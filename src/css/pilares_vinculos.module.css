@@ -32,11 +32,11 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    text-align: center;
     color: black;
-    font-size: 30px;
+    font-size: clamp(1rem, 2.3vw, 3rem);
     background-color: #F0F2FF;
     border-radius: 10px;
+    padding: 30px;
 }
 
 .Vision{
@@ -63,11 +63,11 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    text-align: center;
     color: black;
-    font-size: 30px;
+    font-size: clamp(1rem, 2.3vw, 3rem);
     background-color: #F0F2FF;
     border-radius: 10px;
+    padding: 30px;
 }
 
 
@@ -92,9 +92,9 @@
     height: 100vh;
     display: flex;
     flex-direction: column;
-    text-align: center;
     color: black;
-    font-size: 25px;
+    font-size: clamp(1rem, 2vw, 3rem);
     background-color: #F0F2FF;
     border-radius: 10px;
+    padding: 30px;
 }
