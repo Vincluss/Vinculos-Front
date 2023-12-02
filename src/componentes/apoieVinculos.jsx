@@ -2,6 +2,7 @@
 import Style from "../css/header_publico.module.css";
 import { useState, useCallback, useEffect } from "react";
 import { CiHeart } from "react-icons/ci";
+import Link from 'next/link';
 
 export default function ApoieVinculos() {
   const useMediaQuery = (width) => {
@@ -42,14 +43,14 @@ export default function ApoieVinculos() {
   return (
     <>
       {isBreakpoint ? null : (
-        <button className={`${Style.coracao}`}>
-          <CiHeart
-            size={32}
-            className="font-bold"
-            aria-label="Imagem de coração"
-          />
-          <p>Apoie Vínculos</p>
-        </button>
+          <button className={`${Style.coracao}`}>
+            <CiHeart
+              size={32}
+              className="font-bold"
+              aria-label="Imagem de coração"
+            />
+            <p>Apoie Vínculos</p>
+          </button>
       )}
     </>
   );

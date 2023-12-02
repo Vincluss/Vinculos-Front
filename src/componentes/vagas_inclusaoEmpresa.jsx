@@ -1,7 +1,7 @@
-import Style from "@/src/css/vagas_inclusãoEmpresa.module.css"
+import Style from "@/src/css/vagas_inclusaoEmpresa.module.css"
 import Link from "next/link"
 
-export default function VagasInclusãoEmpresa(){
+export default function VagasInclusaoEmpresa(){
     return(
 
         <section className={Style.Vagas}>
@@ -26,10 +26,11 @@ export default function VagasInclusãoEmpresa(){
                     <h1>R$1.650,00</h1>
                 </div>
             </div>
-
-            <div className={Style.BotaoVermais1}>
-                <Link href="/cadastro_vagas">Cadastrar</Link>
-            </div>
+            <Link href="/cadastro_vagas">
+                <div className={Style.BotaoVermais1}>
+                    Cadastrar
+                </div>
+            </Link>
         </section>
 
 

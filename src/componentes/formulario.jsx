@@ -1,4 +1,5 @@
 import Style from "../css/formulario.module.css";
+import Link from 'next/link';
 
 export default function Candidato() {
   return (
@@ -90,7 +91,7 @@ export default function Candidato() {
           </label>
 
           <button className={Style.botao_salvar}>Salvar</button>
-          <button className={Style.botao_voltar}>Voltar</button>
+          <Link href="/usuario_vagas"><button className={Style.botao_voltar}>Voltar</button></Link>
         </form>
       </section>
     </>

@@ -1,12 +1,12 @@
 "use client";
 import Style from "../css/header_publico.module.css";
-import Link from "next/link";
 import Logo from "@/src/img/Logo_Vinculos_Redondo.png";
 import { Squash as Hamburger } from "hamburger-react";
 import { useState, useCallback, useEffect } from "react";
 import Image from "next/image";
 import { CiHeart } from "react-icons/ci";
 import dynamic from "next/dynamic";
+import Link from "next/link";
 
 export default function Header({ bgColor }) {
   const [isOpen, setOpen] = useState(false);
@@ -32,14 +32,16 @@ export default function Header({ bgColor }) {
 
   const ApoieVinculos = () => {
     return (
-      <button className={`${Style.coracao} ${Style.hidden}`}>
-        <CiHeart
-          size={32}
-          className="font-bold"
-          aria-label="Imagem de coração"
-        />
-        <p>Apoie Vínculos</p>
-      </button>
+      <Link href="/doacao">
+        <button className={`${Style.coracao} ${Style.hidden}`}>
+          <CiHeart
+            size={32}
+            className="font-bold"
+            aria-label="Imagem de coração"
+          />
+          <p>Apoie Vínculos</p>
+        </button>
+      </Link>
     );
   };
 

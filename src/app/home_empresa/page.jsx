@@ -1,7 +1,6 @@
 import Footer from '@/src/componentes/footer';
 import AssinaturaHome from '@/src/componentes/assinatura_home';
 import HomeEmpresa from '@/src/componentes/home_empresa';
-import Link from 'next/link';
 import HeaderUser from '@/src/componentes/headerUser';
 import ResultadoEmpresa from '@/src/componentes/resultado_empresa';
 import InclusaoEmpresa from '@/src/componentes/candidatoEmpresa';

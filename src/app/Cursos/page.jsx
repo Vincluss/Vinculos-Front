@@ -2,7 +2,6 @@ import Cursos_user from "@/src/componentes/cursos/cursos_user";
 import Footer from "@/src/componentes/footer";
 import Header from "@/src/componentes/header_publico";
 import Wave from "@/src/componentes/wave";
-import Link from "next/link";
 import VLibras from "@/src/componentes/vlibras";
 
 export default function Home() {

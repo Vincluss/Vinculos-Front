@@ -22,6 +22,12 @@
     margin-top: 10px;
 }
 
+.botao_candidato:hover{
+    background-color: #AFC2FF;
+    color: #003786;
+    transition: 1s;
+}
+
 .botao_empresa{
     width: 250px;
     padding: 20px;
@@ -30,4 +36,10 @@
     font-weight: bold;
     border-radius: 15px;
     margin-left: 30px;
+}
+
+.botao_empresa:hover{
+    background-color: #B5C8E2;
+    color: #302C29;
+    transition: 1s;
 }

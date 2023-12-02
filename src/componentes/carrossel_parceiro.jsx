@@ -9,8 +9,8 @@ const PartnersCarousel = ({ image }) => {
         <Image
             src={image}
             alt="Parceiro"
-            width={250}
-            height={250}
+            width={200}
+            height={200}
             priority
         />
     )

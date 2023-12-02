@@ -13,10 +13,11 @@ export default function CandidatosInclusãoEmpresa() {
                 <div className={Style.Candidato3}>
                 </div>
             </div>
-
-            <div className={Style.BotaoVermais1}>
-                <Link href="/match">Ver Mais</Link>
-            </div>
+            <Link href="/match">
+                <div className={Style.BotaoVermais1}>
+                    Ver Mais
+                </div>
+            </Link>
         </section>
     )
 

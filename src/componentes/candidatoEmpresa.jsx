@@ -15,7 +15,7 @@ export default function CandidatoEmpresa() {
           <Image className={Style.inclusao} src={Inclusao1} alt="inclusao1" />
           <Image className={Style.inclusao} src={Inclusao2} alt="inclusao2" />
         </div>
-        <Link href="">
+        <Link href="/match">
           <div className={Style.btnContainer}>
             <button className={Style.btn}>Ver Mais</button>
           </div>

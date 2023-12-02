@@ -31,14 +31,16 @@ export default function HeaderUser({ bgColor }) {
 
   const ApoieVinculos = () => {
     return (
-      <button className={`${Style.coracao} ${Style.hidden}`}>
-        <CiHeart
-          size={32}
-          className="font-bold"
-          aria-label="Imagem de coração"
-        />
-        <p>Apoie Vínculos</p>
-      </button>
+      <Link href="/doacao">
+        <button className={`${Style.coracao} ${Style.hidden}`}>
+          <CiHeart
+            size={32}
+            className="font-bold"
+            aria-label="Imagem de coração"
+          />
+          <p>Apoie Vínculos</p>
+        </button>
+      </Link>
     );
   };
 
