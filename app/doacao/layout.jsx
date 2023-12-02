@@ -1,6 +1,5 @@
 import { Poppins } from "next/font/google";
-import "@/src/app/globals.css";
-import Script from "next/script";
+import "@/app/globals.css";
 
 // A página layout é a página onde nosso código será renderizado.
 // Ela serve como uma página mãe para outras páginas
@@ -10,7 +9,7 @@ const poppins = Poppins({
 });
 
 export const metadata = {
-  title: "Vínculos",
+  title: "Doação",
   description:
     "A plataforma que emprega e capacita pessoas com deficiências sensoriais",
 };
@@ -18,7 +17,6 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="pt-br">
-      {/* <Script src="https://cdn.userway.org/widget.js" data-account="0PWSHa9uTA"/> */}
       <body className={poppins.className}>{children}</body>
     </html>
   );

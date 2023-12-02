@@ -5,6 +5,7 @@ import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
 import { jobsData } from "./data/jobs";
 import 'leaflet/dist/leaflet.css';
 
+
 export const JobMap = () => {
     const [position, setPosition] = useState([-23.545497048645824, -46.63660925760619]);
 
@@ -24,6 +25,7 @@ export const JobMap = () => {
             <TileLayer
                 url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
                 attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+
             />
 
             {jobsData.map((job) => (
