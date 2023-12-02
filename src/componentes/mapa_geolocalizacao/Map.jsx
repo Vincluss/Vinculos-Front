@@ -20,7 +20,7 @@ export const JobMap = () => {
     }, [])
 
     return (       
-        <MapContainer center={position} zoom={10} style={{ height: '700px', width: '85%' }}>
+        <MapContainer center={position} zoom={10} style={{ height: '550px', width: '85%' }}>
             <TileLayer
                 url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
                 attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
