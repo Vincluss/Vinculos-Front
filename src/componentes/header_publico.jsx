@@ -79,9 +79,9 @@ export default function Header({ bgColor }) {
       style={{ backgroundColor: `${bgColor}` }}
     >
       {windowWidth > 721 && <ApoieVinculos />}
-
+      
       <button className={Style.logo}>
-        <Image src={Logo} alt="Logo" priority />
+        <Link href="/"><Image src={Logo} alt="Logo" priority /></Link>
       </button>
 
       <button className={Style.menu} onClick={toggleMenu}>

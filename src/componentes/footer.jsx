@@ -14,7 +14,7 @@ export default function Footer() {
         {" "}
         {/*Div Footer*/}
         <div className={Style.Logo}>
-          <Image src={Logo} />
+          <Link href="/"><Image src={Logo} /></Link>
         </div>{" "}
         {/*Div da logo da Footer*/}
         <div className={Style.Contatos}>
