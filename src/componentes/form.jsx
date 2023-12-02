@@ -1,4 +1,5 @@
 import Style from "../css/form.module.css";
+import Link from "next/link"
 
 export default function Form() {
   return (
@@ -30,9 +31,11 @@ export default function Form() {
         </form>
       </section>
       <div className={Style.formButtonContainer}>
-        <button type="submit" className={Style.formButton}>
-          Filtrar
-        </button>
+        <Link href="">
+          <button type="submit" className={Style.formButton}>
+            Filtrar
+          </button>
+        </Link>
       </div>
     </div>
   );

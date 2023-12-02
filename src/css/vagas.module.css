@@ -24,4 +24,5 @@
 .title__vagas{
     font-size: clamp(1rem, 4vw, 4rem);
     font-weight: bold;
+    color: #302C29;
 }

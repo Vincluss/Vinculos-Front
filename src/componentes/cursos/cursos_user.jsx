@@ -88,8 +88,9 @@ export default function Cursos_user() {
                 <br />
                 <textarea className={Style.campo} cols="20" rows="10" placeholder="Comentário"></textarea>
                 <br />
-                <input className={Style.botao2} type="submit" value="Enviar"></input>
-
+                <Link href="">
+                    <button className={Style.botao2} type="submit" value="Enviar">Enviar</button>
+                </Link>
             </form>
         </section>
     );

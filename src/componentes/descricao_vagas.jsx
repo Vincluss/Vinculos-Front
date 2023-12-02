@@ -77,10 +77,11 @@ export default function DescricaoVagas() {
           vagas para construirmos juntos um ambiente mais colorido e diverso!
         </p>
       </div>
-
-      <button type="submit" className={Style.btnAplicar}>
-        Aplicar
-      </button>
+      <Link href="">
+        <button type="submit" className={Style.btnAplicar}>
+          Aplicar
+        </button>
+      </Link>
     </section>
   );
 }
