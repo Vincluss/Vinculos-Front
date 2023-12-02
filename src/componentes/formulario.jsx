@@ -8,19 +8,19 @@ export default function Candidato() {
         <form className={Style.caixa_pequena1}>
 
           <label className={Style.label}>Nome Completo
-            <input type="text" placeholder="digite seu nome" className={Style.inputStyle} />
+            <input type="text" required placeholder="digite seu nome" className={Style.inputStyle} />
           </label>
 
           <label className={Style.label}>Email:
-            <input type="text" placeholder="digite seu email" className={Style.inputStyle} />
+            <input type="text" required placeholder="digite seu email" className={Style.inputStyle} />
           </label>
 
           <label className={Style.label}>Telefone Principal
-            <input type="text" placeholder="(11) 9999-99999" className={Style.inputStyle} />
+            <input type="text" required placeholder="(11) 9999-99999" className={Style.inputStyle} />
           </label>
 
           <label className={Style.label}>Qual é o seu CEP?
-            <input type="text" placeholder="00000-0000" className={Style.inputStyle} />
+            <input type="text" required placeholder="00000-0000" className={Style.inputStyle} />
           </label>
 
           <label className={Style.label}>Logradouro (Rua, avenida..)
@@ -46,24 +46,24 @@ export default function Candidato() {
           </label>
 
           <label className={Style.label}>data de nascimento (idade minima 14 anos)
-            <input type="date" placeholder="DD/MM/AAAA" className={Style.inputStyle} />
+            <input type="date" required placeholder="DD/MM/AAAA" className={Style.inputStyle} />
           </label>
 
           <label htmlFor="" className={Style.titulo_area}>Área De Atuação</label>
           <div className={Style.tags}>
-            <input list="areas_atuacao" placeholder="Selecione Uma Tag" className={Style.estilizacaoTags} />
+            <input list="areas_atuacao" placeholder="Selecione Uma Tag" required className={Style.estilizacaoTags} />
             <datalist id="areas_atuacao">
               <option value="Administração"></option>
               <option value="Desenvolvedor Junior"></option>
               <option value="Financeiro"></option>
             </datalist>
-            <input list="areas_atuacao" placeholder="Selecione Uma Tag" className={Style.estilizacaoTags} />
+            <input list="areas_atuacao" placeholder="Selecione Uma Tag" required className={Style.estilizacaoTags} />
             <datalist id="areas_atuacao">
               <option value="Administração"></option>
               <option value="Desenvolvedor Junior"></option>
               <option value="Financeiro"></option>
             </datalist>
-            <input list="areas_atuacao" placeholder="Selecione Uma Tag" className={Style.estilizacaoTags} />
+            <input list="areas_atuacao" placeholder="Selecione Uma Tag" required className={Style.estilizacaoTags} />
             <datalist id="areas_atuacao">
               <option value="Administração"></option>
               <option value="Desenvolvedor Junior"></option>
@@ -90,6 +90,13 @@ export default function Candidato() {
             </select>
           </label>
 
+          <label>Sobre:
+            <textarea className={Style.tamanho_campo} required cols="20" rows="10" placeholder="exemplo: sou formada em tecnologia da informação..."></textarea>
+          </label>
+
+          <label>Conhecimentos:
+            <textarea className={Style.tamanho_campo} required cols="20" rows="10" placeholder="digite 3 conhecimentos mais importantes"></textarea>
+          </label>
           <button className={Style.botao_salvar}>Salvar</button>
           <Link href="/usuario_vagas"><button className={Style.botao_voltar}>Voltar</button></Link>
         </form>

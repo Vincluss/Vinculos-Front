@@ -57,8 +57,6 @@ export default function Cursos() {
                 </div>
 
             </section>
-            
-          
         </Link>
 
         <h2 className={Style.title_avaliacao}>Sugestão/Avaliações</h2>

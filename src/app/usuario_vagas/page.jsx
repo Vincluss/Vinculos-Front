@@ -32,7 +32,7 @@ export default function Usuario() {
           </div>
         </div>
         <div className={Style.vejaContainer}>
-        <button className={Style.veja}>Veja Mais</button>
+        <Link href="/cadastro_vagas"><button className={Style.veja}>Veja Mais</button></Link>
         </div>
         <Footer />
         <VLibras forceOnload={true} />

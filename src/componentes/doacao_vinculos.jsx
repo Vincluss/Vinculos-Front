@@ -20,9 +20,6 @@ export default function Doe() {
 
       <div className={Style.Qrcode}>
 
-
-
-
       </div>
 
     </section>
