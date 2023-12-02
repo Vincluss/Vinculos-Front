@@ -91,13 +91,13 @@ export default function Candidato() {
           </label>
 
           <label>Sobre:
-            <textarea className={Style.tamanho_campo} required cols="20" rows="10" placeholder="exemplo: sou formada em tecnologia da informação..."></textarea>
+            <textarea className={Style.tamanho_sobre} required cols="20" rows="10" placeholder="exemplo: sou formada em tecnologia da informação..."></textarea>
           </label>
 
           <label>Conhecimentos:
             <textarea className={Style.tamanho_campo} required cols="20" rows="10" placeholder="digite 3 conhecimentos mais importantes"></textarea>
           </label>
-          <button className={Style.botao_salvar}>Salvar</button>
+          <button className={Style.botao_salvar}>Visualizar</button>
           <Link href="/usuario_vagas"><button className={Style.botao_voltar}>Voltar</button></Link>
         </form>
       </section>

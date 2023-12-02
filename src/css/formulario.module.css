@@ -19,7 +19,7 @@
   height: 60px;
   width: 800px;
   padding: 8px;
-  border: 2px solid black;
+  border: 1px solid black;
   outline: 0;
 }
 
@@ -39,7 +39,7 @@
 }
 
 .bairro, .numero{
-  border: 2px solid black;
+  border: 1px solid black;
   height: 50px;
   width: 398px;
   padding: 8px;
@@ -67,7 +67,12 @@
 .tamanho_campo{
   height: 100px;
   width: 800px;
-  border: 2px solid black;
+  border: 1px solid black;
 }
 
+.tamanho_sobre{
+  height: 200px;
+  width: 800px;
+  border: 1px solid black;
+}
 
