@@ -97,7 +97,7 @@ export default function Candidato() {
           <label>Conhecimentos:
             <textarea className={Style.tamanho_campo} required cols="20" rows="10" placeholder="digite 3 conhecimentos mais importantes"></textarea>
           </label>
-          <button className={Style.botao_salvar}>Visualizar</button>
+          <button className={Style.botao_visualizar}>Visualizar</button>
           <Link href="/usuario_vagas"><button className={Style.botao_voltar}>Voltar</button></Link>
         </form>
       </section>

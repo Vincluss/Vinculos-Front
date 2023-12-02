@@ -46,8 +46,8 @@
   margin-left: 2px;
 }
 
-.botao_voltar, .botao_salvar {
-  background-color: #E8A023;
+.botao_voltar, .botao_visualizar {
+  background-color: #E1A54D;
   width: 800px;
   color: #fff;
   padding: 10px;
@@ -56,8 +56,20 @@
   font-weight: bold;
 }
 
-.botao_salvar{
+.botao_visualizar{
   background-color: #003786;
+}
+
+.botao_visualizar:hover{
+  background-color: #005BD2;
+  color: #F0F2FF;
+  transition: 1s;
+}
+
+.botao_voltar:hover{
+  background-color: #E8A023;
+  color: #FFF1E3;
+  transition: 1s;
 }
 
 .label{
