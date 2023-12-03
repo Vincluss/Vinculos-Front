@@ -1,5 +1,5 @@
 import Link from "next/link";
-import HomeUsuario from "@/src/componentes/home_usuario";
+
 import Vagas from "@/src/componentes/vagas";
 import Candidatos from "@/src/componentes/inclusao_home";
 import Cursos from "@/src/componentes/cursos_home";
@@ -9,6 +9,7 @@ import Wave from '@/src/componentes/wave';
 import ResultadoComunidade from "@/src/componentes/resultados_comunidade";
 import Parceiros from "@/src/componentes/parceiros";
 import VLibras from "@/src/componentes/vlibras";
+import HomeUsuario from "@/src/componentes/home_usuario";
 
 export default function Usuario() {
   return (
