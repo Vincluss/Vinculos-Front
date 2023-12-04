@@ -20,7 +20,7 @@ export default function Home() {
         <Depoimentos />
         <Parceiros />
       </main>
-      <Footer />
+      <Footer bgColor="#003786"/>
       <VLibras />
     </>
   );

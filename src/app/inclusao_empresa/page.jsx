@@ -15,7 +15,7 @@ export default function inclusao() {
       </header>
       <VagasInclusaoEmpresa />
       <CandidatosInclusaoEmpresa />
-      <Footer />
+      <Footer bgColor={"#E8A023"} />
       <VLibras forceOnload={true} />
     </>
   );

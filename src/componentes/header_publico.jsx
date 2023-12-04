@@ -11,12 +11,24 @@ import Link from "next/link";
 export default function Header({ bgColor }) {
   const [isOpen, setOpen] = useState(false);
   const [isVisible, setIsVisible] = useState(false);
-  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+  const [windowWidth, setWindowWidth] = useState(null);
 
   useEffect(() => {
-    const handleResize = () => setWindowWidth(window.innerWidth);
-    window.addEventListener("resize", handleResize);
-    return () => window.removeEventListener("resize", handleResize);
+    // Function to update the window width in the state
+    const updateWindowWidth = () => {
+      setWindowWidth(window.innerWidth);
+    };
+
+    // Initial call to set the window width
+    updateWindowWidth();
+
+    // Event listener to update the window width on resize
+    window.addEventListener("resize", updateWindowWidth);
+
+    // Cleanup function to remove the event listener when the component is unmounted
+    return () => {
+      window.removeEventListener("resize", updateWindowWidth);
+    };
   }, []);
 
   const toggleMenu = () => {
@@ -67,7 +79,7 @@ export default function Header({ bgColor }) {
           </details>
         </ul>
 
-        {windowWidth < 720 && <ApoieVinculos/>}
+        {windowWidth < 720 && <ApoieVinculos />}
       </div>
     );
   };
@@ -79,9 +91,11 @@ export default function Header({ bgColor }) {
       style={{ backgroundColor: `${bgColor}` }}
     >
       {windowWidth > 721 && <ApoieVinculos />}
-      
+
       <button className={Style.logo}>
-        <Link href="/"><Image src={Logo} alt="Logo" priority /></Link>
+        <Link href="/">
+          <Image src={Logo} alt="Logo" priority />
+        </Link>
       </button>
 
       <button className={Style.menu} onClick={toggleMenu}>

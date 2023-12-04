@@ -7,14 +7,16 @@ import LinkedIn from "@/src/assets/img-footer/Logo_LinkedIn.png";
 import Linktree from "@/src/assets/img-footer/Logo_Linktree.png";
 import { FaArrowUpLong } from "react-icons/fa6";
 
-export default function Footer() {
+export default function Footer({ bgColor }) {
   return (
     <>
       <footer className={Style.footer}>
         {" "}
         {/*Div Footer*/}
         <div className={Style.Logo}>
-          <Link href="/"><Image src={Logo} /></Link>
+          <Link href="/">
+            <Image src={Logo} />
+          </Link>
         </div>{" "}
         {/*Div da logo da Footer*/}
         <div className={Style.Contatos}>
@@ -25,8 +27,12 @@ export default function Footer() {
         {/*Div dos contatos da Footer*/}
         <div className={Style.Links}>
           <h1 className={Style.TituloLinks}>links</h1>
-          <Link href="/"><h2 className={Style.Inicio}>Inicio</h2></Link>
-          <Link href="/sobre"><h2 className={Style.Vagas}>Sobre</h2></Link>
+          <Link href="/">
+            <h2 className={Style.Inicio}>Inicio</h2>
+          </Link>
+          <Link href="/sobre">
+            <h2 className={Style.Vagas}>Sobre</h2>
+          </Link>
         </div>{" "}
         {/*Div dos links do Site*/}
         <div className={Style.redesSociais}>
@@ -53,7 +59,7 @@ export default function Footer() {
         </div>{" "}
         {/*Div das redes sociais da Footer*/}
       </footer>
-      <div className={Style.Direitos}>
+      <div className={`${Style.Direitos}`} style={{backgroundColor : `${bgColor}`}}>
         <h1>Densenvolvido por Vínculos ©</h1>
         <Link href="#header">
           <button>

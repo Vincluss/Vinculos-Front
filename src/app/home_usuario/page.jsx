@@ -26,7 +26,7 @@ export default function Usuario() {
         <Cursos />
       </section>
       <Parceiros />
-      <Footer />
+      <Footer bgColor={"#E8A023"}/>
       <VLibras forceOnload={true} />
     </>
   );

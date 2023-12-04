@@ -18,6 +18,26 @@
     }
 }
 
+@keyframes slideInUser {
+    from {
+        transform: translateX(-105%);
+    }
+
+    to {
+        transform: default
+    }
+}
+
+@keyframes slideOutUser {
+    from {
+        transform: default
+    }
+
+    to {
+        transform: translateX(-105%);
+    }
+}
+
 .modalEnter {
 	animation: slideIn 0.3s ease-in-out;
 }
@@ -26,11 +46,20 @@
 	animation: slideOut .3s ease-in-out forwards;
 }
 
+.modalEnterUser {
+	animation: slideInUser 0.3s ease-in-out;
+}
+
+.modalExitUser {
+	animation: slideOutUser .3s ease-in-out forwards;
+}
+
 /*Estilização Principal*/
 .header {
 	width: 100%;
 	display: flex;
 	align-items: center;
+	justify-content: space-between;
 	padding: 12px 40px;
 }
 
@@ -48,7 +77,6 @@
 }
 
 .header .logo {
-	margin: auto;
 	z-index: 13;
 }
 
@@ -70,16 +98,33 @@
 	padding-bottom: 42px;
 }
 
-.header .sideBar ul {
+.sideBarUser{
+	position: absolute;
+	padding-right: 1rem;
+	background-color: #fff;
+	left: 0;
+	top: 0;
+	transform: translateX(0%);
+	z-index: 11;
+	border-radius: 0 10px 10px 0;
+	padding-bottom: 42px;
+}
+
+.header .sideBar ul,
+.sideBarUser ul {
 	list-style: none;
 	margin-top: 140px;
-	margin-left: 8%;
+	margin-left: 40px;
+}
+
+.header .sideBar ul li,
+.header .sideBarUser ul li {
+	font-weight: bold;
+	font-size: 24px;
 }
 
 .header .sideBar ul li {
 	text-transform: uppercase;
-	font-weight: bold;
-	font-size: 24px;
 }
 
 .header .sideBar ul .coracao {
@@ -87,21 +132,25 @@
 }
 
 
-.header .sideBar details summary {
+.header .sideBar details summary,
+.header .sideBarUser details summary {
 	font-size: 14px;
 	margin-top: 8px;
 }
 
-.header .sideBar details p {
+.header .sideBar details p,
+.header .sideBarUser details p {
 	font-size: 20px !important;
 }
 
-.header .sideBar summary::after {
+.header .sideBar summary::after,
+.header .sideBarUser summary::after {
 	content: '\25B6';
 	margin-left: 0.5em; 
   }
 
-.header .sideBar details[open] summary::after {
+.header .sideBar details[open] summary::after,
+.header .sideBarUser details[open] summary::after {
 	content: '\25BC'; 
 }
 
@@ -109,10 +158,24 @@
     background-color: #D2DEEE;
     border-radius: 100%;
     padding: 5px;
+	z-index: 13;
+	position: relative;
 }
 
-.container{
-    width: 40%;
+.userContainer{
+	width: 20%;
+	z-index: 13;
+}
+
+.logoContainer{
+	width: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.hamburgerContainer{
+	width: 20%;
     display: flex;
     justify-content: space-between;
 }

@@ -34,7 +34,7 @@ export default function Usuario() {
         <div className={Style.vejaContainer}>
         <Link href="/cadastro_vagas"><button className={Style.veja}>Veja Mais</button></Link>
         </div>
-        <Footer />
+        <Footer bgColor={"#003786"}/>
         <VLibras forceOnload={true} />
     </> 
   );

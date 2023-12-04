@@ -18,7 +18,7 @@ export default function sobre() {
       <Conteudo_sobre />
       <Pilares />
       <NossaEquipe />
-      <Footer />
+      <Footer bgColor={"#003786"}/>
       <VLibras forceOnload={true} />
     </>
   );

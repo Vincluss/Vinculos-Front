@@ -12,7 +12,7 @@ export default function Home() {
         <Wave position={"relative"} bgColor="#003786"/>
       </header>
       <Cursos_user />
-      <Footer />
+      <Footer bgColor="#003786" />
       <VLibras forceOnload={true} />
     </>
   )

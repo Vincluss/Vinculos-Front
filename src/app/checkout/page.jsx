@@ -66,7 +66,7 @@ return (
         </Pagamento>
 
         <VLibras forceOnload={true} />
-        <Footer />
+        <Footer bgColor="#243B53"/>
     </section>
 );
 }

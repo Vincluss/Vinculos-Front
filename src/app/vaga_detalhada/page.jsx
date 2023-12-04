@@ -17,7 +17,7 @@ export default function Home() {
         <DescricaoVagas />
         <FormularioRH />
       </main>
-      <Footer />
+      <Footer bgColor={'#003786'}/>
       <VLibras forceOnload={true} />
     </>
   );

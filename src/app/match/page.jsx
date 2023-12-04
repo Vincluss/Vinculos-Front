@@ -14,7 +14,7 @@ export default function Home() {
       </header>
       <Match />
       <Convuser />
-      <Footer />
+      <Footer bgColor="#243B53"/>
       <VLibras forceOnload={true} />
     </>
   );
