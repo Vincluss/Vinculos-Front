@@ -48,7 +48,7 @@ export default function HamburgerMenu() {
       <button className={Style.menu} onClick={toggleMenu}>
         <Hamburger
           onClick={toggleMenu}
-          color="#E8A023"
+          color="#AFC2FF"
           size={40}
           label="Abrir o menu"
           toggled={isOpen}

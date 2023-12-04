@@ -9,8 +9,8 @@ export default function Home() {
   return (
     <>
       <header className="relative">
-          <HeaderUser bgColor="#E8A023" />
-          <Wave position={"relative"} bgColor="#E8A023"/>
+          <HeaderUser bgColor="#243B53" />
+          <Wave position={"relative"} bgColor="#243B53"/>
       </header>
       <Match />
       <Convuser />

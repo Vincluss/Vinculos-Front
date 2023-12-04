@@ -100,7 +100,7 @@ export default function Header({ bgColor }) {
 
       <button className={Style.menu} onClick={toggleMenu}>
         <Hamburger
-          color="#E8A023"
+          color="#AFC2FF"
           size={40}
           label="Abrir o menu"
           toggled={isOpen}

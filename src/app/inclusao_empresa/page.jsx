@@ -10,8 +10,8 @@ export default function inclusao() {
   return (
     <>
       <header className="relative">
-          <HeaderUser bgColor="#E8A023" />
-          <Wave position={"relative"} bgColor="#E8A023"/>
+          <HeaderUser bgColor="#243B53" />
+          <Wave position={"relative"} bgColor="#243B53"/>
       </header>
       <VagasInclusaoEmpresa />
       <CandidatosInclusaoEmpresa />
