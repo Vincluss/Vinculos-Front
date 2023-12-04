@@ -6,13 +6,9 @@ export const ModalCandidatos = ({ imagem, nome, email, localidade, deficiencia, 
         onClose();
     }
 
-    const skills = []
-
     return (
         <div id={styles.modalCandidatos}>
             <div className={styles.quadrado_cima}>
-                <h2 className={styles.titulo_candidato}>Candidatos</h2>
-
                 <div className={styles.botaoFechar} onClick={onClose}>X</div>
             </div>
 

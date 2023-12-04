@@ -19,6 +19,7 @@ export default function HeaderUser({ bgColor }) {
     return () => window.removeEventListener("resize", handleResize);
   }, []);
 
+
   const ApoieVinculos = () => {
     return (
       <Link href="/doacao">

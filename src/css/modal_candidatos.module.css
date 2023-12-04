@@ -29,7 +29,7 @@
 
 .quadrado_cima {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
 }
 
 .quadrado_meio, .quadrado_baixo{

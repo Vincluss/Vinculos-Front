@@ -2,6 +2,7 @@
 import { CiUser } from "react-icons/ci";
 import Style from "../../css/headerUser.module.css";
 import { useButtonMenu } from "./useButtonMenu";
+import { ModalCandidatos } from "../modal_candidatos";
 
 export default function User() {
   const { isOpen, setIsOpen, isVisible, setIsVisible } = useButtonMenu();
@@ -16,6 +17,7 @@ export default function User() {
       }, 300);
     }
   };
+
 
   const SideBarUser = () => {
     return (

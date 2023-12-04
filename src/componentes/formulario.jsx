@@ -1,7 +1,23 @@
+'use client'
+
 import Style from "../css/formulario.module.css";
 import Link from 'next/link';
+import { ModalCandidatos } from "./modal_candidatos";
+import { useState } from "react";
+
+import { Daniele } from "./modalCandidatosInfo";
 
 export default function Candidato() {
+  const [showUser, setShowUser] = useState(null);
+
+  const toggleUser = () => {
+    setShowUser(Daniele[0]);
+  }
+
+  const closeModal = () => {
+    setShowUser(null)
+  }
+
   return (
     <>
       <section className={Style.container}>
@@ -97,8 +113,10 @@ export default function Candidato() {
           <label>Conhecimentos:
             <textarea className={Style.tamanho_campo} required cols="20" rows="10" placeholder="digite 3 conhecimentos mais importantes"></textarea>
           </label>
-          <button className={Style.botao_visualizar}>Visualizar</button>
+          <button className={Style.botao_visualizar} onClick={toggleUser}>Visualizar</button>
           <Link href="/usuario_vagas"><button className={Style.botao_voltar}>Voltar</button></Link>
+
+          {showUser && <ModalCandidatos {...showUser} onClose={closeModal} />}
         </form>
       </section>
     </>
