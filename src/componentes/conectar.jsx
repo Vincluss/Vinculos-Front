@@ -22,9 +22,11 @@ export default function Conectar() {
 
       <div className={Style.container_curriculo}>
         {/* <h2 className={Style.baixe}>Baixe seu Modelo de Currículo</h2> */}
-        <button className={Style.clique}>
-          Baixe seu modelo de currículo
-        </button>
+        <Link href="/curriculo">
+          <button className={Style.clique}>
+            Baixe seu modelo de currículo
+          </button>
+        </Link>
         <Link href="/editar_perfil"><button className={`${Style.botao_editar} ${Style.containerSubline}`}>
                 <span className={Style.subline}>Editar meu perfil</span>
               </button>

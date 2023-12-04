@@ -1,18 +1,18 @@
 import Doe from '@/src/componentes/doacao_vinculos';
 import Footer from '@/src/componentes/footer';
-import Header from '@/src/componentes/header_publico';
 import Wave from '@/src/componentes/wave';
 import VLibras from "@/src/componentes/vlibras";
+import HeaderUser from '@/src/componentes/header/headerUser';
 
 export default function Home() {
     return (
         <>
             <header className="relative">
-                <Header bgColor="#E8A023" />
+                <HeaderUser bgColor="#E8A023" />
                 <Wave position={"relative"} bgColor="#E8A023"/>
             </header>
             <Doe />
-            <Footer bgColor="#E8A023"/>
+            <Footer bgColor="#003786"/>
             <VLibras forceOnload={true} />
         </>
     )

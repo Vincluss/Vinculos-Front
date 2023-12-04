@@ -79,22 +79,22 @@
 
 .title_avaliacao{
     @apply text-font;
-    font-size: 38px;
+    font-size: clamp(1rem, 5vw, 5rem);
     font-weight: bold;
     text-align: center;
     margin-left:150px;
     margin-top: 80px;
     margin-bottom: 20px;
-    background-color: rgb(197, 114, 6)
+    background-color: rgb(197, 114, 6);
 }
 
 /* RATING */
 .rating{
     width: 88%;
     height: 80px;
-    margin-left: 150px;
+    margin-left: 300px;
 }
 
 .ratingg{
-    font-size: 60px;
+    font-size: clamp(1rem, 5vw, 5rem);
 }

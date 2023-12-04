@@ -8,7 +8,7 @@
 
 .titleCursos{
     @apply text-font;
-    font-size: 38px;
+    font-size: clamp(1rem, 4vw, 4rem);
     font-weight: bold;
     width: 60%;
     margin: 0 auto;
@@ -32,8 +32,6 @@
 .contabilidade, .gestao, .programacao{
     width: 30%;
     height: 250px;
-    border-radius: 15px;
-    margin-left: -1px;
 }
 
 .coluna{
@@ -63,7 +61,7 @@
 
 .contabilidade_descricao, .gestao_descricao, .programacao_descricao{
     @apply text-font;
-    font-size: 22px;
+    font-size: clamp(1rem, 1.6vw, 3rem);
     align-items: center;
 }
 
@@ -71,7 +69,7 @@
     width: 60%;
     margin: 20px auto 0 auto;
     @apply text-font;
-    font-size: 38px;
+    font-size: clamp(1rem, 3vw, 3rem);
     font-weight: bold;
 }
 

@@ -83,8 +83,31 @@ export default function Cursos() {
           <input type="text" id="nome" name="nome" required />
         </div>
 
-        <div className={Style.nome}></div>
-      </section>
+      <form className={Style.formulario}>
+        <input
+          className={Style.nome}
+          type="text"
+          name="nome"
+          maxlength="50"
+          size="50"
+          required
+          placeholder="Nome do curso"
+        />
+        <br />
+        <br />
+        <textarea
+          className={Style.campo}
+          cols="20"
+          rows="10"
+          placeholder="Comentário"
+        ></textarea>
+        <br />
+        <div className={Style.btnContainer}>
+          <Link href="">
+            <button className={Style.botao2} type="submit" value="Enviar">Enviar</button>
+          </Link>
+        </div>
+      </form>
     </section>
   );
 }

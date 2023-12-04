@@ -18,7 +18,7 @@ export default function Empresa() {
             <ResultadoEmpresa />
             <InclusaoEmpresa />
             <AssinaturaHome />
-            <Footer bgColor="#243B53" />
+            <Footer bgColor={"#243B53"} />
             <VLibras forceOnload={true} />
         </>
     )
