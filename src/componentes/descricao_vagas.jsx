@@ -3,6 +3,7 @@ import Image from "next/image";
 import { MdOutlineAttachMoney } from "react-icons/md";
 import { BsFillGeoAltFill } from "react-icons/bs";
 import { CgUiKit } from "react-icons/cg";
+import Link from "next/link";
 
 export default function DescricaoVagas() {
   return (
