@@ -132,8 +132,9 @@ export default function Cursos_user() {
         <br />
         <div className={Style.btnContainer}>
           <Link href="">
-                    <button className={Style.botao2} type="submit" value="Enviar">Enviar</button>
-                </Link>        </div>
+            <button className={Style.botao2} type="submit" value="Enviar">Enviar</button>
+          </Link>
+        </div>
       </form>
     </section>
   );

@@ -21,7 +21,7 @@ export default function Home() {
         <Parceiros />
       </main>
       <Footer bgColor="#003786"/>
-      <VLibras />
+      <VLibras forceOnload={true}/>
     </>
   );
 }

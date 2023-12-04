@@ -4,18 +4,18 @@ import Vagas from "@/src/componentes/vagas";
 import Candidatos from "@/src/componentes/inclusao_home";
 import Cursos from "@/src/componentes/cursos_home";
 import Footer from "@/src/componentes/footer";
-import Header from '@/src/componentes/header_publico';
 import Wave from '@/src/componentes/wave';
 import ResultadoComunidade from "@/src/componentes/resultados_comunidade";
 import Parceiros from "@/src/componentes/parceiros";
 import VLibras from "@/src/componentes/vlibras";
 import HomeUsuario from "@/src/componentes/home_usuario";
+import HeaderUser from "@/src/componentes/header/headerUser";
 
 export default function Usuario() {
   return (
     <>
       <header className="relative">
-        <Header bgColor="#003786" />
+        <HeaderUser bgColor="#003786" />
         <Wave position={"absolute"} bgColor="#003786"/>
       </header>
         <HomeUsuario />
@@ -26,7 +26,7 @@ export default function Usuario() {
         <Cursos />
       </section>
       <Parceiros />
-      <Footer bgColor={"#E8A023"}/>
+      <Footer bgColor="#003786"/>
       <VLibras forceOnload={true} />
     </>
   );

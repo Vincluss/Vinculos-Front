@@ -1,25 +1,42 @@
-.Titulo{
-    font-weight: 700;
-    font-size: 40px;
-    margin-left: 47%;
+.Conteudo{
+    position: relative;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-.Caixatexto{
-    width: 700px;
-    height: 300px;
-    margin-top: 30px;
-    font-size: 25px;
-    margin-left: 30%;
-    padding: 65px;
-    background-color: #0048ae;
-    color: #fff;
-    border-radius: 0 80px 0 80px;
+.titulo_doacao{
+    font-weight: bold;
+    color: #302C29;
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: clamp(1rem, 4vw, 4rem);
 }
 
-.Qrcode{
+.quadrado1{
+    position: relative;
+    background-color: #0048AE;
+    width: 70%;
+    height: 430px;
+    border-radius: 0px 200px 0px 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: clamp(1rem, 6vw, 3rem);
+    padding: 35px;
+    text-align: center;
+}
+
+.code{
     width: 250px;
     height: 250px;
-    margin-top: 40px;
-    margin-left: 44%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
     background-color: darkgray;
 }

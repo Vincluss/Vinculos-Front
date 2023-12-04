@@ -1,25 +1,19 @@
-import Style from "@/src/css/curriculo.module.css";
 import Footer from "@/src/componentes/footer";
-import Header from "@/src/componentes/header_publico";
 import VLibras from "@/src/componentes/vlibras";
+import HeaderUser from "@/src/componentes/header/headerUser";
+import Wave from "@/src/componentes/wave";
+import Baixar from "@/src/componentes/curriculo";
 
 export default function Curriculo() {
   return (
-    <section className={Style.container_curriculo}>
-      <Header />
-    
-      <div className={Style.container_centro}>
-        <h1 className={Style.titulo_curriculo}>Curriculo</h1>
-
-        <h1 className={Style.subtitulo_curriculo}>CRIE SEU CURRÍCULO</h1>
-
-        <button type="submit" className={Style.btn_enviarCurriculo}>
-          BAIXAR MODELO DE CURRÍCULO
-        </button>
-      </div>
-
+    <>
+      <header className="relative">
+        <HeaderUser bgColor="#003786" />
+        <Wave position={"relative"} bgColor="#003786" />
+      </header>
+      <Baixar />
       <Footer />
       <VLibras forceOnload={true} />
-    </section>
+    </>
   );
 }

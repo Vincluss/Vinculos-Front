@@ -1,20 +1,20 @@
 import Link from "next/link";
 import Form from "@/src/componentes/form";
 import Conectar from "@/src/componentes/conectar";
-import Header from "@/src/componentes/header_publico";
 import Wave from "@/src/componentes/wave";
 import VagasCandidato from "@/src/componentes/vagasCandidato";
 import Style from "@/src/css/vagasCandidato.module.css";
 import Footer from "@/src/componentes/footer";
 import VLibras from "@/src/componentes/vlibras";
+import HeaderUser from "@/src/componentes/header/headerUser";
 
 export default function Usuario() {
   return (
     <>
-      <header className="relative">
-        <Header bgColor="#003786" />
-        <Wave position={"relative"} bgColor="#003786"/>
-      </header>
+        <header className="relative">
+          <HeaderUser bgColor="#003786" />
+          <Wave position={"relative"} bgColor="#003786"/>
+        </header>
         <Conectar/>
         <Form/>
         <div className={Style.alinhamento}>

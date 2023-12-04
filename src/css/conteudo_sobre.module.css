@@ -10,7 +10,7 @@
 
 .TituloSobre{
     font-weight: bold;
-    color: Black;
+    color: #302C29;
     text-align: center;
     margin-bottom: 20px;
     font-size: clamp(1rem, 4vw, 4rem);

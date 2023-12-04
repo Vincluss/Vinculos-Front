@@ -40,3 +40,9 @@
     border-radius: 10px;
     margin-top: 25px;
 }
+
+.btn:hover{
+    color: #243B53;
+    background-color: #B5C8E2;
+    transition: 1s;
+}

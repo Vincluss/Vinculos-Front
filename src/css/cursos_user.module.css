@@ -8,7 +8,7 @@
 
 .title_cursos{
     @apply text-font;
-    font-size: 38px;
+    font-size: clamp(1rem, 4vw, 4rem);
     font-weight: bold;
     margin-left: 150px;
     margin-bottom: 10px;
@@ -33,8 +33,6 @@
 .contabilidade, .gestao, .programacao{
     width: 30%;
     height: 250px;
-    border-radius: 15px;
-    margin-left: -1px;
 }
 
 .coluna{
@@ -65,13 +63,13 @@
 
 .contabilidade_descricao, .gestao_descricao, .programacao_descricao{
     @apply text-font;
-    font-size: 22px;
+    font-size: clamp(1rem, 1.6vw, 3rem);
     align-items: center;
 }
 
 .title_avaliacao{
     @apply text-font;
-    font-size: 38px;
+    font-size: clamp(1rem, 3vw, 3rem);
     font-weight: bold;
     text-align: center;
     margin-left:100px;
@@ -79,15 +77,11 @@
     margin-bottom: 20px;
 }
 
-
 .rating{
     width: 88%;
     height: 80px;
-    margin-left: 150px;
-}
-
-.ratingg{
-    font-size: 60px;
+    display: flex;
+    margin-left: 130px;
 }
 
 .formulario{
@@ -96,6 +90,8 @@
     flex-direction: column;
     width: 100%;
     height: 450px;
+    justify-content: center;
+    align-items: center;
 }
 
 .nome{
@@ -127,8 +123,7 @@
     align-items: center;
     border-radius: 10px;
     font-weight: bold;
-    margin-top: 20px;
-    margin-left: 380px;
+    
 }
 
 .botao2:hover{
