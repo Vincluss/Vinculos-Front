@@ -1,4 +1,4 @@
-import Cursos_user from "@/src/componentes/cursos/cursos_user";
+import Cursos from "@/src/componentes/cursos/cursos";
 import Footer from "@/src/componentes/footer";
 import Wave from "@/src/componentes/wave";
 import VLibras from "@/src/componentes/vlibras";
@@ -11,7 +11,7 @@ export default function Home() {
         <HeaderUser bgColor="#003786" />
         <Wave position={"relative"} bgColor="#003786"/>
       </header>
-      <Cursos_user />
+      <Cursos/>
       <Footer bgColor="#003786" />
       <VLibras forceOnload={true} />
     </>

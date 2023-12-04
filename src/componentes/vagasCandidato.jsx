@@ -12,7 +12,7 @@ export default function VagasCandidato({ Empresa, Vaga, Local, Salario }) {
                             <h3 className={`${Style.nome_vaga}`}>{Vaga}</h3>
                             <p className={`${Style.nome_local}`}>{Local}</p>
                             <p className={`${Style.qtd_salario}`}>{Salario}</p>
-                            <Link href="/cadastro_vagas"><button className={Style.saiba}>Saiba Mais</button></Link>
+                            <Link href="/descricao_vagas"><button className={Style.saiba}>Saiba Mais</button></Link>
                         </div>
                     </div>
                 </div>

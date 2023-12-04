@@ -22,7 +22,7 @@ export default function Header() {
       >
         <div className="w-1/3">
           <Hamburger
-            color="#fafafa"
+            color="#D0DFE4"
             size={48}
             label="Abrir o menu"
             toggled={isOpen}

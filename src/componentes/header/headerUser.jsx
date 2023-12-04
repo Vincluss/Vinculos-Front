@@ -41,7 +41,6 @@ export default function HeaderUser({ bgColor }) {
       className={Style.header}
       style={{ backgroundColor: `${bgColor}` }}
     >
-      {/* {isVisible && <SideBarUser />} */}
       <div className={Style.userContainer}>
         <ButtonMenuProvider>
           <User />

@@ -48,3 +48,9 @@
     font-weight: bold;
     text-align: center;
 }
+
+.veja:hover{
+    background-color: #CF8E21;
+    color: #FFF1E3;
+    transition: 1s;
+}

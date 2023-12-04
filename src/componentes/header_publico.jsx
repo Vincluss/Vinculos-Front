@@ -75,7 +75,9 @@ export default function Header({ bgColor }) {
 
           <details>
             <summary>CURSOS</summary>
-            <p>Para candidatos</p>
+            <Link href="/cursos">
+              <p>Para candidatos</p>
+            </Link>
           </details>
         </ul>
 
@@ -100,7 +102,7 @@ export default function Header({ bgColor }) {
 
       <button className={Style.menu} onClick={toggleMenu}>
         <Hamburger
-          color="#E8A023"
+          color="#AFC2FF"
           size={40}
           label="Abrir o menu"
           toggled={isOpen}
