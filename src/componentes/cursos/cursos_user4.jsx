@@ -1,41 +1,21 @@
-"use client";
-import { useEffect, useState } from "react";
-import Style from "@/src/css/cursos_user.module.css";
+import Style from "@/src/css/cursos.module.css";
 import Link from "next/link";
 import Image from "next/image";
 import Contabilidade from "@/src/assets/img-pessoas/contabilidade.png";
 import Gestao from "@/src/assets/img-pessoas/gestao.png";
 import Programacao from "@/src/assets/img-pessoas/programacao.png";
-import dynamic from "next/dynamic";
-import DynamicRating from "@/src/componentes/cursos/rating"; // Importe corretamente o componente DynamicRating
 
-const DynamicRatingComponent = dynamic(
-  () => import("@/src/componentes/cursos/rating"),
-  { ssr: false }
-);
-
-export default function Cursos_user() {
-  const [isClient, setIsClient] = useState(false);
-
-  useEffect(() => {
-    setIsClient(true); // Define isClient como true quando o componente é montado no lado do cliente
-  }, []);
-
+export default function Cursos() {
   return (
     <section className={Style.container_cursos}>
       <h2 className={Style.title_cursos}>Cursos</h2>
-
-      <section className={Style.caixa}>
-        <Link
-          href="https://www.ev.org.br/cursos/Contabilidade-Empresarial"
-          target="_blank"
-          className={Style.subtitle__link}
-        >
+      <Link href="/homeCandidato" className={Style.subtitle__link}>
+        <section className={Style.caixa}>
           <div className={Style.curso1}>
             <Image
               className={Style.contabilidade}
               src={Contabilidade}
-              alt="Um grupo de pessoas sentadas ao redor de uma mesa com um laptop."
+              alt="deficientes na cadeira de roda"
             />
             <div className={Style.coluna}>
               <div className={Style.titulo}>
@@ -50,19 +30,14 @@ export default function Cursos_user() {
               </div>
             </div>
           </div>
-        </Link>
 
-        <Link
-          href="https://sebrae.com.br/sites/PortalSebrae/cursosonline/gestao-de-pessoas,eda0b8a6a28bb610VgnVCM1000004c00210aRCRD"
-          target="_blank"
-          className={Style.subtitle__link}
-        >
           <div className={Style.curso2}>
             <Image
               className={Style.gestao}
               src={Gestao}
-              alt="Uma mulher sentada em uma mesa de trabalho com livros e um tablete sobre a mesma."
+              alt="deficientes na cadeira de roda"
             />
+
             <div className={Style.coluna}>
               <div className={Style.titulo}>
                 <h2 className={Style.gestao_titulo}>Gestão De Equipe</h2>
@@ -76,18 +51,12 @@ export default function Cursos_user() {
               </div>
             </div>
           </div>
-        </Link>
 
-        <Link
-          href="https://www.edx.org/learn/computer-programming"
-          target="_blank"
-          className={Style.subtitle__link}
-        >
           <div className={Style.curso3}>
             <Image
               className={Style.programacao}
               src={Programacao}
-              alt="Dedos digitando no teclado do computador."
+              alt="deficientes na cadeira de roda"
             />
             <div className={Style.coluna}>
               <div className={Style.titulo}>
@@ -103,13 +72,16 @@ export default function Cursos_user() {
               </div>
             </div>
           </div>
-        </Link>
-      </section>
+        </section>
+      </Link>
 
       <h2 className={Style.title_avaliacao}>Sugestão/Avaliações</h2>
-      <section className={Style.rating}>
-        <DynamicRating />
-      </section>
+      <section className={Style.rating}></section>
+      <section className={Style.label}>
+        <div className={Style.nome}>
+          <label htmlFor="nome">Nome:</label>
+          <input type="text" id="nome" name="nome" required />
+        </div>
 
       <form className={Style.formulario}>
         <input

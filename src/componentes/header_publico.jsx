@@ -75,7 +75,9 @@ export default function Header({ bgColor }) {
 
           <details>
             <summary>CURSOS</summary>
-            <p>Para candidatos</p>
+            <Link href="/cursos">
+              <p>Para candidatos</p>
+            </Link>
           </details>
         </ul>
 
