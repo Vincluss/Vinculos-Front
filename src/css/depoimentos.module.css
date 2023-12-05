@@ -2,12 +2,34 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-top: 2rem;
+    width: 100%;
 }
 
-.frase1{
+.frase{
     text-align: center;
     font-size: clamp(1rem, 4vw, 4rem);
     font-weight: bold;
     color: #302C29;
+}
+
+.frameContainer{
+    margin-top: 2rem;
+    width: 80%;
+    margin: 2rem auto 0 auto;
+}
+
+.frameContainer iframe{
+    width: 100%;
+    height: 600px;
+}
+
+@media screen and (max-width:768px){
+    .frameContainer{
+        width: 90%;
+    }
+    .frameContainer iframe{
+        height: 300px;
+    }
 }
 

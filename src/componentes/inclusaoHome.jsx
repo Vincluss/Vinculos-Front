@@ -15,7 +15,7 @@ export default function Candidatos() {
           <Image className={Style.inclusao2} src={Inclusao1} alt="inclusao1" />
           <Image className={Style.inclusao3} src={Inclusao2} alt="inclusao2" />
         </div>
-        <Link href="/match">
+        <Link href="/usuario_vagas">
           <div className={Style.button__container}>
             <button className={Style.botao3}>Ver Mais</button>
           </div>

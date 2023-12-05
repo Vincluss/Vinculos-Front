@@ -11,13 +11,13 @@ import User from "./user";
 import HamburgerMenu from "./hamburgerMenu";
 
 export default function HeaderUser({ bgColor }) {
-  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+  // const [windowWidth, setWindowWidth] = useState(window.innerWidth);
 
-  useEffect(() => {
-    const handleResize = () => setWindowWidth(window.innerWidth);
-    window.addEventListener("resize", handleResize);
-    return () => window.removeEventListener("resize", handleResize);
-  }, []);
+  // useEffect(() => {
+  //   const handleResize = () => setWindowWidth(window.innerWidth);
+  //   window.addEventListener("resize", handleResize);
+  //   return () => window.removeEventListener("resize", handleResize);
+  // }, []);
 
 
   const ApoieVinculos = () => {
@@ -46,14 +46,14 @@ export default function HeaderUser({ bgColor }) {
           <User />
         </ButtonMenuProvider>
       </div>
-      <div className={Style.logoContainer}>
+      <Link href={'/home_usuario'} className={Style.logoContainer}>
         <button className={Style.logo}>
           <Image src={Logo} alt="Logo" priority />
         </button>
-      </div>
+      </Link>
 
       <div className={Style.hamburgerContainer}>
-        {windowWidth > 721 && <ApoieVinculos />}
+        {/* {windowWidth > 721 && <ApoieVinculos />} */}
         <ButtonMenuProvider>
           <HamburgerMenu />
         </ButtonMenuProvider>

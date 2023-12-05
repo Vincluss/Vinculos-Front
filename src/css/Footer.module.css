@@ -1,104 +1,112 @@
 .footer {
   position: relative;
   width: 100%;
-  height: 400px;
-  bottom: 0;
   background-image: url(../assets/img-footer/FooterBackground.png);
   background-repeat: no-repeat;
   background-size: cover;
   display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-around;
+  padding: 7rem 2rem 2rem 2rem;
   margin-top: 50px;
 }
 
-.Logo {
+.footerContainer {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.logo {
   position: relative;
   width: 150px;
   height: 150px;
 }
 
-.Logo img {
+.logo img {
   width: 100%;
   height: 100%;
 }
 
-.Contatos,
-.Links {
+.contatos,
+.links {
   position: relative;
-  width: 280px;
-  height: 220px;
   display: flex;
   flex-direction: column;
   text-align: center;
   align-items: center;
-  justify-content: space-around;
-  padding-top: 60px;
+  justify-content: flex-start;
 }
 
 .redesSociais {
   position: relative;
-  width: 300px;
-  height: 220px;
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: flex-start;
   align-items: center;
-  padding-top: 60px;
-  padding-right: 60px;
 }
 
 .titulo_redes,
-.TituloLinks,
+.tituloLinks,
 .titulo_contato {
-  font-size: clamp(1rem, 3vw, 2rem);
+  font-size: clamp(1.5rem, 2vw, 3rem);
   color: #fff;
   font-weight: bold;
   text-transform: uppercase;
 }
 
-.Email,
-.Telefone,
-.Inicio,
-.Vagas {
+.email,
+.telefone,
+.inicio,
+.sobre {
   color: #fff;
-  font-size: clamp(1rem, 2vw, 3rem);
+  font-size: clamp(1.5rem, 2vw, 3rem);
+  margin-top: 1rem;
+}
+
+.email {
+  word-break: break-all;
 }
 
 .redesSociais {
   color: #fff;
 }
 
-.Email:hover,
-.Telefone:hover,
-.Inicio:hover,
-.Vagas:hover {
+.email:hover,
+.telefone:hover,
+.inicio:hover,
+.sobre:hover {
   color: #003786;
   transition: 0.5s;
   cursor: pointer;
 }
 
 .icones {
+  width: 100%;
   position: relative;
   height: auto;
-  width: 220px;
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-between;
+  margin-top: 2rem;
 }
 
-.Direitos {
+.direitosContainer {
   width: 100%;
   height: 90px;
+  padding: 0 1rem;
+  position: relative;
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
   background-color: #003786;
   color: #fff;
-  font-size: clamp(1rem, 2vw, 3rem);
-  padding-left: 330px;
+  font-size: clamp(1.5rem, 2vw, 3rem);
+}
+
+.direitos {
+  text-align: center;
+  flex-grow: 1;
 }
 
 .cima {
@@ -106,4 +114,16 @@
   display: flex;
   width: 50px;
   height: 45px;
+}
+
+@media screen and (max-width: 1024px) {
+  .footerContainer {
+    flex-direction: column;
+    align-items: center;
+  }
+  .links,
+  .redesSociais,
+  .contatos {
+    margin-top: 2rem;
+  }
 }

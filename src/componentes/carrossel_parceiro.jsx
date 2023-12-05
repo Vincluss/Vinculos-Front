@@ -1,5 +1,6 @@
 import styles from '../css/carrossel_home.module.css';
 import Image from 'next/image';
+import senac from '@/src/assets/parceiros/senac.webp'
 import senai from "@/src/assets/parceiros/senai.png"
 import pecto from "@/src/assets/parceiros/Logo_Pecto.png"
 import ajeitalar from "@/src/assets/parceiros/ajeitalar.png"
@@ -19,7 +20,7 @@ const PartnersCarousel = ({ image }) => {
 export const CarrosselParceiros = () => {
     const partnerImages = [
         { image: senai },
-        { image: senai },
+        { image: senac },
         { image: ajeitalar },
         { image: pecto }
     ];

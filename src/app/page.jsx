@@ -1,9 +1,9 @@
-import HomeGeral from "@/src/componentes/home_geral";
+import HomeGeral from "@/src/componentes/homeGeral";
 import Vagas from "@/src/componentes/vagas";
 import Depoimentos from "@/src/componentes/depoimentos";
 import Parceiros from "@/src/componentes/parceiros";
 import Footer from "@/src/componentes/footer";
-import Header from "../componentes/header_publico";
+import Header from "../componentes/headerPublico";
 import Wave from "../componentes/wave";
 import VLibras from "@/src/componentes/vlibras";
 
@@ -16,7 +16,7 @@ export default function Home() {
       </header>
       <HomeGeral />
       <main>
-        <Vagas />
+        {/* <Vagas /> */}
         <Depoimentos />
         <Parceiros />
       </main>

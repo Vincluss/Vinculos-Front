@@ -11,25 +11,25 @@ import Link from "next/link";
 export default function Header({ bgColor }) {
   const [isOpen, setOpen] = useState(false);
   const [isVisible, setIsVisible] = useState(false);
-  const [windowWidth, setWindowWidth] = useState(null);
+  // const [windowWidth, setWindowWidth] = useState(null);
 
-  useEffect(() => {
-    // Function to update the window width in the state
-    const updateWindowWidth = () => {
-      setWindowWidth(window.innerWidth);
-    };
+  // useEffect(() => {
+  //   // Function to update the window width in the state
+  //   const updateWindowWidth = () => {
+  //     setWindowWidth(window.innerWidth);
+  //   };
 
-    // Initial call to set the window width
-    updateWindowWidth();
+  //   // Initial call to set the window width
+  //   updateWindowWidth();
 
-    // Event listener to update the window width on resize
-    window.addEventListener("resize", updateWindowWidth);
+  //   // Event listener to update the window width on resize
+  //   window.addEventListener("resize", updateWindowWidth);
 
-    // Cleanup function to remove the event listener when the component is unmounted
-    return () => {
-      window.removeEventListener("resize", updateWindowWidth);
-    };
-  }, []);
+  //   // Cleanup function to remove the event listener when the component is unmounted
+  //   return () => {
+  //     window.removeEventListener("resize", updateWindowWidth);
+  //   };
+  // }, []);
 
   const toggleMenu = () => {
     setOpen(!isOpen);
@@ -81,7 +81,7 @@ export default function Header({ bgColor }) {
           </details>
         </ul>
 
-        {windowWidth < 720 && <ApoieVinculos />}
+        {/* {windowWidth < 720 && <ApoieVinculos />} */}
       </div>
     );
   };
@@ -92,7 +92,7 @@ export default function Header({ bgColor }) {
       className={Style.header}
       style={{ backgroundColor: `${bgColor}` }}
     >
-      {windowWidth > 721 && <ApoieVinculos />}
+      {/* {windowWidth > 721 && <ApoieVinculos />} */}
 
       <button className={Style.logo}>
         <Link href="/">

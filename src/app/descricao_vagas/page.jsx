@@ -1,6 +1,6 @@
 import Link from "next/link";
 import Wave from "@/src/componentes/wave";
-import DescricaoVagas from "@/src/componentes/descricao_vagas";
+import DescricaoVagas from "@/src/componentes/descricaoVagas";
 import Footer from "@/src/componentes/footer";
 import FormularioRH from "@/src/componentes/formularioRH";
 import HeaderUser from "@/src/componentes/header/headerUser";

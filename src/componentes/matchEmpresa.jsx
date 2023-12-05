@@ -6,7 +6,7 @@ import Style from "../css/match_empresa.module.css";
 import Dani from "@/public/img/img-pessoas/img-inclusao1.png"
 import Gus from "@/public/img/img-pessoas/img-inclusao2.png"
 import Danilo from "@/public/img/img-pessoas/img-inclusao3.png"
-import { ModalCandidatos } from "./modal_candidatos";
+import { ModalCandidatos } from "./modalCandidatos";
 
 import { Daniele, Gustavo, DaniloModal } from "./modalCandidatosInfo";
 

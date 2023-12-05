@@ -2,7 +2,7 @@
 
 import Style from "../css/formulario.module.css";
 import Link from 'next/link';
-import { ModalCandidatos } from "./modal_candidatos";
+import { ModalCandidatos } from "./modalCandidatos";
 import { useState } from "react";
 
 import { Daniele } from "./modalCandidatosInfo";

@@ -2,7 +2,7 @@
 import { CiUser } from "react-icons/ci";
 import Style from "../../css/headerUser.module.css";
 import { useButtonMenu } from "./useButtonMenu";
-import { ModalCandidatos } from "../modal_candidatos";
+import { ModalCandidatos } from "../modalCandidatos";
 
 export default function User() {
   const { isOpen, setIsOpen, isVisible, setIsVisible } = useButtonMenu();
