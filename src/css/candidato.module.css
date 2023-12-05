@@ -21,7 +21,7 @@
   display: flex;
   align-items: center;
   flex-direction: column;
-  width: 500px;
+  width: 90%;
   height: 250px;
   margin: auto;
   justify-content: center;
@@ -38,10 +38,28 @@
   margin-left: 250px;
 }
 
+.topForm {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.topForm label:first-of-type {
+  margin-right: 50px;
+  cursor: pointer;
+}
+
+.topForm input:nth-of-type(1) {
+  width: 15px;
+  height: 15px;
+  margin-right: 10px;
+}
+
 .label{
   font-size: clamp(1rem, 2vw, 2rem);
 }
 
 .linha{
-  border-bottom: 1px solid black;
+ text-decoration: underline;
 }
