@@ -32,9 +32,7 @@ export default function Home() {
                 <Wave position={"relative"} bgColor="#243B53" />
             </header>
 
-            <PlanoAssinatura />
-
-            <button onClick={botaoAbrirModal}>Abrir Modal</button>
+            <PlanoAssinatura onToggle={botaoAbrirModal} />
 
             <Pagamento aberto={abrirModal} fechar={botaoFecharModal}>
 
