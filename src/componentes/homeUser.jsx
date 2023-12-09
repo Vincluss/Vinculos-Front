@@ -21,14 +21,21 @@ export default function HomeUsuario() {
             <h1 className={Style.frase}>
               Faça seu cadastro e tenha acesso aos nossos serviços
             </h1>
-            <div className={Style.btnContainer}>
-              <Link href={"/home_usuario"} className={Style.btnCandidato}>
-                Para candidatos
-              </Link>
-              <Link href={"/home_empresa"} className={Style.btnEmpresa}>
-                Para empresas
-              </Link>
-            </div>
+            <form className={Style.btnContainer}>
+              <label htmlFor="email" className={Style.label}>
+                Email:
+                <input
+                  type="email"
+                  id="email"
+                  aria-labelledby="emailLabel"
+                  placeholder="Insira aqui seu email"
+                  className={Style.inputForm}
+                />
+              </label>
+              <button type="submit" className={Style.btnSubmit}>
+                Enviar
+              </button>
+            </form>
           </div>
         </div>
       </section>
@@ -36,7 +43,8 @@ export default function HomeUsuario() {
   );
 }
 
-          {/* <div className={Style.FormularioEmpresa}>
+{
+  /* <div className={Style.FormularioEmpresa}>
             <h1 className={Style.frase2}>Encontre sua carreira conosco</h1>
             <form className={Style.formulario}>
               <input
@@ -49,4 +57,5 @@ export default function HomeUsuario() {
                 Enviar
               </button>
             </form>
-          </div> */}
+          </div> */
+}
