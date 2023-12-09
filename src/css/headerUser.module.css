@@ -188,14 +188,20 @@
 	}
 }
 
+@media screen and (max-width: 768px) {
+	.hamburgerContainer{
+		justify-content: end;
+	}
+}
+
 @media (max-width: 720px) {
 	.header .logo {
-		width: 120px;
+		width: 80px;
 	}
 
-	.header .logo img {
+	/* .header .logo img {
 		transform: translate(40%);
-	}
+	} */
 
 	.header .sideBar ul {
 		margin-top: 82px;
@@ -204,16 +210,11 @@
 	.header .hidden{
 		display: none;
 	}
-	
-	
-}
 
-@media (max-width: 720px) {
-	.header .logo {
-		width: 70px;
-	}
-
+	
 	.header .sideBar {
 		width: 210px;
 	}
+	
+	
 }

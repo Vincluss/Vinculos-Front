@@ -1,4 +1,4 @@
-import Doe from '@/src/componentes/doacao_vinculos';
+import Doe from '@/src/componentes/doacaoVinculos';
 import Footer from '@/src/componentes/footer';
 import Wave from '@/src/componentes/wave';
 import VLibras from "@/src/componentes/vlibras";

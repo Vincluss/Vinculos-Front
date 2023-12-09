@@ -11,14 +11,24 @@ import User from "./user";
 import HamburgerMenu from "./hamburgerMenu";
 
 export default function HeaderUser({ bgColor }) {
-  // const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+  const [windowWidth, setWindowWidth] = useState(null);
 
-  // useEffect(() => {
-  //   const handleResize = () => setWindowWidth(window.innerWidth);
-  //   window.addEventListener("resize", handleResize);
-  //   return () => window.removeEventListener("resize", handleResize);
-  // }, []);
+  useEffect(() => {
+    const handleResize = () => {
+      setWindowWidth(window.innerWidth);
+    };
 
+    // Set initial window width
+    setWindowWidth(window.innerWidth);
+
+    // Add event listener for window resize
+    window.addEventListener("resize", handleResize);
+
+    // Remove event listener on component unmount
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
 
   const ApoieVinculos = () => {
     return (
@@ -46,14 +56,14 @@ export default function HeaderUser({ bgColor }) {
           <User />
         </ButtonMenuProvider>
       </div>
-      <Link href={'/home_usuario'} className={Style.logoContainer}>
+      <Link href={"/home_usuario"} className={Style.logoContainer}>
         <button className={Style.logo}>
           <Image src={Logo} alt="Logo" priority />
         </button>
       </Link>
 
       <div className={Style.hamburgerContainer}>
-        {/* {windowWidth > 721 && <ApoieVinculos />} */}
+        {windowWidth > 768 && <ApoieVinculos />}
         <ButtonMenuProvider>
           <HamburgerMenu />
         </ButtonMenuProvider>

@@ -1,14 +1,14 @@
 import Link from "next/link";
 
 import Vagas from "@/src/componentes/vagas";
-import Candidatos from "@/src/componentes/inclusao_home";
-import Cursos from "@/src/componentes/cursos_home";
+import Candidatos from "@/src/componentes/inclusaoHome";
+import Cursos from "@/src/componentes/cursosHome";
 import Footer from "@/src/componentes/footer";
 import Wave from '@/src/componentes/wave';
-import ResultadoComunidade from "@/src/componentes/resultados_comunidade";
+import ResultadoComunidade from "@/src/componentes/resultadosComunidade";
 import Parceiros from "@/src/componentes/parceiros";
 import VLibras from "@/src/componentes/vlibras";
-import HomeUsuario from "@/src/componentes/home_usuario";
+import HomeUsuario from "@/src/componentes/homeUser";
 import HeaderUser from "@/src/componentes/header/headerUser";
 
 export default function Usuario() {

@@ -1,10 +1,10 @@
 "use client";
 import Image from "next/image";
-import Style from "../css/homeGeral.module.css";
-import ImageMain from "@/src/assets/img-pcds/blob.png";
+import Style from "../css/homeUser.module.css";
+import ImageMain from "@/src/assets/img-efeitos/blob.png";
 import Link from "next/link";
 
-export default function HomeGeral() {
+export default function HomeUsuario() {
   return (
     <>
       <section className={Style.homeGeral}>
@@ -35,3 +35,18 @@ export default function HomeGeral() {
     </>
   );
 }
+
+          {/* <div className={Style.FormularioEmpresa}>
+            <h1 className={Style.frase2}>Encontre sua carreira conosco</h1>
+            <form className={Style.formulario}>
+              <input
+                className={Style.email}
+                type="text"
+                placeholder="insira seu email"
+                name="name"
+              />
+              <button className={Style.botao2} type="submit">
+                Enviar
+              </button>
+            </form>
+          </div> */}

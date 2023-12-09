@@ -1,4 +1,4 @@
-import Match from "@/src/componentes/match_empresa";
+import Match from "@/src/componentes/matchEmpresa";
 import Convuser from "@/src/componentes/converse_usuario";
 import Footer from "@/src/componentes/footer";
 import Wave from "@/src/componentes/wave";

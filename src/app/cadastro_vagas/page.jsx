@@ -1,4 +1,4 @@
-import CadastroVagas from "@/src/componentes/cadastra_vagas";
+import CadastroVagas from "@/src/componentes/cadastroVagas";
 import Footer from "@/src/componentes/footer";
 import Wave from "@/src/componentes/wave";
 import VLibras from "@/src/componentes/vlibras";
