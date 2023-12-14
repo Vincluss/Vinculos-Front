@@ -1,50 +1,88 @@
-.fundo_cursos{
-    width: 50%;
-    padding-top: 10px;
+.container {
+  width: 50%;
 }
 
-.fundo4{
-    height: 480px;
-    background-color: #003786;
+.cursosBg {
+  padding: 1rem 0;
+  @apply bg-header;
 }
 
-.titulo1{
-    text-align: center;
-    color: #fff;
-    font-size: clamp(1rem, 5vw, 5rem);
-    font-weight: bold;
+.titulo {
+  text-align: center;
+  color: #fff;
+  font-size: clamp(3rem, 5vw, 5rem);
+  font-weight: 400;
 }
 
-.imagens1{
-    display: flex;
-    justify-content: space-evenly;
-    margin-top: 50px;
+.imgContainer {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 1rem;
 }
 
-.cursos1, .cursos2, .cursos3{
-    width: 190px;
-    height: 190px;
-    cursor: pointer;
+.imgInclusao {
+  border-radius: 1rem;
+  width: 30%;
+  height: 190px;
+  cursor: pointer;
 }
 
-.button__container{
+.btnContainer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.btnCursos {
+  width: 150px;
+  padding: 10px;
+  background-color: #e1a54d;
+  color: #fff;
+  font-weight: bold;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btnCursos:hover {
+  background-color: #d1daff;
+  color: #003786;
+  transition: 1s;
+}
+
+@media only screen and (max-width: 1024px) {
+  .container {
     width: 100%;
-    display: flex;
-    justify-content: center;
+  }
+
+  .imgInclusao {
+    height: 250px;
+  }
 }
 
-.botao4{
-    width: 150px;
-    padding: 10px;
-    background-color: #E8A023;
-    color: #fff;
-    font-weight: bold;
-    border-radius: 10px;
-    margin-top: 60px;
-    transform: scale(1.05, 1.05);
+@media only screen and (max-width: 768px) {
+  .imgContainer {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .imgInclusao {
+    margin-top: 1rem;
+  }
+
+  .imgInclusao:first-child {
+    margin-top: 0;
+  }
+
+  .imgInclusao {
+    width: 60%;
+  }
 }
 
-.botao4:hover{
-    background-color: #E1A54D;
-    color: #F0F2FF;
+@media only screen and (max-width: 425px) {
+  .imgInclusao {
+    width: 90%;
+  }
 }

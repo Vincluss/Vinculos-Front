@@ -1,25 +1,25 @@
 import Image from "next/image";
 import Style from "../css/cursos_home.module.css";
-import Curso from "@/src/assets/img-pessoas/img-curso1.png";
-import Curso1 from "@/src/assets/img-pessoas/img-curso2.png";
-import Curso2 from "@/src/assets/img-pessoas/img-curso3.png";
+import Curso from "@/src/assets/img-pcds/cursoBraille.jpg";
+import Curso1 from "@/src/assets/img-pcds/pessoaLendo.jpg";
+import Curso2 from "@/src/assets/img-pcds/pessoasTrabalhando.webp";
 import Link from "next/link";
 
 export default function Cursos() {
   return (
-    <div className={Style.fundo_cursos}>
-      <div className={Style.fundo4}>
-        <h3 className={Style.titulo1}>Cursos</h3>
-        <div className={Style.imagens1}>
-          <Image className={Style.cursos1} src={Curso} alt="curso" />
-          <Image className={Style.cursos2} src={Curso1} alt="curso1" />
-          <Image className={Style.cursos3} src={Curso2} alt="curso2" />
+    <div className={Style.container}>
+      <div className={Style.cursosBg}>
+        <h3 className={Style.titulo}>Cursos</h3>
+        <div className={Style.imgContainer}>
+          <Image className={Style.imgInclusao} src={Curso} alt="curso" />
+          <Image className={Style.imgInclusao} src={Curso1} alt="curso1" />
+          <Image className={Style.imgInclusao} src={Curso2} alt="curso2" />
         </div>
-        <Link href="/Cursos">
-          <div className={Style.button__container}>
-            <button className={Style.botao4}>Ver Mais</button>
-          </div>
-        </Link>
+        <div className={Style.btnContainer}>
+          <Link href="/Cursos" className={Style.btnCursos}>
+            Ver Mais
+          </Link>
+        </div>
       </div>
     </div>
   );

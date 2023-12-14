@@ -1,0 +1,17 @@
+.wavesBg {
+  background: url(../assets/img-ondas/ondaBg.png) top center no-repeat;
+  background-size: cover;
+}
+
+.container{
+  width: 100%;
+  flex-direction: row;
+  display: flex;
+}
+
+@media only screen and (max-width: 1024px) {
+
+  .container{
+    flex-direction: column;
+  }
+}

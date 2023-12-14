@@ -1,44 +1,72 @@
-.titulo4{
-    text-align: center;
-    font-weight: bold;
-    color: #302C29;
-    font-size: clamp(1rem, 4vw, 4rem);
-    margin-top: 20px;
+.titulo {
+  text-align: center;
+  font-weight: 400;
+  color: #302c29;
+  font-size: clamp(1.6rem, 4vw, 4rem);
+  margin-top: 20px;
+  width: 90%;
+  margin: 2rem auto 1rem auto;
 }
 
-.quadrado_grande{
-    margin-top: 30px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+.resultsContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: stretch;
 }
 
-.quadrado1, .quadrado2, .quadrado3{
-    border: 1px solid #E8A023;;
-    width: 400px;
-    height: 400px;
-    border-radius: 10px;
+.imgContainer {
+  height: auto;
+  border: 1px solid #e8a023;
+  background: url(../assets/img-ondas/bg-adesivo2.png) center center no-repeat;
+  background-size: cover;
+  width: 27%;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
 }
 
-.redonda1, .redonda2, .redonda3{
-   margin-top: 20px;
-   margin-left: 80px;
+.imgResultsContainer {
+  width: 100%;
+  padding-bottom: 100%;
+  border-radius: 50%;
+  overflow: hidden;
+  position: relative;
 }
 
-.redonda1 img, .redonda2 img, .redonda3 img{
-    width: 300px;
-    height: 300px;
+.imgResults{
+  position: absolute;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
 }
 
-.titulo1{
-    font-size: clamp(1rem, 3vw, 3rem);
-    margin-left: 140px;
+.descricao {
+  font-size: clamp(1.7rem, 2vw, 2rem);
+  text-align: center;
+  margin: 2rem 0 4rem 0;
 }
 
-.descricao{
-    font-size: clamp(1rem, 2vw, 2rem);
-    text-align: center;
-    padding-top: 60px;
+@media only screen and (max-width: 768px) {
+  .resultsContainer {
+    flex-direction: column;
+    align-items: center;
+  }
+  .imgContainer {
+    margin-top: 1rem;
+    width: 60%;
+  }
+
+  .imgContainer:first-child {
+    margin-top: 0;
+  }
 }
 
-
+@media only screen and (max-width: 425px) {
+  .imgContainer {
+    margin-top: 1rem;
+    width: 90%;
+  }
+}
