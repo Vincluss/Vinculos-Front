@@ -6,7 +6,7 @@ import ResultadoEmpresa from "@/src/componentes/resultadoEmpresa";
 import InclusaoEmpresa from "@/src/componentes/candidatoEmpresa";
 import Wave from "@/src/componentes/wave";
 import VLibras from "@/src/componentes/vlibras";
-import Style from "@/src/css/mainPage.module.css"
+import Style from "../../css/mainPage.module.css"
 
 export default function Empresa() {
   return (

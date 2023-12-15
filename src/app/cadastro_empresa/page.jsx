@@ -1,65 +1,141 @@
-import Style from "@/src/css/cadastro_empresa.module.css";
+import Style from "../../css/cadastroEmpresa.module.css";
 import logo from "@/src/assets/logo-semfundo/5.png";
 import Image from "next/image";
 import Link from "next/link";
 import { VscArrowLeft } from "react-icons/vsc";
 import VLibras from "@/src/componentes/vlibras";
 
-export default function CadastroEmpresa(){
-    return(
-        <section className={Style.paginaCadastro}>
-            {/* Formulário de cadastro da empresa */}
-            {/* PRECISA FAZER O RESPONSIVO */}
-            
-            <div className={Style.caixaFormulario}>
-                <button className={Style.btn_sair}>
-                    <VscArrowLeft/>&nbsp; Sair
-                </button>
+export default function CadastroEmpresa() {
+  return (
+    <section className={Style.paginaCadastro}>
+      {/* Formulário de cadastro da empresa */}
+      {/* PRECISA FAZER O RESPONSIVO */}
 
-                <div className={Style.containerForms}>
-                    <h1 className={Style.tituloEmpresa}>EMPRESA</h1>
-                    <h1 className={Style.tituloCadastro}>CADASTRE-SE</h1>
+      <div className={Style.caixaFormulario}>
+        <Link href="/" className={Style.btn_sair}>
+          <VscArrowLeft />
+          &nbsp; Sair
+        </Link>
 
-                    {/* action serve para indicar o local que será enviado as informações do formulário */}
-                    <form action="/curriculo"  className={Style.formulario}>
-                        <label htmlFor="" >NOME DO COLABORADOR: </label><br/>
-                        <input type="text" name="nome" placeholder="DIGITE O SEU NOME" className={Style.estilizacaoInputs} required/><br/>
+        <div className={Style.containerForms}>
+          <h1 className={Style.tituloCadastro}>Cadastre sua empresa</h1>
 
-                        <label htmlFor="">EMAIL DO COLABORADOR: </label><br/>
-                        <input type="email" name="email" placeholder="DIGITE SEU EMAIL" className={Style.estilizacaoInputs} required/><br/>
-
-                        <label htmlFor="">EMPRESA</label><br/>
-                        <input type="text" name="empresa" title="Nome da sua empresa" className={Style.estilizacaoInputs} required/><br/>
-
-                        <label htmlFor="">CNPJ</label><br/>
-                        <input type="text" name="cnpj" className={Style.estilizacaoInputs} title="Formato esperado: 00.000.000/0000-00"
-                        pattern="\d{2}\.\d{3}\.\d{3}/\d{4}-\d{2}" required/>
-
-                        <div className={Style.centraalizarBtn}>
-                            <button type="submit" className={Style.btn_inscrever_se}>INSCREVER-SE</button>
-                        </div>
-                    </form>
-
-                    <Link href="/login_empresa" >JÁ POSSUO UMA CONTA</Link>
-                </div>
-
+          {/* action serve para indicar o local que será enviado as informações do formulário */}
+          <form action="/curriculo" className={Style.formulario}>
+            <div className={Style.formGroup}>
+              <label htmlFor="nome">NOME DO COLABORADOR: </label>
+              <input
+                id="nome"
+                type="text"
+                name="nome"
+                placeholder="DIGITE O SEU NOME"
+                className={Style.estilizacaoInputs}
+                required
+              />
             </div>
 
-            {/* Saudação da página */}
-            <div className={Style.caixaSaudacao}>
-                <h1 className={Style.titulo}>OLÁ!</h1>
-
-                <h2 className={Style.subtitulo}>
-                    insira seus dados pessoais para <br/>
-                    abrir uma conta conosco
-                </h2>
-                <div className={Style.logo}>
-                    <Image src={logo} alt="Logo da Vínculos"/>
-                </div>
-                
+            <div className={Style.formGroup}>
+              <label htmlFor="email">EMAIL DO COLABORADOR: </label>
+              <input
+                id="email"
+                type="email"
+                name="email"
+                placeholder="DIGITE SEU EMAIL"
+                className={Style.estilizacaoInputs}
+                required
+              />
             </div>
-            <VLibras forceOnload={true} />
 
-        </section>    
-    );
+            <div className={Style.formGroup}>
+              <label htmlFor="empresa">EMPRESA</label>
+              <input
+                id="empresa"
+                type="text"
+                name="empresa"
+                title="Nome da sua empresa"
+                placeholder="DIGITE O NOME DA SUA EMPRESA"
+                className={Style.estilizacaoInputs}
+                required
+              />
+            </div>
+            <div className={Style.formGroup}>
+              <label htmlFor="cnpj">CNPJ</label>
+              <input
+                id="cnpj"
+                type="text"
+                name="cnpj"
+                className={Style.estilizacaoInputs}
+                placeholder="00.000.000/0000-00"
+                title="Formato esperado: 00.000.000/0000-00"
+                pattern="\d{2}\.\d{3}\.\d{3}/\d{4}-\d{2}"
+                required
+              />
+            </div>
+
+            <div className={Style.formGroup}>
+              <label htmlFor="senha">
+                Senha
+                <span id="senhaHelperText" className={Style.visuallyHidden}>
+                  A senha deve conter pelo menos 8 caracteres, incluindo números
+                  e letras maiúsculas.
+                </span>
+              </label>
+              <input
+                id="senha"
+                type="password"
+                name="password"
+                className={Style.estilizacaoInputs}
+                title="No mínimo 8 caracteres, com 1 caracter especial e 1 número"
+                required
+                aria-describedby="senhaHelperText"
+              />
+            </div>
+            <div className={Style.formGroup}>
+              <label htmlFor="confirmaSenha">
+                Confirmar senha
+                <span id="confirmaSenhaHelper" className={Style.visuallyHidden}>
+                  A senha deve conter pelo menos 8 caracteres, incluindo números
+                  e letras maiúsculas.
+                </span>
+              </label>
+              <input
+                id="confirmaSenha"
+                type="password"
+                name="confirmPassword"
+                className={Style.estilizacaoInputs}
+                title="No mínimo 8 caracteres, com 1 caracter especial e 1 número"
+                required
+                aria-describedby="confirmaSenhaHelperText"
+              />
+            </div>
+
+            <div className={Style.centraalizarBtn}>
+              <button type="submit" className={Style.btnSubmit}>
+                INSCREVER-SE
+              </button>
+            </div>
+          </form>
+
+          <Link
+            href="/login_empresa"
+            aria-label="Login empresa"
+            className={Style.loginLink}
+          >
+            Já tem uma conta? Faça login aqui!
+          </Link>
+        </div>
+      </div>
+
+      {/* Saudação da página */}
+      <div className={Style.caixaSaudacao}>
+        <h1 className={Style.titulo}>OLÁ!</h1>
+
+        <h2 className={Style.subtitulo}>Insira seus dados e vincule-se!</h2>
+        <div className={Style.logo}>
+          <Image src={logo} alt="Logo da Vínculos" />
+        </div>
+      </div>
+      <VLibras forceOnload={true} />
+    </section>
+  );
 }

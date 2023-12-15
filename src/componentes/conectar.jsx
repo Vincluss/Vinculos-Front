@@ -11,25 +11,32 @@ export default function Conectar() {
         <h2 className={Style.titulo_conecte}>Conecte-se</h2>
       </div>
 
-      <button className={Style.botao_linkedin}>
+      <button className={Style.botao_linkedin} aria-label="Entrar com Linkedin">
         <FaLinkedin size={50} className={Style.corIcone} />
         <p className={Style.texto_linkedin}>Entrar com Linkedin</p>
       </button>
-      <button className={Style.botao_email}>
+      <button
+        className={Style.botao_email}
+        aria-label="Entrar com Email ou CPF"
+      >
         <MdOutlineEmail size={50} className={Style.corIcone} />
         <p className={Style.texto_email}>Entrar com Email ou CPF</p>
       </button>
 
       <div className={Style.container_curriculo}>
-        {/* <h2 className={Style.baixe}>Baixe seu Modelo de Currículo</h2> */}
-        <Link href="/curriculo">
-          <button className={Style.clique}>
-            Baixe seu modelo de currículo
-          </button>
+        <Link
+          href="/curriculo"
+          className={Style.clique}
+          aria-label="Baixar modelo de currículo"
+        >
+          Baixe seu modelo de currículo
         </Link>
-        <Link href="/editar_perfil"><button className={`${Style.botao_editar} ${Style.containerSubline}`}>
-                <span className={Style.subline}>Editar meu perfil</span>
-              </button>
+        <Link
+          href="/editar_perfil"
+          className={`${Style.botao_editar} ${Style.containerSubline}`}
+          aria-label="Editar meu perfil"
+        >
+          <span className={Style.subline}>Editar meu perfil</span>
         </Link>
       </div>
     </section>

@@ -1,0 +1,85 @@
+.fundo_candidato {
+  background-color: #e1a54d;
+  margin-top: 2rem;
+  padding-bottom: 1rem;
+}
+
+.titulo {
+  text-align: center;
+  color: #fff;
+  font-size: clamp(3rem, 5vw, 5rem);
+  font-weight: 400;
+  padding-top: 1rem;
+}
+
+.imagens {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.inclusao {
+  width: 29%;
+  height: 300px;
+  cursor: pointer;
+  border-radius: 2rem;
+}
+
+.btnContainer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn {
+  width: 29%;
+  padding: 15px 0;
+  font-size: 1.3rem;
+  background-color: #243b53;
+  color: #fff;
+  font-weight: 500;
+  border-radius: 10px;
+  margin-top: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn:hover {
+  color: #243b53;
+  background-color: #b5c8e2;
+  transition: 1s;
+}
+
+@media only screen and (max-width: 1024px) {
+  .imagens {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .inclusao {
+    width: 80%;
+    height: 400px;
+    margin-top: 1rem;
+  }
+
+  .inclusao:first-child {
+    margin-top: 0;
+  }
+
+  .btn {
+    width: 80%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .inclusao {
+    width: 90%;
+    height: 300px;
+  }
+  
+  .btn {
+    width: 90%;
+  }
+}

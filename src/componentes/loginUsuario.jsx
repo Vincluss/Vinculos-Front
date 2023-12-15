@@ -1,53 +1,91 @@
-import Style from "../css/login_usario.module.css"
+import Style from "../css/cadastro_usuario.module.css";
 import Image from "next/image";
-import Logo from '@/src/assets/logo-fundo/5.png'
-import Link from 'next/link';
+import Logo from "@/src/assets/logo-semfundo/5.png";
+import Link from "next/link";
+import { VscArrowLeft } from "react-icons/vsc";
+import VLibras from "@/src/componentes/vlibras";
 
-export default function Login() {
-    return (
+export default function Caduser() {
+  return (
+    <section className={Style.paginaCadastro}>
+      <div className={Style.caixaSaudacao}>
+        <h1 className={Style.titulo}>Bem vindo de volta!</h1>
 
-<div className={Style.Page}> 
+        <h2 className={Style.subtitulo}>
+          Para manter-se vinculado, faça o login!
+        </h2>
+        <div className={Style.logo}>
+          <Image src={Logo} alt="Logo da Vínculos" />
+        </div>
+      </div>
 
-    <div className={Style.Logo}>
-        <h2 className={Style.Titulo}> BEM VINDO DE VOLTA!</h2> 
-        <p className={Style.Subtitulo}> Para manter-se conectado conosco, faça login com seus dados pessoais. </p> 
-         <Image className={Style.Redonda}
-         src={Logo}
-         alt="Logo da vinculos comportos por um abraço"
-         />
+      <div className={Style.caixaFormulario}>
+        <Link href="/" className={Style.btn_sair}>
+          <VscArrowLeft />
+          &nbsp; Sair
+        </Link>
 
-    </div>
+        <div className={Style.containerForms}>
+          <h1 className={Style.tituloCadastro}>Login</h1>
 
-    <div className={Style.Dados}>
+          {/* action serve para indicar o local que será enviado as informações do formulário */}
+          <form action="/curriculo" className={Style.formulario}>
+            <div className={Style.formGroup}>
+              <label htmlFor="email">Email </label>
+              <input
+                id="email"
+                type="email"
+                name="email"
+                placeholder="DIGITE SEU EMAIL"
+                className={Style.estilizacaoInputs}
+                required
+              />
+            </div>
 
-       <Link href="home_geral"><button className={Style.Buttonsair}> SAIR </button></Link> 
+            <div className={Style.formGroup}>
+              <label htmlFor="senha">
+                Senha
+                <span id="senhaHelperText" className={Style.visuallyHidden}>
+                  A senha deve conter pelo menos 8 caracteres, incluindo números
+                  e letras maiúsculas.
+                </span>
+              </label>
+              <input
+                id="senha"
+                type="password"
+                name="password"
+                className={Style.estilizacaoInputs}
+                title="No mínimo 8 caracteres, com 1 caracter especial e 1 número"
+                required
+                aria-describedby="senhaHelperText"
+              />
+            </div>
 
-        <h2 className={Style.SubtituloForms}> USUÁRIO </h2>
-        <h1 className={Style.TituloForms}> ENTRAR </h1>
+            <div className={Style.centraalizarBtn}>
+              <button type="submit" className={Style.btnSubmit}>
+                Entrar
+              </button>
+            </div>
+          </form>
 
-        <form className={Style.Formulario} action="/processar-login" method="post" required>
-        <label className={Style.Label} htmlFor="email"> EMAIL: </label>
+          <Link
+            href="/login_usuario"
+            aria-label="Esqueci minha senha"
+            className={Style.loginLink}
+          >
+            Esqueceu sua conta? Clique aqui!
+          </Link>
+          <Link
+            href="/login_usuario"
+            aria-label="Cadastro usuário"
+            className={Style.loginLink}
+          >
+            Ainda não tem sua conta? Clique aqui!
+          </Link>
+        </div>
+      </div>
 
-        <br></br>
-
-        <input className={Style.Inputs} type="email" id="email" name="email" placeholder="DIGITE SEU EMAIL" required></input>
-        <br></br>
-    
-        <label className={Style.Label} htmlFor="senha"> SENHA: </label>
-
-        <br></br>
-
-        <input className={Style.Inputs} type="password" id="senha" name="senha" placeholder="DIGITE SUA SENHA" required></input>
-        </form>
-
-        <br></br>
-        <Link href="" ><p className={Style.Recuperacao_cadastrar}> Esqueceu a senha? clique aqui </p></Link>
-        <Link href="/cadastro_usuario" ><p className={Style.Recuperacao_cadastrar}> Ainda não tem perfil? criar perfil</p></Link>
-        <Link href="home_usuario" > <button className={Style.ButEntrar} type="submit" onClick="enviar formulario()"> ENTRAR </button></Link>
-        
-        
-    </div>
-
-</div>
-    );
+      <VLibras forceOnload={true} />
+    </section>
+  );
 }

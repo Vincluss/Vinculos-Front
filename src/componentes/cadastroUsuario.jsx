@@ -1,62 +1,115 @@
-import Style from '../css/cadastro_usuario.module.css'
+import Style from "../css/cadastro_usuario.module.css";
 import Image from "next/image";
-import Logo from '@/src/assets/logo-fundo/5.png'
-import Link from 'next/link';
+import Logo from "@/src/assets/logo-semfundo/5.png";
+import Link from "next/link";
+import { VscArrowLeft } from "react-icons/vsc";
+import VLibras from "@/src/componentes/vlibras";
 
 export default function Caduser() {
-    return (
+  return (
+    <section className={Style.paginaCadastro}>
+      {/* Formulário de cadastro da empresa */}
+      {/* PRECISA FAZER O RESPONSIVO */}
 
-<div className={Style.Page}> 
+      <div className={Style.caixaFormulario}>
+        <Link href="/" className={Style.btn_sair}>
+          <VscArrowLeft />
+          &nbsp; Sair
+        </Link>
 
-    <div className={Style.Dados}>
+        <div className={Style.containerForms}>
+          <h1 className={Style.tituloCadastro}>Cadastre-se</h1>
 
-       <Link href="home_geral"><button className={Style.Buttonsair}> SAIR </button></Link> 
+          {/* action serve para indicar o local que será enviado as informações do formulário */}
+          <form action="/curriculo" className={Style.formulario}>
+            <div className={Style.formGroup}>
+              <label htmlFor="email">Email </label>
+              <input
+                id="email"
+                type="email"
+                name="email"
+                placeholder="DIGITE SEU EMAIL"
+                className={Style.estilizacaoInputs}
+                required
+              />
+            </div>
 
-        <h2 className={Style.SubtituloForms}> USUÁRIO </h2>
-        <h1 className={Style.TituloForms}> CADASTRE-SE </h1>
+            <div className={Style.formGroup}>
+              <label htmlFor="cpf">CPF</label>
+              <input
+                id="cpf"
+                type="text"
+                name="cpf"
+                className={Style.estilizacaoInputs}
+                placeholder="000.000.000-00"
+                title="Formato esperado: 000.000.000-00"
+                pattern="\d{3}.\d{3}.\d{3}-\d{2}"
+                required
+              />
+            </div>
 
-        <form className={Style.Formulario} action="/processar-login" method="post" required>
-        <label className={Style.Label} for="email"> EMAIL: </label>
+            <div className={Style.formGroup}>
+              <label htmlFor="senha">
+                Senha
+                <span id="senhaHelperText" className={Style.visuallyHidden}>
+                  A senha deve conter pelo menos 8 caracteres, incluindo números
+                  e letras maiúsculas.
+                </span>
+              </label>
+              <input
+                id="senha"
+                type="password"
+                name="password"
+                className={Style.estilizacaoInputs}
+                title="No mínimo 8 caracteres, com 1 caracter especial e 1 número"
+                required
+                aria-describedby="senhaHelperText"
+              />
+            </div>
+            <div className={Style.formGroup}>
+              <label htmlFor="confirmaSenha">
+                Confirmar senha
+                <span id="confirmaSenhaHelper" className={Style.visuallyHidden}>
+                  A senha deve conter pelo menos 8 caracteres, incluindo números
+                  e letras maiúsculas.
+                </span>
+              </label>
+              <input
+                id="confirmaSenha"
+                type="password"
+                name="confirmPassword"
+                className={Style.estilizacaoInputs}
+                title="No mínimo 8 caracteres, com 1 caracter especial e 1 número"
+                required
+                aria-describedby="confirmaSenhaHelperText"
+              />
+            </div>
 
-        <br></br>
+            <div className={Style.centraalizarBtn}>
+              <button type="submit" className={Style.btnSubmit}>
+                Cadastrar-se
+              </button>
+            </div>
+          </form>
 
-        <input className={Style.Inputs} type="email" id="email" name="email" placeholder="DIGITE SEU EMAIL" required></input>
-        <br></br>
-    
-        <label className={Style.Label} for="senha"> SENHA: </label>
+          <Link href="/login_usuario" aria-label="Login usuário" className={Style.loginLink}>
+            Já tem uma conta? Faça login aqui!
+          </Link>
+        </div>
+      </div>
 
-        <br></br>
+      {/* Saudação da página */}
+      <div className={Style.caixaSaudacao}>
+        <h1 className={Style.titulo}>OLÁ!</h1>
 
-        <input className={Style.Inputs} type="password" id="senha" name="senha" placeholder="DIGITE SUA SENHA" required></input>
-        <input className={Style.Inputs} type="password" id="senha" name="senha" placeholder="CONFIRME SUA SENHA" required></input>
-
-        <br></br>
-
-        <label className={Style.Label} for="senha"> CPF: </label>
-        <br></br>
-        <input className={Style.Inputs} type="text" pattern='[0-9]' id="cpf" name="cpf" placeholder="DIGITE A APENAS NUMEROS" required></input>
-
-        </form>
-
-        <br></br>
-        <input className={Style.Inputcheck} type="checkbox" id="termos" name="termos" required></input>
-        <Link href=""> Li e aceito os TERMOS DE USO </Link>
-         <br></br>
-        <Link href="home_usuario" > <button className={Style.ButEntrar} type="submit" onClick="enviar formulario()"> INSCREVER-SE </button></Link>
-        
-        
-    </div>
-
-    <div className={Style.Logo}>
-        <h2 className={Style.Titulo}> OLÁ!</h2> 
-        <p className={Style.Subtitulo}> Insira seus dados pessoais para abrir uma conta conosco. </p> 
-         <Image className={Style.Redonda}
-         src={Logo}
-         alt="Logo da vinculos comportos por um abraço"
-         />
-
-    </div>
-
-</div>
-    );
+        <h2 className={Style.subtitulo}>
+          Insira seus dados e vincule-se!
+        </h2>
+        <div className={Style.logo}>
+          <Image src={Logo} alt="Logo da Vínculos" />
+        </div>
+      </div>
+      <VLibras forceOnload={true} />
+    </section>
+  );
 }

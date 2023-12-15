@@ -13,10 +13,11 @@
 }
 
 .titulo{
-    font-weight: bold;
+    font-weight: 500;
     @apply text-font;
     font-size: clamp(3rem, 4vw, 5rem);
     margin-bottom: 4%;
+    text-align: center;
 }
 
 .containerPlano{
@@ -26,24 +27,25 @@
     justify-content: center;
     width: 80%;
     border-radius: 2rem;
-    padding: 5%;
     background-color: #fafa;
-    background: url('../assets/img-ondas/bg-adesivo.png') top center no-repeat;
+    background: url('../assets/img-ondas/bg-adesivo.png') center center no-repeat;
     background-size: cover;
+    padding: 2rem 1rem 4rem 1rem;
 }
 
 .tituloAssinatura{
-    font-weight: 900;
+    font-weight: 700;
     margin-bottom: 2%;
-    font-size: clamp(2rem, 2vw, 3rem);
+    font-size: clamp(3rem, 2vw, 3rem);
     @apply text-font;
     margin-top: 2%;
+    text-align: center;
 }
 
 
 .descricao{
     font-size: clamp(2rem, 2vw, 3rem);
-    font-weight: 900;
+    font-weight: 500;
     margin-bottom: 2%;
     padding: 0 3rem;
     text-align: center;
@@ -55,7 +57,7 @@
 
 .btn_assinatura{
     @apply bg-btn-home;
-    padding: 1% 2%;
+    padding: 1rem;
     border-radius: 10px;
     color: #fff;
     font-weight: 600;
@@ -63,13 +65,13 @@
 }
 
 .btn_assinatura:hover{
-    @apply bg-header;
-    transition: 2s all;
+    @apply bg-blue-400;
+    transition: 1s all;
 }
 
 .logoContainer{
-    width: 200px;
-    height: 200px;
+    width: 15rem;
+    height: 15rem;
     background-color: #fafafa;
     border-radius: 100%
 }
@@ -79,22 +81,9 @@
     height: 100%;
 }
 
-@media (min-width: 480px) and (max-width: 600px){
-    .titulo{
-        font-size: 2rem;
-    }
 
-    .tituloAssinatura{
-        font-size: 1.6rem;
-    }
-}
-
-@media(max-width: 480px){
-    .titulo{
-        font-size: 1.2rem;
-    }
-
-    .tituloAssinatura{
-        font-size: 1rem;
+@media only screen and (max-width: 768px) {
+    .containerPlano{
+        width: 90%;
     }
 }

@@ -1,0 +1,76 @@
+.titulo {
+  text-align: center;
+  font-weight: 400;
+  color: #302c29;
+  font-size: clamp(3rem, 4vw, 4rem);
+  margin-top: 20px;
+}
+
+.assinaturaContainer {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 1rem;
+  padding: 0 1.5rem;
+}
+
+.assinatura {
+  max-width: 100%;
+  flex: 1;
+  padding: 3.5rem 2rem;
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  align-items: center;
+  background: url("../assets/img-ondas/ondaBg.png") center center no-repeat;
+  background-size: cover;
+}
+
+.titulo {
+  font-size: clamp(2rem, 4vw, 3rem);
+}
+
+.descricao {
+  font-size: clamp(1.5rem, 1.5vw, 2rem);
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.money {
+  font-size: clamp(1.5rem, 2vw, 2rem);
+}
+
+.btnContainer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn {
+  width: 30%;
+  padding: 15px 0;
+  background-color: #243b53;
+  color: #fff;
+  font-weight: 500;
+  border-radius: 10px;
+  margin-top: 25px;
+  text-align: center;
+  font-size: 1.3rem;
+}
+
+.btn:hover {
+  color: #243b53;
+  background-color: #b5c8e2;
+  transition: 1s;
+}
+
+@media only screen and (max-width: 1024px) {
+    .assinaturaContainer{
+        flex-direction: column;
+    }
+    .btn{
+        width: calc(100% - 3rem);
+    }
+}

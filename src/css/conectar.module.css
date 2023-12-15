@@ -75,9 +75,9 @@
   background-color: #0048ae;
   padding: 15px;
   color: #f0f2ff;
-  /* font-weight: bold; */
+  text-align: center;
+  width: 50%;
   border-radius: 10px;
-  width: 535px;
   text-transform: uppercase;
   margin-top: 20px;
   font-size: clamp(1rem, 2vw, 3rem);
