@@ -1,3 +1,4 @@
+import React, { useState } from "react";
 import Style from "../css/candidato.module.css";
 
 const UploadIcon = () => {
@@ -10,6 +11,16 @@ const UploadIcon = () => {
 }
 
 export default function Perfil() {
+  const [openModal, setOpenModal] = useState(true);
+
+  const handleOpenModal = () => {
+    setOpenModal(true);
+  }
+
+  const handleCloseModal = () => {
+    setOpenModal(false);
+  }
+
   return (
     <>
       <h2 className={Style.titulo_form}>Perfil do Candidato</h2>
@@ -37,7 +48,7 @@ export default function Perfil() {
             </label>
             <label htmlFor="termosDeUso" className={Style.label}>
               Li e aceito os{' '}
-              <a className={Style.linha} href="/termos-de-uso" target="_blank">
+              <a className={Style.linha} onClick={handleOpenModal}>
                 termos de uso
               </a>
               .
@@ -45,6 +56,25 @@ export default function Perfil() {
           </div>
         </form>
         <button className={Style.enviar} type="submit">Enviar</button>
+
+        {openModal && (
+          <div className={Style.modal}>
+            <div className={Style.modalTop}>
+              <h3>Termos de Uso</h3>
+              <p onClick={handleCloseModal}>X</p>
+            </div>
+            <ol>
+              <li>Objetivo: O presente termo estabelece as diretrizes e compromissos entre vínculos e seus empregados com deficiência, visando criar um ambiente de trabalho inclusivo e respeitoso.</li>
+              <li>Igualdade de Oportunidades: vínculos compromete-se a promover a igualdade de oportunidades no ambiente de trabalho, assegurando que empregados com deficiência tenham acesso a todas as atividades e benefícios oferecidos aos demais colaboradores.</li>
+              <li>Capacitação e Desenvolvimento: Vínculos fornecerá oportunidades de capacitação e desenvolvimento profissional específicas para empregados com deficiência, promovendo o crescimento de suas habilidades e competências.</li>
+              <li>Ambiente Livre de Discriminação: Discriminação de qualquer forma, incluindo aquela relacionada à deficiência, será estritamente proibida. A empresa busca criar um ambiente de trabalho onde todos se sintam respeitados e valorizados.</li>
+              <li>Comunicação Acessível: Garantiremos que todas as formas de comunicação interna e externa sejam acessíveis a todos os colaboradores, independentemente de suas limitações, proporcionando meios alternativos quando necessário.</li>
+              <li>Saúde e Bem-Estar: vínculos está comprometida em oferecer suporte à saúde e ao bem-estar dos empregados com deficiência, proporcionando condições de trabalho adequadas e implementando medidas para prevenir qualquer forma de discriminação relacionada à saúde.</li>
+              <li>Disposições Gerais: Este termo de uso será revisado periodicamente para garantir sua relevância e eficácia. Empregados são incentivados a reportar quaisquer preocupações relacionadas à inclusão, assegurando a contínua melhoria do ambiente de trabalho. Ao aceitar este termo, empregados e a empresa reafirmam seu compromisso com a promoção da inclusão e igualdade, contribuindo para um ambiente de trabalho diversificado e respeitoso.</li>
+            </ol>
+          </div>
+        )}
+
       </section>
     </>
   );

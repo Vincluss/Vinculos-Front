@@ -1,3 +1,5 @@
+'use client'
+
 import Candidato from "@/src/componentes/formulario";
 import Perfil from "@/src/componentes/perfilCandidato";
 import Wave from "@/src/componentes/wave";

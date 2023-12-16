@@ -62,4 +62,58 @@
 
 .linha{
  text-decoration: underline;
+ cursor: pointer;
+}
+
+.modal {
+  position: fixed;
+  bottom: 50%;
+  left: 50%;
+  transform: translate(-50%, 50%);
+
+  width: 60%;
+  height: 85vh;
+  background-color: #d3c9c9;
+  z-index: 999;
+  padding: 34px;
+  border-radius: 8px;
+  overflow-y: auto;
+}
+
+.modalTop {
+  display: flex;
+  justify-content: space-between;
+}
+
+.modalTop h3 {
+  font-size: 34px;
+  margin-bottom: 24px;
+}
+
+.modal ol li {
+  list-style: decimal;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.modal ol li:last-of-type {
+  margin-bottom: -10px;
+}
+
+@media (max-width: 1280px) {
+  .modal {
+    width: 70%;
+  }
+}
+
+@media (max-width: 768px) {
+  .modal {
+    width: 80%;
+  }
+}
+
+@media (max-width: 480px) {
+  .modal {
+    width: 95%;
+  }
 }
