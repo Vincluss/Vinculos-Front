@@ -1,0 +1,109 @@
+.section {
+  width: 65%;
+  margin: auto;
+}
+
+.titulo {
+  margin-top: 20px;
+}
+
+.titulo h2 {
+  font-size: clamp(3rem, 3vw, 4rem);
+  font-weight: 600;
+}
+
+.candidatosContainer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.candidatosContent {
+  display: flex;
+  column-gap: 25px;
+  margin-top: 45px;
+}
+
+.imagemContainer {
+  width: 40%;
+}
+
+.imagemCandidato {
+  height: 100%;
+  width: 100%;
+}
+
+.candidatosContent .candidatosInfo {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.candidatosContent .candidatosInfo h3 {
+  font-size: 40px;
+  font-weight: 400;
+}
+
+.candidatosContent .candidatosInfo p {
+  font-size: 25px;
+}
+
+.candidatosContent .candidatosInfo .saibaMais {
+  font-size: 25px;
+  color: #fff;
+  background-color: #243b53;
+  padding: 8px 20px;
+  border-radius: 10px;
+  align-self: flex-start;
+  width: 40%;
+}
+
+.buttonContainer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 3rem 0 0 0;
+}
+
+.vejaMais {
+  width: 250px;
+  font-size: 20px;
+  background-color: #243b53;
+  color: #fff;
+  border-radius: 10px;
+  padding: 15px;
+}
+
+@media only screen and (max-width: 1024px) {
+  .section {
+    width: 90%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .candidatosContainer {
+    align-items: center;
+  }
+  .candidatosContent {
+    flex-direction: column;
+    align-items: center;
+    row-gap: 1.5rem;
+  }
+
+  .imagemContainer{
+    width: 70%;
+  }
+
+  .candidatosInfo {
+    text-align: center;
+    align-items: center;
+    row-gap: .7rem;
+  }
+
+  .candidatosContent .candidatosInfo .saibaMais {
+    align-self: auto;
+    width: 80%;
+  }
+}

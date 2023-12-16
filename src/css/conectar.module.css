@@ -8,13 +8,13 @@
 }
 
 .titulo_candidato {
-  font-size: clamp(1rem, 4vw, 4rem);
-  font-weight: bold;
+  font-size: clamp(3rem, 4vw, 4rem);
+  font-weight: 500;
   color: #302c29;
 }
 
 .titulo_conecte {
-  font-size: clamp(1rem, 2vw, 3rem);
+  font-size: clamp(2rem, 2vw, 3rem);
   color: #302c29;
   text-align: center;
 }
@@ -57,7 +57,7 @@
 }
 
 .botao_editar {
-  font-size: clamp(1rem, 2vw, 2rem);
+  font-size: clamp(1.5rem, 2vw, 2rem);
   border-bottom: 1px solid #0048ae;
   color: #302c29;
   margin-top: 30px;
@@ -126,4 +126,12 @@
 
 .containerSubline:hover::before {
   top: 0;
+}
+
+@media only screen and (max-width: 768px) {
+  .botao_linkedin,
+  .botao_email,
+  .clique{
+    width: 100%;
+  }
 }
