@@ -6,6 +6,7 @@ import Footer from "@/src/componentes/footer";
 import Header from "../componentes/headerPublico";
 import Wave from "../componentes/wave";
 import VLibras from "@/src/componentes/vlibras";
+import Conteudo_sobre from "../componentes/Conteudo_sobre";
 
 export default function Home() {
   return (
@@ -16,12 +17,13 @@ export default function Home() {
       </header>
       <HomeGeral />
       <main>
-        {/* <Vagas /> */}
+        <Conteudo_sobre />
+        <Vagas />
         <Depoimentos />
         <Parceiros />
       </main>
-      <Footer bgColor="#003786"/>
-      <VLibras forceOnload={true}/>
+      <Footer bgColor="#003786" />
+      <VLibras forceOnload={true} />
     </>
   );
 }

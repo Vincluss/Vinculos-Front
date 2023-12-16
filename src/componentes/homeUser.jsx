@@ -19,7 +19,7 @@ export default function HomeUsuario() {
 
           <div className={Style.formularioEmpresa}>
             <h1 className={Style.frase}>
-              Faça seu cadastro e tenha acesso aos nossos serviços
+              Encontre a sua carreira conosco!
             </h1>
             <form className={Style.btnContainer}>
               <label htmlFor="email" className={Style.label}>

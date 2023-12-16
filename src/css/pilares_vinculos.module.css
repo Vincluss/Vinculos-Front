@@ -1,8 +1,6 @@
 .Pilares{
     width: 90%;
-    height: 200vh;
     margin: auto;
-    margin-top: 10vh;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -15,6 +13,7 @@
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    margin-top: 10px;
 }
 
 .SimboloMission{
@@ -45,7 +44,7 @@
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    
+    margin-top: 10px;
 }
 
 .SimboloVision{
@@ -73,10 +72,10 @@
 
 .Value{
     width: 100%;
-    height: 81vh;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    margin-top: 10px;
 }
 
 .SimboloValue{
@@ -89,7 +88,6 @@
 
 .TextoValue{
     width: 70%;
-    height: 100vh;
     display: flex;
     flex-direction: column;
     color: black;
@@ -97,4 +95,33 @@
     background-color: #F0F2FF;
     border-radius: 10px;
     padding: 30px;
+}
+
+.TituloSobre{
+    font-weight: bold;
+    color: #302C29;
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: clamp(1rem, 4vw, 4rem);
+}
+
+/* responsividade */
+
+@media screen and (max-width: 1100px) and (min-width: 300px){
+    .SimboloMission{
+        display: none;
+    }
+    
+    .SimboloVision{
+        display: none;
+    }
+
+    .SimboloValue{
+        display: none;
+    }
+
+    .TextoMission, .TextoValue, .TextoVision{
+        width: 80%;
+        height: auto;
+    }
 }

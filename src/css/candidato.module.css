@@ -73,7 +73,7 @@
 
   width: 60%;
   height: 85vh;
-  background-color: #d3c9c9;
+  background-color: #B5C8E2;
   z-index: 999;
   padding: 34px;
   border-radius: 8px;
@@ -86,18 +86,29 @@
 }
 
 .modalTop h3 {
-  font-size: 34px;
+  font-size: clamp(1rem, 3vw, 2rem);
   margin-bottom: 24px;
+  font-weight: bold;
 }
 
 .modal ol li {
   list-style: decimal;
-  font-size: 18px;
+  font-size: clamp(1rem, 1.6vw, 2rem);
   margin-bottom: 10px;
 }
 
 .modal ol li:last-of-type {
   margin-bottom: -10px;
+}
+
+.modalTop p{
+  background-color: red;
+  font-size: clamp(1rem, 2vw, 2rem);
+  border-radius: 10px;
+  color: #fff;
+  padding: 0px 10px 0px 10px;
+  cursor: pointer;
+  height: 40px;
 }
 
 @media (max-width: 1280px) {

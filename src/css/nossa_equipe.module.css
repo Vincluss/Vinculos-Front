@@ -4,11 +4,11 @@
     height: 800px;
     margin-top: 150px;
     text-align: center;
-    font-size: 10vh;
+    font-size: clamp(1rem, 5vw, 5rem);
+    font-weight: bold;
 }
 
 .Perfis{
-    position: relative;
     width: 90%;
     height: 600px;
     margin:auto;
@@ -38,7 +38,7 @@
 }
 
 .TextoPerfil1, .TextoPerfil2, .TextoPerfil3, .TextoPerfil4, .TextoPerfil5, .TextoPerfil6, .TextoPerfil7{
-    font-size: 20px;
+    font-size: clamp(1rem, 1.5vw, 3rem);
 }
 
 .TextoPerfil1:hover, .TextoPerfil2:hover, .TextoPerfil3:hover, .TextoPerfil4:hover, .TextoPerfil5:hover, .TextoPerfil6:hover, .TextoPerfil7:hover{

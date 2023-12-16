@@ -11,7 +11,7 @@ const UploadIcon = () => {
 }
 
 export default function Perfil() {
-  const [openModal, setOpenModal] = useState(true);
+  const [openModal, setOpenModal] = useState(false);
 
   const handleOpenModal = () => {
     setOpenModal(true);
