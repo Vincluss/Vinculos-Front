@@ -12,7 +12,7 @@ export const Daniele = [
         genero: 'Feminino',
         estadoCivil: '?',
 
-        sobre: 'sou formada em psicologia na universidade federal do rio de janeiro com pouca experiencia e estou em busca de uma oportunidade na área.',
+        sobre: 'Sou formada em Psicologia na Universidade Federal do Rio de Janeiro com pouca experiência e estou em busca de uma oportunidade na área.',
 
         habilidades: ['Psicologia clínica para surdos', 'Pacote Office', 'Aula de Libras']
     }
@@ -28,7 +28,7 @@ export const Gustavo = [
         genero: 'Masculino',
         estadoCivil: '?',
 
-        sobre: 'destaca-se como uma engenheira de software com experiência sólida, trazendo inovação e habilidades técnicas excepcionais para desafios complexos.',
+        sobre: 'Destaca-se como uma Engenheira de Software com experiência sólida, trazendo inovação e habilidades técnicas excepcionais para desafios complexos.',
 
         habilidades: ['Desenvolvimento de Software Avançado', 'Resolução de Problemas Complexos', 'Trabalho em Equipe Colaborativo']
     }
@@ -44,7 +44,7 @@ export const DaniloModal = [
         genero: 'Masculino',
         estadoCivil: '?',
 
-        sobre: 'é um gestor de projetos multifacetado, combinando visão estratégica, liderança inspiradora e expertise em administração para impulsionar o sucesso corporativo.',
+        sobre: 'É um gestor de projetos multifacetado, combinando visão estratégica, liderança inspiradora e expertise em administração para impulsionar o sucesso corporativo.',
 
         habilidades: ['Gestão de Projetos', 'Liderança Inspiradora', 'Visão Estratégica']
     }

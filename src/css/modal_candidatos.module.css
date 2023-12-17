@@ -1,4 +1,5 @@
 #modalCandidatos {
+<<<<<<< Updated upstream
     position: fixed;
     width: 70%;
     height: 580px;
@@ -8,106 +9,154 @@
     z-index: 999;
     border-radius: 10px;
     padding: 30px 50px 30px 50px;
+=======
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 70%;
+  max-height: 95vh;
+  /* top: 2.5%; */
+  display: flex;
+  flex-direction: column;
+  background-color: aliceblue;
+  /* grid-template-areas: "image info" "about about" "skills skills"; */
+  z-index: 999;
+  border-radius: 10px;
+  padding: 30px 50px 30px 50px;
+  row-gap: 0.5rem;
+  overflow-y: scroll;
+  align-self: center;
+>>>>>>> Stashed changes
 }
 
-#modalCandidatos .imagem {
-    grid-area: image;
-}
-
-#modalCandidatos .info{
-    grid-area: info;
-    font-size: clamp(1rem, 1.2vw, 4rem);
-    display: flex;
-    width: 50%;
-    height: 60%;
-}
-
-.nome_candidato{
-    font-size: clamp(1rem, 2vw, 4rem);
-    font-weight: bold;
+.nome_candidato {
+  font-size: clamp(1.5rem, 2vw, 4rem);
+  font-weight: bold;
 }
 
 .quadrado_cima {
-    display: flex;
-    justify-content: flex-end;
+  display: flex;
+  justify-content: flex-end;
 }
 
-.quadrado_meio, .quadrado_baixo{
-    display: flex;
-    justify-content: space-around;
+.quadrado_meio,
+.quadrado_baixo {
+  display: flex;
+  justify-content: space-between;
 }
 
-.quadrado_baixo{
-    display: flex;
-    flex-direction: column;
+.quadrado_meio {
+  column-gap: 1rem;
+}
+
+.imagemContainer {
+  flex: 1;
+}
+
+.imagem {
+  height: 100%;
+}
+
+#modalCandidatos .info {
+  grid-area: info;
+  font-size: clamp(1.5rem, 1.2vw, 2rem);
+  display: flex;
+  flex: 2;
+}
+
+.quadrado_baixo {
+  display: flex;
+  flex-direction: column;
+  row-gap: 0.5rem;
 }
 
 #modalCandidatos .about {
-    grid-area: about;
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    height: 30%;
+  grid-area: about;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 30%;
 }
 
-.texto_sobre{
-    font-size: clamp(1rem, 1.6vw, 4rem);
+.texto_sobre {
+  font-size: clamp(1.5rem, 2vw, 3rem);
 }
 
 #modalCandidatos .skills {
-    grid-area: skills;
-    display: flex;
-    flex-direction: column;
-    width: 50%;
-    height: 30%;
+  grid-area: skills;
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  height: 30%;
 }
 
-.titulo_candidato{
-    font-size: clamp(1rem, 2.6vw, 4rem);
-    font-weight: bold;
-    width: 50%;
+.titulo_candidato {
+  font-size: clamp(1.5rem, 2.5vw, 4rem);
+  font-weight: bold;
+  width: 50%;
 }
 
-.botaoFechar{
-    background-color: red;
-    width: 40px;
-    height: 40px;
-    font-size: clamp(1rem, 2vw, 4rem);
-    color: #fff;
-    border-radius: 10px;
-    text-align: center;
-    cursor: pointer;
-    justify-content: center;
+.botaoFechar {
+  background-color: red;
+  width: 40px;
+  height: 40px;
+  font-size: clamp(1rem, 2vw, 4rem);
+  color: #fff;
+  border-radius: 10px;
+  text-align: center;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.info{
-    display: flex;
-    flex-direction: column;
-    color: #302C29;
+.info {
+  display: flex;
+  flex-direction: column;
+  color: #302c29;
 }
 
-.voltar{
-    background-color: #E8A023;
-    width: 210px;
-    height: 50px;
-    border-radius: 10px;
-    color: #fff;
-    font-size: clamp(1rem, 1.6vw, 4rem);
-    font-weight: bold;
-    text-align: center;
+.voltar {
+  background-color: #e8a023;
+  width: 210px;
+  height: 50px;
+  border-radius: 10px;
+  color: #fff;
+  font-size: clamp(1.5rem, 1.6vw, 2rem);
+  font-weight: bold;
+  text-align: center;
 }
 
-.alinhamento_botao{
-    display: flex;
-    justify-content: center;
+.alinhamento_botao {
+  display: flex;
+  justify-content: center;
 }
 
-.titulo_sobre, .titulo_conhecimento{
-    font-size: clamp(1rem, 2vw, 4rem);
-    font-weight: bold;
-    color: #302C29;
+.titulo_sobre,
+.titulo_conhecimento {
+  font-size: clamp(1.5rem, 2vw, 3rem);
+  font-weight: bold;
+  color: #302c29;
 }
 
 .skills .informacoesSobre li {
-    list-style-type: circle !important;
+  list-style-type: circle !important;
+  font-size: clamp(1.5rem, 2vw, 3rem);
+}
+
+@media only screen and (max-width: 768px) {
+  .quadrado_meio {
+    flex-direction: column;
+    row-gap: 1rem;
+    column-gap: 0;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  #modalCandidatos {
+    width: 90%;
+    align-self: center;
+    justify-self: center;
+  }
 }

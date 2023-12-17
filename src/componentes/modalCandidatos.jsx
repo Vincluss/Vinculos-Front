@@ -14,13 +14,14 @@ export const ModalCandidatos = ({ imagem, nome, email, localidade, deficiencia, 
 
             <div className={styles.quadrado_meio}>
                 {/*Grid: image*/}
-                <div className={styles.imagem}>
+                <div className={styles.imagemContainer}>
                     <Image
                         src={imagem}
                         alt={nome}
                         priority
                         width={200}
                         height={200}
+                        className={styles.imagem}
                     />
                 </div>
 

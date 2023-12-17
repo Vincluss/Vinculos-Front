@@ -1,5 +1,5 @@
 import Match from "@/src/componentes/matchEmpresa";
-import Convuser from "@/src/componentes/converse_usuario";
+import Convuser from "@/src/componentes/converseUsuario";
 import Footer from "@/src/componentes/footer";
 import Wave from "@/src/componentes/wave";
 import VLibras from "@/src/componentes/vlibras";
