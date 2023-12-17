@@ -97,15 +97,18 @@
 
 .header .sideBar details p {
   font-size: 20px !important;
+  cursor: pointer;
 }
 
 .header .sideBar summary::after {
   content: "\25B6";
   margin-left: 0.5em;
+  cursor: pointer;
 }
 
 .header .sideBar details[open] summary::after {
   content: "\25BC";
+  cursor: pointer;
 }
 
 /*Responsividade*/
