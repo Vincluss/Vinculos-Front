@@ -70,10 +70,9 @@
   bottom: 50%;
   left: 50%;
   transform: translate(-50%, 50%);
-
-  width: 60%;
-  height: 85vh;
-  background-color: #B5C8E2;
+  width: 75%;
+  height: 90vh;
+  background-color: aliceblue;
   z-index: 999;
   padding: 34px;
   border-radius: 8px;

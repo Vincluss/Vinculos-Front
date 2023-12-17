@@ -1,8 +1,8 @@
 #modalCandidatos {
     position: fixed;
     width: 70%;
-    height: 95%;
-    top: 2.5%;
+    height: 580px;
+    top: 30px;
     background-color: aliceblue;
     grid-template-areas: 'image info' 'about about' 'skills skills';
     z-index: 999;
