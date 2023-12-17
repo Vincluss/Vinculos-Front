@@ -66,7 +66,7 @@ export default function NossaEquipe() {
                         <Image src={Gabs} />
                     </div>
                     <div className={Style.TextoPerfil6}>
-                        <Link href="https://www.linkedin.com/in/gabriellahernandes/" target="_blank">Gabriella Hernandes<br></br>Design e Desenvolvedora Full Stack</Link>
+                        <Link href="https://www.linkedin.com/in/gabriellahernandes/" target="_blank">Gabriella Hernandes<br></br>Designer e Desenvolvedora Full Stack</Link>
                     </div>
                 </div>
 
