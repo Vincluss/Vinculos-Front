@@ -134,13 +134,16 @@
 
 .header .sideBar details summary,
 .header .sideBarUser details summary {
-	font-size: 14px;
+	font-size: clamp(1rem, 1.6vw, 2rem) !important;
 	margin-top: 8px;
+	cursor: pointer;
+	font-weight: bold;
 }
 
 .header .sideBar details p,
 .header .sideBarUser details p {
 	font-size: 20px !important;
+	cursor: pointer;
 }
 
 .header .sideBar summary::after,

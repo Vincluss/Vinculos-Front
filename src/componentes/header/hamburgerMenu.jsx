@@ -1,4 +1,5 @@
 import { Squash as Hamburger } from "hamburger-react";
+import Link from "next/link";
 import Style from "../../css/headerUser.module.css";
 import { useButtonMenu } from "./useButtonMenu";
 
@@ -24,17 +25,25 @@ export default function HamburgerMenu() {
         }`}
       >
         <ul>
-          <li>INÍCIO</li>
-          <li>SOBRE</li>
+          <Link href="/">
+            <li>INÍCIO</li>
+          </Link>
+          <Link href="/sobre">
+            <li>SOBRE</li>
+          </Link>
           <details>
             <summary>INCLUSÃO</summary>
             <p>Encontrar talentos</p>
-            <p>Vagas</p>
+            <Link href="/usuario_vagas">
+              <p>Vagas</p>
+            </Link>
           </details>
 
           <details>
             <summary>CURSOS</summary>
-            <p>Para candidatos</p>
+            <Link href="/Cursos">
+              <p>Para candidatos</p>
+            </Link>
           </details>
         </ul>
 

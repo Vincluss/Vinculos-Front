@@ -67,17 +67,23 @@ export default function Header({ bgColor }) {
         }`}
       >
         <ul>
-          <li>INÍCIO</li>
-          <li>SOBRE</li>
+          <Link href="/">
+            <li>INÍCIO</li>
+          </Link>
+          <Link href="/sobre">
+            <li>SOBRE</li>
+          </Link>
           <details>
             <summary>INCLUSÃO</summary>
             <p>Encontrar talentos</p>
-            <p>Vagas</p>
+            <Link href="/usuario_vagas">
+              <p>Vagas</p>
+            </Link>
           </details>
 
           <details>
             <summary>CURSOS</summary>
-            <Link href="/cursos">
+            <Link href="/Cursos">
               <p>Para candidatos</p>
             </Link>
           </details>
