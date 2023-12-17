@@ -1,7 +1,7 @@
-import Style from "@/src/css/candidatos_inclusãoEmpresa.module.css"
+import Style from "@/src/css/candidatos_inclusaoEmpresa.module.css"
 import Link from "next/link"
 
-export default function CandidatosInclusãoEmpresa() {
+export default function CandidatosInclusaoEmpresa() {
     return (
         <section className={Style.Candidatos}>
             <h1 className={Style.TituloCandidatos}>Candidatos</h1>

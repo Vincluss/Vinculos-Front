@@ -1,14 +1,14 @@
 .Vagas{
-    position: relative;
-    width: 80%;
-    height: 85vh;
+    width: 85%;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
     margin: auto;
-    margin-top: 15vh;
 }
 
 .TituloVagas{
-    font-size: 50px;
-    
+    font-size: clamp(3rem, 4vw, 4rem);
+    font-weight: bold;
 }
 
 .VagasConteudo{
@@ -17,11 +17,8 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
     justify-content: space-evenly;
-    margin-top: 5vh;
+    margin-top: 20px;
 }
 
 .Vaga1, .Vaga2, .Vaga3{
@@ -32,27 +29,40 @@
     align-items: center;
     justify-content: space-evenly;
     background-color: #D2DEEE;
-    border-radius: 5vh;
-    font-size: 4vh;
+    border-radius: 20px;
+    font-size: clamp(1rem, 1.6vw, 2rem);
 }
 
 .BotaoVermais1{
-    width: 15%;
-    height: 10vh;
+    width: 280px;
+    height: 50px;
     background-color: #243B53;
-    border-radius: 2vh;
-    font-size: 5vh;
-    color: #FFF;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-evenly;
+    font-size: clamp(1rem, 1.6vw, 2rem);
+    color: #fff;
+    text-align: center;
+    border-radius: 10px;
+    padding-top: 10px;
     margin: auto;
-    margin-top: 15vh;
+    margin-top: 20px;
+    font-weight: bold;
 }
 
 .BotaoVermais1:hover{
     transition: 0.5s;
     background-color: #D2DEEE;
     color: #243B53;
+}
+
+/* responsividade */
+
+@media screen and (max-width: 700px) and (min-width: 200px){
+    .VagasConteudo{
+        flex-direction: column;
+    }
+
+    .Vaga1, .Vaga2, .Vaga3{
+        width: 100%;
+        height: 300px;
+        margin-top: 10px;
+    }
 }

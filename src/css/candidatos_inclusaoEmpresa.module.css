@@ -1,13 +1,12 @@
 .Candidatos {
-  position: relative;
   width: 80%;
-  height: 85vh;
   margin: auto;
-  margin-top: 15vh;
+  margin-top: 30px;
 }
 
 .TituloCandidatos {
-  font-size: 50px;
+  font-size: clamp(3rem, 4vw, 4rem);
+  font-weight: bold;
 }
 
 .CandidatosConteudo {
@@ -16,11 +15,8 @@
   display: flex;
   flex-direction: row;
   align-items: center;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
   justify-content: space-evenly;
-  margin-top: 5vh;
+  margin-top: 10px;
 }
 
 .Candidato1,
@@ -33,8 +29,7 @@
   align-items: center;
   justify-content: space-evenly;
   background-color: #d2deee;
-  border-radius: 5vh;
-  font-size: 4vh;
+  border-radius: 20px;
 }
 
 .Candidato1 {
@@ -56,22 +51,37 @@
 }
 
 .BotaoVermais1 {
-  width: 15%;
-  height: 10vh;
-  background-color: #243b53;
-  border-radius: 2vh;
-  font-size: 5vh;
+  width: 280px;
+  height: 50px;
+  background-color: #243B53;
+  font-size: clamp(1rem, 1.6vw, 2rem);
   color: #fff;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-evenly;
+  text-align: center;
+  border-radius: 10px;
+  padding-top: 10px;
   margin: auto;
-  margin-top: 15vh;
+  margin-top: 20px;
+  font-weight: bold;
 }
 
 .BotaoVermais1:hover {
   transition: 0.5s;
   background-color: #d2deee;
   color: #243b53;
+}
+
+/* responsividade */
+
+@media screen and (max-width: 700px) and (min-width: 200px) {
+  .CandidatosConteudo {
+    flex-direction: column;
+  }
+
+  .Candidato1,
+  .Candidato2,
+  .Candidato3 {
+    width: 100%;
+    height: 700px;
+    margin-top: 10px;
+  }
 }
