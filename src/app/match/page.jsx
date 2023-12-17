@@ -1,5 +1,5 @@
 import Match from "@/src/componentes/matchEmpresa";
-import Convuser from "@/src/componentes/converseUsuario";
+import ConverseUsuario from "@/src/componentes/converseUsuario";
 import Footer from "@/src/componentes/footer";
 import Wave from "@/src/componentes/wave";
 import VLibras from "@/src/componentes/vlibras";
@@ -13,7 +13,7 @@ export default function Home() {
           <Wave position={"relative"} bgColor="#243B53"/>
       </header>
       <Match />
-      <Convuser />
+      <ConverseUsuario />
       <Footer bgColor={"#243B53"} />
       <VLibras forceOnload={true} />
     </>

@@ -1,6 +1,6 @@
 import Style from "../css/converseUsuario.module.css";
 
-export default function Convuser() {
+export default function ConverseUsuario() {
   return (
     <section className={Style.containerForms}>
       <form action="" className={Style.forms}>

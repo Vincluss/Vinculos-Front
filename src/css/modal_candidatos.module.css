@@ -1,15 +1,4 @@
 #modalCandidatos {
-<<<<<<< Updated upstream
-    position: fixed;
-    width: 70%;
-    height: 580px;
-    top: 30px;
-    background-color: aliceblue;
-    grid-template-areas: 'image info' 'about about' 'skills skills';
-    z-index: 999;
-    border-radius: 10px;
-    padding: 30px 50px 30px 50px;
-=======
   position: fixed;
   top: 50%;
   left: 50%;
@@ -27,7 +16,6 @@
   row-gap: 0.5rem;
   overflow-y: scroll;
   align-self: center;
->>>>>>> Stashed changes
 }
 
 .nome_candidato {
