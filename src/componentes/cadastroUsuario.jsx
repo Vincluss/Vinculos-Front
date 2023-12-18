@@ -1,11 +1,46 @@
+"use client"
+
+import { useState } from "react";
 import Style from "../css/cadastro_usuario.module.css";
 import Image from "next/image";
 import Logo from "@/src/assets/logo-semfundo/5.png";
 import Link from "next/link";
 import { VscArrowLeft } from "react-icons/vsc";
 import VLibras from "@/src/componentes/vlibras";
+import { useRouter } from 'next/navigation'
+import {cadastrarEmpresaReq} from "@/src/api/request"
 
 export default function Caduser() {
+
+  const dadosIniciaisFormulario = {
+    cpf_candidato: "",
+    nome_candidato: "",
+    email_candidato: "",
+    senha_candidato: "",
+  }
+
+  const [formData, setFormData] = useState(dadosIniciaisFormulario);
+  const router = useRouter();
+
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData((prevData) => ({ ...prevData, [name]: value }));
+  };
+
+  async function hadleSubmit(event){
+    event.preventDefault();
+
+    try{
+      const usuarioCadastrado = await cadastrarEmpresaReq(formData);
+      setFormData(dadosIniciaisFormulario)
+      alert("Usuario cadastrado com sucesso")
+      router.push('/home_usuario')
+    }catch(err){
+      console.log(err)
+    }
+
+  } 
+
   return (
     <section className={Style.paginaCadastro}>
       {/* Formulário de cadastro da empresa */}
@@ -21,15 +56,16 @@ export default function Caduser() {
           <h1 className={Style.tituloCadastro}>Cadastre-se</h1>
 
           {/* action serve para indicar o local que será enviado as informações do formulário */}
-          <form action="/curriculo" className={Style.formulario}>
+          <form action="/curriculo" className={Style.formulario} onSubmit={hadleSubmit}>
             <div className={Style.formGroup}>
               <label htmlFor="email">Email </label>
               <input
-                id="email"
+                id="email_candidato"
                 type="email"
-                name="email"
+                name="email_candidato"
                 placeholder="DIGITE SEU EMAIL"
                 className={Style.estilizacaoInputs}
+                onChange={handleChange}
                 required
               />
             </div>
@@ -37,13 +73,14 @@ export default function Caduser() {
             <div className={Style.formGroup}>
               <label htmlFor="cpf">CPF</label>
               <input
-                id="cpf"
+                id="cpf_candidato"
                 type="text"
-                name="cpf"
+                name="cpf_candidato"
                 className={Style.estilizacaoInputs}
                 placeholder="000.000.000-00"
                 title="Formato esperado: 000.000.000-00"
                 pattern="\d{3}.\d{3}.\d{3}-\d{2}"
+                onChange={handleChange}
                 required
               />
             </div>
@@ -57,11 +94,12 @@ export default function Caduser() {
                 </span>
               </label>
               <input
-                id="senha"
+                id="senha_candidato"
                 type="password"
-                name="password"
+                name="senha_candidato"
                 className={Style.estilizacaoInputs}
                 title="No mínimo 8 caracteres, com 1 caracter especial e 1 número"
+                onChange={handleChange}
                 required
                 aria-describedby="senhaHelperText"
               />
@@ -80,6 +118,7 @@ export default function Caduser() {
                 name="confirmPassword"
                 className={Style.estilizacaoInputs}
                 title="No mínimo 8 caracteres, com 1 caracter especial e 1 número"
+                onChange={handleChange}
                 required
                 aria-describedby="confirmaSenhaHelperText"
               />
@@ -92,7 +131,11 @@ export default function Caduser() {
             </div>
           </form>
 
-          <Link href="/login_usuario" aria-label="Login usuário" className={Style.loginLink}>
+          <Link
+            href="/login_usuario"
+            aria-label="Login usuário"
+            className={Style.loginLink}
+          >
             Já tem uma conta? Faça login aqui!
           </Link>
         </div>
@@ -102,9 +145,7 @@ export default function Caduser() {
       <div className={Style.caixaSaudacao}>
         <h1 className={Style.titulo}>OLÁ!</h1>
 
-        <h2 className={Style.subtitulo}>
-          Insira seus dados e vincule-se!
-        </h2>
+        <h2 className={Style.subtitulo}>Insira seus dados e vincule-se!</h2>
         <div className={Style.logo}>
           <Image src={Logo} alt="Logo da Vínculos" />
         </div>
