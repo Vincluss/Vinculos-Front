@@ -1,7 +1,12 @@
+'use client'
+
 import Style from "../css/vagas.module.css";
 import Link from "next/link";
+import dynamic from "next/dynamic";
 
-import { JobMap } from "./mapa_geolocalizacao/Map";
+const JobMap = dynamic(() => import("./mapa_geolocalizacao/Map"), {
+  ssr: false,
+});
 
 export default function Vagas() {
   return (

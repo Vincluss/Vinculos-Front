@@ -1,4 +1,4 @@
-import Style from "@/src/css/descricao_vaga.module.css";
+import Style from "../css/descricao_vaga.module.css";
 import Image from "next/image";
 import { MdOutlineAttachMoney } from "react-icons/md";
 import { BsFillGeoAltFill } from "react-icons/bs";
@@ -22,18 +22,20 @@ export default function DescricaoVagas() {
 
       <div className={Style.descricao}>
         <div className={Style.formatacaoIcones}>
-          <MdOutlineAttachMoney className={Style.icon} /> <h2 className={Style.iconText}>Salário</h2>
+          <MdOutlineAttachMoney className={Style.icon} />{" "}
+          <h2 className={Style.iconText}>Salário</h2>
         </div>
         <div className={Style.formatacaoIcones}>
-          <BsFillGeoAltFill className={Style.icon} /> <h2 className={Style.iconText}>São Paulo</h2>
+          <BsFillGeoAltFill className={Style.icon} />{" "}
+          <h2 className={Style.iconText}>São Paulo</h2>
         </div>
         <div className={Style.formatacaoIcones}>
-          <CgUiKit className={Style.icon} /> <h2 className={Style.iconText}>Regime - CLT</h2>
+          <CgUiKit className={Style.icon} />{" "}
+          <h2 className={Style.iconText}>Regime - CLT</h2>
         </div>
 
         <h2 className={Style.subtitulos}>DESCRIÇÃO:</h2>
         <p className={Style.paragrafo}>
-          {" "}
           Administrar banco de dados em ambiente Azure Cloud;{" "}
         </p>
         <p className={Style.paragrafo}>
@@ -78,11 +80,11 @@ export default function DescricaoVagas() {
           vagas para construirmos juntos um ambiente mais colorido e diverso!
         </p>
       </div>
-      <Link href="">
-        <button type="submit" className={Style.btnAplicar}>
+      <div className={Style.btnContainer}>
+        <Link href="/apply" className={Style.btnAplicar}>
           Aplicar
-        </button>
-      </Link>
+        </Link>
+      </div>
     </section>
   );
 }

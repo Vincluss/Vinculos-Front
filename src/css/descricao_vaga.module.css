@@ -1,114 +1,119 @@
-.containerDescricaoVaga{
-    width: 100%;
-    height: auto;
+.containerDescricaoVaga {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.titulo {
+  @apply text-font;
+  font-weight: 600;
+  margin: 2% 0;
+  font-size: clamp(1.5rem, 4vw, 5rem);
+}
+
+.conteudoVaga {
+  width: 60%;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 2% 0;
+}
+
+.caixa {
+  width: 150px;
+  height: 150px;
+  @apply bg-slate-500;
+}
+
+.tituloVaga {
+  font-weight: 500;
+  font-size: clamp(1.2rem, 2vw, 2rem);
+  text-align: left;
+}
+
+.formatacaoIcones {
+  display: flex;
+  align-items: center;
+  margin: 2% 0;
+}
+
+.icon {
+  width: clamp(1.5rem, 2vw, 2rem);
+  height: clamp(1.5rem, 2vw, 2rem);
+  margin-right: 1%;
+}
+
+.iconText {
+  font-size: clamp(1.5rem, 2.6vw, 2rem);
+}
+
+.descricao {
+  width: 60%;
+  height: auto;
+  margin: 2%;
+}
+
+.subtitulos {
+  font-weight: 500;
+  font-size: clamp(1.5rem, 2.6vw, 2rem);
+  margin-bottom: 2%;
+}
+
+.paragrafo {
+  margin: 2% 0 4% 0;
+  font-size: clamp(1.2rem, 2.6vw, 1.5rem);
+}
+
+.lista {
+  margin: 2% 0 2% 4%;
+  font-size: clamp(1.2rem, 2.6vw, 1.5rem);
+  list-style: disc;
+}
+
+.btnContainer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btnAplicar {
+  width: 30%;
+  padding: 1rem;
+  font-size: clamp(1.2rem, 2vw, 1.7rem);
+  background-color: #e8a023;
+  color: #fff;
+  border-radius: 10px;
+  transition: 1s all;
+  text-align: center;
+}
+
+.btnAplicar:hover {
+  box-shadow: 2px 2px 15px 1px #7a7a7a;
+  transition: 1s all;
+}
+
+@media screen and (max-width: 768px) {
+  .descricao {
+    width: 80%;
+  }
+  .conteudoVaga {
+    width: 80%;
+  }
+
+  .btnAplicar {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 502px) {
+  .conteudoVaga {
     display: flex;
     flex-direction: column;
-    align-items: center
+    align-items: left;
+    justify-content: center;
+  }
 }
-
-.titulo{
-    @apply text-font;
-    font-weight: bold;
-    margin: 2% 0;
-    font-size: clamp(1.5rem, 4vw, 5rem);
-}
-
-.conteudoVaga{
-    width: 60%;
-    height: auto;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    margin: 2% 0;
-}
-
-.caixa{
-    width: 150px;
-    height: 150px;
-    @apply bg-slate-500
-}
-
-.tituloVaga{
-    font-weight: bold;
-    font-size: clamp(1.2rem, 2vw, 2rem);
-    text-align: left;
-    margin: 2%;
-}
-
-.formatacaoIcones{
-    display: flex;
-    align-items: center;
-    margin: 2% 0;
-}
-
-.icon{
-    width: clamp(1.5rem, 2vw, 2rem);
-    height: clamp(1.5rem, 2vw, 2rem);
-    margin-right: 1%;
-}
-
-.iconText{
-    font-size: clamp(1.5rem, 2.6vw,2rem);
-}
-
-.descricao{
-    width: 60%;
-    height: auto;
-    margin: 2%;
-}
-
-.subtitulos{
-    font-weight: bold;
-    font-size: clamp(1.5rem, 2.6vw,2rem);
-    margin-bottom: 2%;
-}
-
-.paragrafo{
-    margin: 2% 0 4% 0;
-    font-size: clamp(1.2rem, 2.6vw,1.5rem);
-}
-
-.lista{
-    margin: 2% 0 2% 4%;
-    font-size: clamp(1.2rem, 2.6vw,1.5rem);
-    list-style: disc;
-}
-
-.btnAplicar{
-    width: clamp(6.25rem,24vw,18.75rem);
-    height: clamp(2.5rem,7.97vh,3.125rem);
-    background-color: #E8A023;
-    color: #fff;
-    border-radius: 10px;
-    font-weight: bold;
-    transition: 1s all;
-}
-
-.btnAplicar:hover{
-    box-shadow: 2px 2px 15px 1px #7a7a7a;
-    transition: 1s all;
-}
-
-@media screen and (max-width: 768px){
-    .descricao{
-        width: 80%;
-    }
-    .conteudoVaga{
-        width: 80%;
-    }
-    
-    .btnAplicar{
-        width: 90%;
-    }
-}
-
-
-@media screen and (max-width: 502px){
-    .conteudoVaga{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-    }
-}
-

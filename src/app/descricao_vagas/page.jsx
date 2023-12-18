@@ -10,11 +10,11 @@ export default function Home() {
     <>
       <header className="relative">
         <HeaderUser bgColor="#003786" />
-        <Wave position={"relative"} bgColor="#003786"/>
+        <Wave position={"relative"} bgColor="#003786" />
       </header>
-      
-      <DescricaoVagas/>
-      <FormularioRH/>
+
+      <DescricaoVagas />
+      <FormularioRH />
 
       <Footer bgColor="#003786" />
     </>

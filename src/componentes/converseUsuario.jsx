@@ -5,7 +5,7 @@ export default function ConverseUsuario() {
     <section className={Style.containerForms}>
       <form action="" className={Style.forms}>
         <label htmlFor="nome" className={Style.tituloForms}>
-          Converse Com o usuário
+          Converse com o usuário
         </label>
 
         <div className={`${Style.posicionarInput}`}>

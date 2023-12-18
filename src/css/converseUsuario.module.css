@@ -58,8 +58,7 @@
 .btnContato {
   background-color: #003786;
   padding: 1rem 1rem;
-  width: 30%;
-  font-weight: 500;
+  width: 40%;
   color: #fff;
   font-size: clamp(1.2rem, 2vw, 1.7rem);
   border-radius: 10px;
@@ -78,6 +77,12 @@
   }
 
   .btnContato {
-    width: 50%;
+    width: 60%;
+  }
+}
+
+@media only screen and (max-width: 425px){
+  .btnContato {
+    width: 90%;
   }
 }
