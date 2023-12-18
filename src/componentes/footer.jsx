@@ -1,5 +1,5 @@
 import Image from "next/image";
-import Style from "../css/footer.module.css";
+import Style from "../css/Footer.module.css";
 import Link from "next/link";
 import Logo from "@/src/assets/img-footer/Logo_Vinculos_Redondo.png";
 import Instagram from "@/src/assets/img-footer/Logo_Instagram.png";
