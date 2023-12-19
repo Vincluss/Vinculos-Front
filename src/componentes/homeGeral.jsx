@@ -22,10 +22,10 @@ export default function HomeGeral() {
               Faça seu cadastro e tenha acesso aos nossos serviços
             </h1>
             <div className={Style.btnContainer}>
-              <Link href={"/cadastro_usuario"} className={Style.btnCandidato}>
+              <Link href={"/home_usuario"} className={Style.btnCandidato}>
                 Para candidatos
               </Link>
-              <Link href={"/cadastro_empresa"} className={Style.btnEmpresa}>
+              <Link href={"/home_empresa"} className={Style.btnEmpresa}>
                 Para empresas
               </Link>
             </div>
