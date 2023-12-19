@@ -35,9 +35,9 @@
 
 .frase {
   text-align: center;
-  font-weight: bold;
+  font-weight: 500;
   color: #fff;
-  font-size: clamp(1.2rem, 4vw, 4rem);
+  font-size: clamp(2rem, 4vw, 4rem);
 }
 
 .btnContainer {
@@ -67,7 +67,6 @@
   width: 40%;
   background-color: #003786;
   color: #fff;
-  font-weight: bold;
   padding: 15px;
   border-radius: 15px;
   text-align: center;

@@ -175,7 +175,7 @@ export default function CadastroEmpresa() {
           <Image src={logo} alt="Logo da Vínculos" />
         </div>
       </div>
-      <VLibras forceOnload={true} />
+      <VLibras  />
     </section>
   );
 }

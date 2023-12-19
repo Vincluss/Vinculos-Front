@@ -9,6 +9,7 @@ const poppins = Poppins({
   weight: ["400", "500", "600", "700", "800", "900"],
 });
 
+
 export const metadata = {
   title: "Vínculos",
   description:
@@ -22,7 +23,9 @@ export default function RootLayout({ children }) {
         src="https://cdn.userway.org/widget.js"
         data-account="0PWSHa9uTA"
       />
-      <body className={poppins.className}>{children}</body>
+      <body className={poppins.className}>
+        {children}
+      </body>
     </html>
   );
 }

@@ -149,7 +149,7 @@ export default function Caduser() {
           <Image src={Logo} alt="Logo da Vínculos" />
         </div>
       </div>
-      <VLibras forceOnload={true} />
+      <VLibras  />
     </section>
   );
 }

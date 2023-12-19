@@ -13,7 +13,7 @@ export default function Curriculo() {
       </header>
       <Baixar />
       <Footer />
-      <VLibras forceOnload={true} />
+      <VLibras  />
     </>
   );
 }

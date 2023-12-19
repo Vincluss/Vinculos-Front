@@ -17,7 +17,7 @@ export default function EditarPerfil() {
       <Perfil />
       <Candidato />
       <Footer bgColor={"#003786"}/>
-      <VLibras forceOnload={true} />
+      <VLibras  />
     </>
   );
 }

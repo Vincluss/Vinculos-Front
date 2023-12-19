@@ -5,7 +5,7 @@ import Parceiros from "@/src/componentes/parceiros";
 import Footer from "@/src/componentes/footer";
 import Header from "../componentes/headerPublico";
 import Wave from "../componentes/wave";
-import VLibras from "@/src/componentes/vlibras";
+import VLibras from "../componentes/vlibras";
 import Conteudo_sobre from "../componentes/Conteudo_sobre";
 
 export default function Home() {
@@ -23,7 +23,7 @@ export default function Home() {
         <Parceiros />
       </main>
       <Footer bgColor="#003786" />
-      <VLibras forceOnload={true} />
+      <VLibras/>
     </>
   );
 }

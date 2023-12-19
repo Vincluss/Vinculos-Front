@@ -85,7 +85,7 @@ export default function Caduser() {
         </div>
       </div>
 
-      <VLibras forceOnload={true} />
+      <VLibras  />
     </section>
   );
 }

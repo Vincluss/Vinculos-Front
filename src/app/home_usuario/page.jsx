@@ -31,7 +31,7 @@ export default function Usuario() {
         <Parceiros />
       </main>
       <Footer bgColor="#003786" />
-      <VLibras forceOnload={true} />
+      <VLibras  />
     </>
   );
 }

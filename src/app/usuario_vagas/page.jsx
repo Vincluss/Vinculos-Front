@@ -66,7 +66,7 @@ export default function Usuario() {
       </div>
 
       <Footer bgColor={"#003786"} />
-      <VLibras forceOnload={true} />
+      <VLibras  />
     </>
   );
 }

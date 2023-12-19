@@ -13,7 +13,7 @@ export default function CadastrarVagas(){
             </header>
             <CadastroVagas/>
             <Footer bgColor={"#243B53"} />
-            <VLibras forceOnload={true} />
+            <VLibras  />
         </>    
     );
 }

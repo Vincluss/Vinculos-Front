@@ -16,7 +16,7 @@ export default function inclusao() {
       <VagasInclusaoEmpresa />
       <CandidatosInclusaoEmpresa />
       <Footer bgColor={"#243B53"} />
-      <VLibras forceOnload={true} />
+      <VLibras  />
     </>
   );
 }

@@ -6,7 +6,7 @@ export default function Home() {
   return (
     <>
       <Login />
-      <VLibras forceOnload={true} />
+      <VLibras  />
     </>
   );
 }

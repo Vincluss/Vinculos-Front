@@ -18,7 +18,7 @@ export default function Home() {
         <FormularioRH />
       </main>
       <Footer bgColor={'#003786'}/>
-      <VLibras forceOnload={true} />
+      <VLibras  />
     </>
   );
 }

@@ -63,7 +63,7 @@ export default function Home() {
                 </div>
             </Pagamento>
 
-            <VLibras forceOnload={true} />
+            <VLibras  />
             <Footer bgColor="#243B53" />
         </section>
     );

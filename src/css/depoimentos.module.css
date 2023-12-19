@@ -8,7 +8,7 @@
 .frase{
     text-align: center;
     font-size: clamp(1rem, 4vw, 4rem);
-    font-weight: bold;
+    font-weight: 500;
     color: #302C29;
 }
 

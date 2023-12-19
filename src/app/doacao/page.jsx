@@ -13,7 +13,7 @@ export default function Home() {
             </header>
             <Doe />
             <Footer bgColor="#003786"/>
-            <VLibras forceOnload={true} />
+            <VLibras  />
         </>
     )
 }

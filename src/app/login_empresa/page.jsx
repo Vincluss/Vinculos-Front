@@ -7,7 +7,7 @@ export default function Home() {
     return (
         <>
             <Loginempresa />
-            <VLibras forceOnload={true} />
+            <VLibras  />
         </>
     )
 }

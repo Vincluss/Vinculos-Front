@@ -18,7 +18,7 @@ export default function sobre() {
       <footer className="relative">
         <Footer bgColor={"#003786"}/>
       </footer>
-      <VLibras forceOnload={true} />
+      <VLibras  />
     </>
   );
 }

@@ -15,7 +15,7 @@ export default function Home() {
       <Match />
       <ConverseUsuario />
       <Footer bgColor={"#243B53"} />
-      <VLibras forceOnload={true} />
+      <VLibras  />
     </>
   );
 }

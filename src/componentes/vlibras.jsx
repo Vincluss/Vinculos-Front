@@ -1,8 +1,6 @@
-'use client'
-import VLibras from '@djpfs/react-vlibras'
+"use client";
+import VLibras from "vlibras-nextjs";
 
-export default function VLibrasComponente(){
-    return(
-        <VLibras forceOnload={true} />
-    )
+export default function VLibrasComponent() {
+  return <VLibras forceOnload />;
 }

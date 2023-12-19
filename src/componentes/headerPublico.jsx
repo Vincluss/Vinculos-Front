@@ -102,11 +102,11 @@ export default function Header({ bgColor }) {
     >
       {windowWidth > 721 && <ApoieVinculos />}
 
-      <button className={Style.logo}>
+      <div className={Style.logo}>
         <Link href="/">
           <Image src={Logo} alt="Logo" priority />
         </Link>
-      </button>
+      </div>
 
       <button className={Style.menu} onClick={toggleMenu}>
         <Hamburger

@@ -1,12 +1,27 @@
 "use client";
 
 import React, { useEffect, useState } from "react";
-import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
+import {
+  MapContainer,
+  TileLayer,
+  Marker,
+  Popup,
+  useMapEvent,
+} from "react-leaflet";
 import { jobsData } from "./data/jobs";
 import "leaflet/dist/leaflet.css";
+import IconVinculos from "../../assets/logo-semfundo/6.png";
+import "leaflet-defaulticon-compatibility";
+import "leaflet-defaulticon-compatibility/dist/leaflet-defaulticon-compatibility.css";
+import { Icon } from "leaflet";
+import L from "leaflet";
+import defaultMarker from "leaflet/dist/images/marker-icon.png";
+
 
 export default function Map() {
   const [isMounted, setIsMounted] = React.useState(false);
+
+  const iconVinculos = new L.icon({ iconUrl: IconVinculos, iconSize: [32, 32] });
 
   React.useEffect(() => {
     setIsMounted(true);
@@ -43,11 +58,17 @@ export default function Map() {
         />
 
         {jobsData.map((job) => (
-          <Marker key={job.id} position={job.position}>
+          <Marker
+            key={job.id}
+            position={job.position}
+            title={job.title}
+            keyboard={true}
+            alt={job.title}
+          >
             <Popup>{job.title}</Popup>
           </Marker>
         ))}
       </MapContainer>
     )
   );
-};
+}

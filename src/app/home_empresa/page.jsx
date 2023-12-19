@@ -22,7 +22,7 @@ export default function Empresa() {
         <AssinaturaHome />
       </main>
       <Footer bgColor={"#243B53"} />
-      <VLibras forceOnload={true} />
+      <VLibras  />
     </>
   );
 }
