@@ -1,5 +1,5 @@
 "use client";
-import Style from "../css/header_publico.module.css";
+import Style from "../css/headerPublico.module.css";
 import Logo from "@/src/img/Logo_Vinculos_Redondo.png";
 import { Squash as Hamburger } from "hamburger-react";
 import { useState, useCallback, useEffect } from "react";
@@ -30,7 +30,7 @@ export default function Header({ bgColor }) {
     };
   }, []);
 
-  console.log('Window Width:', windowWidth);
+  console.log("Window Width:", windowWidth);
   console.log(isOpen);
 
   const toggleMenu = () => {
@@ -100,15 +100,14 @@ export default function Header({ bgColor }) {
       className={Style.header}
       style={{ backgroundColor: `${bgColor}` }}
     >
-      {windowWidth > 721 && <ApoieVinculos />}
-
+      <div className={Style.coracaoContainer}>{windowWidth > 721 && <ApoieVinculos />}</div>
       <div className={Style.logo}>
         <Link href="/">
           <Image src={Logo} alt="Logo" priority />
         </Link>
       </div>
 
-      <button className={Style.menu} onClick={toggleMenu}>
+      <div className={Style.menuContainer} >
         <Hamburger
           color="#AFC2FF"
           size={40}
@@ -118,8 +117,9 @@ export default function Header({ bgColor }) {
           aria-haspopup="true"
           aria-controls="menu"
           aria-expanded="false"
+          onClick={toggleMenu}
         />
-      </button>
+      </div>
 
       {isVisible && <SideBar />}
     </header>

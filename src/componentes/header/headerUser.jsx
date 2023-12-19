@@ -56,11 +56,11 @@ export default function HeaderUser({ bgColor }) {
           <User />
         </ButtonMenuProvider>
       </div>
-      <Link href={"/home_usuario"} className={Style.logoContainer}>
-        <button className={Style.logo}>
+      <div className={Style.logoContainer}>
+        <Link href={'/'} className={Style.logo}>
           <Image src={Logo} alt="Logo" priority />
-        </button>
-      </Link>
+        </Link>
+      </div>
 
       <div className={Style.hamburgerContainer}>
         {windowWidth > 768 && <ApoieVinculos />}

@@ -35,6 +35,10 @@
   padding: 12px 40px;
 }
 
+.coracaoContainer {
+  width: 30%;
+}
+
 .header .coracao {
   display: flex;
   align-items: center;
@@ -56,9 +60,11 @@
 	transform: translate(-35%);
 } */
 
-.header .menu {
+.header .menuContainer {
+  width: 30%;
   display: flex;
   align-items: center;
+  justify-content: end;
   z-index: 12;
 }
 
@@ -141,7 +147,7 @@
     width: 210px;
   }
 
-  .coracao{
-	margin: 1rem 0 0 8%;
+  .coracao {
+    margin: 1rem 0 0 8%;
   }
 }
