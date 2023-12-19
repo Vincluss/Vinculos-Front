@@ -150,9 +150,9 @@ export default function CadastroEmpresa() {
             </div>
 
             <div className={Style.centraalizarBtn}>
-              <button type="submit" className={Style.btnSubmit}>
+              <Link href={"/home_empresa"} className={Style.btnSubmit}>
                 INSCREVER-SE
-              </button>
+              </Link>
             </div>
           </form>
 
