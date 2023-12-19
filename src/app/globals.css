@@ -63,7 +63,7 @@ html {
   background-color: #eee;
 }
 
-main {
+.main {
   display: grid;
   grid-template-rows: auto 1fr;
   width: 100%;
