@@ -8,13 +8,12 @@ import Link from "next/link";
 import { VscArrowLeft } from "react-icons/vsc";
 import VLibras from "@/src/componentes/vlibras";
 import { useRouter } from 'next/navigation'
-import {cadastrarEmpresaReq} from "@/src/api/request"
+import {cadastrarCandidatoReq} from "@/src/api/request"
 
 export default function Caduser() {
 
   const dadosIniciaisFormulario = {
     cpf_candidato: "",
-    nome_candidato: "",
     email_candidato: "",
     senha_candidato: "",
   }
@@ -31,7 +30,7 @@ export default function Caduser() {
     event.preventDefault();
 
     try{
-      const usuarioCadastrado = await cadastrarEmpresaReq(formData);
+      const usuarioCadastrado = await cadastrarCandidatoReq(formData);
       setFormData(dadosIniciaisFormulario)
       alert("Usuario cadastrado com sucesso")
       router.push('/home_usuario')
